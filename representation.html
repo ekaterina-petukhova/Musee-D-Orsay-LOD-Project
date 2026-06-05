@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Knowledge Representation — Musée d'Orsay LOD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#faf8f4;--fg:#1e2022;--muted:#7a7e85;--border:#e4dfd4;--card:#ffffff;--primary:#c4a04a;--secondary:#5a8a8a;--font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif;}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--fg);min-height:100vh;display:flex;flex-direction:column;}
+nav{position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1100px;margin:auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:var(--font-serif);font-size:1.2rem;color:var(--fg);text-decoration:none;}
+.nav-logo span{color:var(--primary);font-style:italic;font-weight:300;margin-left:4px;}
+.nav-links{display:flex;gap:32px;}
+.nav-links a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--muted);}
+.hamburger svg{width:22px;height:22px;}
+.mobile-menu{display:none;flex-direction:column;gap:0;padding:8px 24px 16px;border-top:1px solid var(--border);background:rgba(250,248,244,0.97);}
+.mobile-menu a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border);}
+.mobile-menu a:last-child{border-bottom:none;}
+.mobile-menu a.active{color:var(--primary);}
+@media(max-width:768px){.nav-links{display:none;}.hamburger{display:flex;align-items:center;justify-content:center;}}
+main{flex:1;max-width:1100px;margin:auto;padding:64px 24px 96px;width:100%;}
+h1{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);margin-bottom:16px;}
+.subtitle{font-size:1.1rem;color:var(--muted);font-weight:300;max-width:680px;line-height:1.7;margin-bottom:56px;}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:48px;flex-wrap:wrap;}
+.tab-btn{background:none;border:none;border-bottom:2px solid transparent;padding:12px 20px;font-family:var(--font-serif);font-size:1rem;cursor:pointer;color:var(--muted);margin-bottom:-1px;transition:color .2s,border-color .2s;}
+.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);}
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+.code-block{background:#1e1e2e;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.05);}
+.code-header{background:#181825;padding:10px 20px;font-size:.8rem;font-family:monospace;color:#a6adc8;border-bottom:1px solid #313244;display:flex;justify-content:space-between;align-items:center;}
+.code-label{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:#6c7086;}
+.code-block pre{padding:28px;font-family:'JetBrains Mono','Menlo',monospace;font-size:.85rem;line-height:1.8;overflow-x:auto;color:#cdd6f4;margin:0;white-space:pre;}
+.kw{color:#c678dd;} .str{color:#98c379;} .cmt{color:#7f848e;font-style:italic;} .var{color:#e06c75;} .tag{color:#e06c75;} .attr{color:#d19a66;} .punc{color:#abb2bf;}
+footer{border-top:1px solid var(--border);background:var(--card);padding:36px 24px;}
+.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+footer p{font-family:var(--font-serif);font-style:italic;font-size:1rem;}
+footer .meta{display:flex;gap:20px;font-size:.88rem;color:var(--muted);flex-wrap:wrap;justify-content:center;}
+footer .meta span::before{content:'·';margin-right:20px;color:var(--border);}
+footer .meta span:first-child::before{display:none;}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Musée d'Orsay<span>LOD</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="knowledge.html">Knowledge Organization</a>
+      <a href="representation.html" class="active">Knowledge Representation</a>
+      <a href="team.html">Team</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <svg id="icon-open" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="icon-close" style="display:none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="knowledge.html">Knowledge Organization</a>
+    <a href="representation.html" class="active">Knowledge Representation</a>
+    <a href="team.html">Team</a>
+  </div>
+</nav>
+
+<main>
+  <h1>Knowledge Representation</h1>
+  <p class="subtitle">The technical realization of our conceptual model. Explore the RDF triples and XML markup implementations.</p>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('rdf')">RDF / Turtle</button>
+    <button class="tab-btn" onclick="showTab('tei')">TEI XML</button>
+  </div>
+
+  <div id="tab-rdf" class="tab-content active">
+    <div class="code-block">
+      <div class="code-header"><span>musée-dorsay.ttl</span><span class="code-label">Turtle</span></div>
+      <pre><span class="kw">@prefix</span> crm: &lt;http://www.cidoc-crm.org/cidoc-crm/&gt; .
+<span class="kw">@prefix</span> rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+<span class="kw">@prefix</span> rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+<span class="kw">@prefix</span> xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+<span class="kw">@prefix</span> wd: &lt;http://www.wikidata.org/entity/&gt; .
+<span class="kw">@prefix</span> ex: &lt;http://example.org/orsay/&gt; .
+
+<span class="cmt"># The Museum Building as a Man-Made Object</span>
+ex:Building_Orsay <span class="kw">a</span> crm:E22_Man-Made_Object ;
+    rdfs:label <span class="str">"Musée d'Orsay"</span>@fr , <span class="str">"Orsay Museum"</span>@en ;
+    crm:P2_has_type wd:Q33506 ; <span class="cmt"># Wikidata: Museum</span>
+    crm:P53_has_former_or_current_location ex:Place_Paris_7e .
+
+<span class="cmt"># The Construction Event (1898-1900)</span>
+ex:Construction_Gare <span class="kw">a</span> crm:E12_Production ;
+    crm:P108_has_produced ex:Building_Orsay ;
+    crm:P14_carried_out_by ex:Actor_Laloux ;
+    crm:P4_has_time-span ex:TimeSpan_1898_1900 .
+
+<span class="cmt"># The Architect</span>
+ex:Actor_Laloux <span class="kw">a</span> crm:E21_Person ;
+    rdfs:label <span class="str">"Victor Laloux"</span> ;
+    crm:P2_has_type wd:Q733008 . <span class="cmt"># Wikidata: Architect</span>
+
+<span class="cmt"># Time Span</span>
+ex:TimeSpan_1898_1900 <span class="kw">a</span> crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin <span class="str">"1898-01-01"</span>^^xsd:date ;
+    crm:P82b_end_of_the_end <span class="str">"1900-12-31"</span>^^xsd:date .
+
+<span class="cmt"># The Conversion Event (1980s)</span>
+ex:Conversion_Museum <span class="kw">a</span> crm:E12_Production ;
+    crm:P108_has_produced ex:Building_Orsay ; <span class="cmt"># Same physical entity, new state</span>
+    crm:P14_carried_out_by ex:Actor_Aulenti ;
+    crm:P4_has_time-span ex:TimeSpan_1986 .</pre>
+    </div>
+  </div>
+
+  <div id="tab-tei" class="tab-content">
+    <div class="code-block">
+      <div class="code-header"><span>history.xml</span><span class="code-label">TEI XML</span></div>
+      <pre><span class="punc">&lt;?</span><span class="tag">xml</span> <span class="attr">version</span>=<span class="str">"1.0"</span> <span class="attr">encoding</span>=<span class="str">"UTF-8"</span><span class="punc">?&gt;</span>
+<span class="punc">&lt;</span><span class="tag">TEI</span> <span class="attr">xmlns</span>=<span class="str">"http://www.tei-c.org/ns/1.0"</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;</span><span class="tag">teiHeader</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;</span><span class="tag">fileDesc</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;</span><span class="tag">titleStmt</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">title</span><span class="punc">&gt;</span>Historical Timeline of the Musée d'Orsay<span class="punc">&lt;/</span><span class="tag">title</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">author</span><span class="punc">&gt;</span>Eakterina Petukhova<span class="punc">&lt;/</span><span class="tag">author</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;/</span><span class="tag">titleStmt</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;</span><span class="tag">publicationStmt</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">p</span><span class="punc">&gt;</span>Unpublished — DHDK, University of Bologna<span class="punc">&lt;/</span><span class="tag">p</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;/</span><span class="tag">publicationStmt</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;/</span><span class="tag">fileDesc</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;/</span><span class="tag">teiHeader</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;</span><span class="tag">text</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;</span><span class="tag">body</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;</span><span class="tag">div</span> <span class="attr">type</span>=<span class="str">"history"</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">head</span><span class="punc">&gt;</span>From Station to Museum<span class="punc">&lt;/</span><span class="tag">head</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">p</span><span class="punc">&gt;</span>The <span class="punc">&lt;</span><span class="tag">placeName</span> <span class="attr">ref</span>=<span class="str">"wd:Q236528"</span><span class="punc">&gt;</span>Musée d'Orsay<span class="punc">&lt;/</span><span class="tag">placeName</span><span class="punc">&gt;</span>
+        was originally constructed as a railway station by
+        <span class="punc">&lt;</span><span class="tag">persName</span> <span class="attr">ref</span>=<span class="str">"ex:Actor_Laloux"</span><span class="punc">&gt;</span>Victor Laloux<span class="punc">&lt;/</span><span class="tag">persName</span><span class="punc">&gt;</span>
+        between <span class="punc">&lt;</span><span class="tag">date</span> <span class="attr">when</span>=<span class="str">"1898"</span><span class="punc">&gt;</span>1898<span class="punc">&lt;/</span><span class="tag">date</span><span class="punc">&gt;</span>
+        and <span class="punc">&lt;</span><span class="tag">date</span> <span class="attr">when</span>=<span class="str">"1900"</span><span class="punc">&gt;</span>1900<span class="punc">&lt;/</span><span class="tag">date</span><span class="punc">&gt;</span>.<span class="punc">&lt;/</span><span class="tag">p</span><span class="punc">&gt;</span>
+        <span class="punc">&lt;</span><span class="tag">p</span><span class="punc">&gt;</span>Listed as a historic monument in
+        <span class="punc">&lt;</span><span class="tag">date</span> <span class="attr">when</span>=<span class="str">"1978"</span><span class="punc">&gt;</span>1978<span class="punc">&lt;/</span><span class="tag">date</span><span class="punc">&gt;</span> and converted by
+        <span class="punc">&lt;</span><span class="tag">persName</span> <span class="attr">ref</span>=<span class="str">"ex:Actor_Aulenti"</span><span class="punc">&gt;</span>Gae Aulenti<span class="punc">&lt;/</span><span class="tag">persName</span><span class="punc">&gt;</span>,
+        opening on <span class="punc">&lt;</span><span class="tag">date</span> <span class="attr">when</span>=<span class="str">"1986-12-09"</span><span class="punc">&gt;</span>9 December 1986<span class="punc">&lt;/</span><span class="tag">date</span><span class="punc">&gt;</span>.<span class="punc">&lt;/</span><span class="tag">p</span><span class="punc">&gt;</span>
+      <span class="punc">&lt;/</span><span class="tag">div</span><span class="punc">&gt;</span>
+    <span class="punc">&lt;/</span><span class="tag">body</span><span class="punc">&gt;</span>
+  <span class="punc">&lt;/</span><span class="tag">text</span><span class="punc">&gt;</span>
+<span class="punc">&lt;/</span><span class="tag">TEI</span><span class="punc">&gt;</span></pre>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>Musée d'Orsay — Linked Open Data Project</p>
+    <div class="meta">
+      <span>Eakterina Petukhova</span>
+      <span>DHDK · University of Bologna</span>
+      <span>2025</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function showTab(id){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+function toggleMenu(){
+  var m=document.getElementById('mobile-menu');
+  var o=document.getElementById('icon-open');
+  var c=document.getElementById('icon-close');
+  var open=m.style.display==='flex';
+  m.style.display=open?'none':'flex';
+  o.style.display=open?'':'none';
+  c.style.display=open?'none':'';
+}
+</script>
+</body>
+</html>

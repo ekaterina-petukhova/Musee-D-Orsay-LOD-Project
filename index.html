@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Musée d'Orsay — Linked Open Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#faf8f4;--fg:#1e2022;--muted:#7a7e85;--border:#e4dfd4;
+  --card:#ffffff;--primary:#c4a04a;--secondary:#5a8a8a;
+  --font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif;
+}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--fg);min-height:100vh;display:flex;flex-direction:column;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1100px;margin:auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:var(--font-serif);font-size:1.2rem;color:var(--fg);text-decoration:none;}
+.nav-logo span{color:var(--primary);font-style:italic;font-weight:300;margin-left:4px;}
+.nav-links{display:flex;gap:32px;}
+.nav-links a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--muted);}
+.hamburger svg{width:22px;height:22px;}
+.mobile-menu{display:none;flex-direction:column;gap:0;padding:8px 24px 16px;border-top:1px solid var(--border);background:rgba(250,248,244,0.97);}
+.mobile-menu a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border);}
+.mobile-menu a:last-child{border-bottom:none;}
+.mobile-menu a.active{color:var(--primary);}
+@media(max-width:768px){.nav-links{display:none;}.hamburger{display:flex;align-items:center;justify-content:center;}}
+
+/* HERO */
+.hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;padding-bottom:96px;overflow:hidden;}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:blur(1px);transform:scale(1.05);}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,22,18,.90) 0%,rgba(26,22,18,.50) 50%,rgba(26,22,18,.20) 100%);}
+.hero-content{position:relative;z-index:2;max-width:1100px;margin:auto;padding:0 24px;width:100%;}
+.badges{display:flex;gap:10px;margin-bottom:28px;flex-wrap:wrap;}
+.badge{font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:5px 12px;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:4px;background:rgba(255,255,255,.1);}
+.hero h1{font-family:var(--font-serif);font-size:clamp(2.8rem,7vw,5rem);color:#fff;line-height:1.1;margin-bottom:20px;}
+.hero h1 em{color:rgba(255,220,120,.8);font-weight:300;}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.8);font-weight:300;max-width:640px;line-height:1.7;}
+
+/* SECTIONS */
+main{flex:1;}
+.section{padding:80px 24px;}
+.section-inner{max-width:1100px;margin:auto;}
+.section-card{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;}
+@media(max-width:768px){.two-col{grid-template-columns:1fr;gap:48px;}}
+.section-title{font-family:var(--font-serif);font-size:1.5rem;margin-bottom:24px;display:flex;align-items:center;gap:12px;}
+.section-title::before{content:'';display:block;width:32px;height:1px;background:var(--primary);flex-shrink:0;}
+.prose p{color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:16px;}
+.facts{list-style:none;display:flex;flex-direction:column;gap:0;}
+.facts li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:.95rem;}
+.facts li:last-child{border-bottom:none;}
+.facts li .label{color:var(--muted);font-weight:300;}
+.facts li .val{font-weight:500;text-align:right;}
+
+/* RESOURCES */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;max-width:640px;}
+.res-card{border:1px solid var(--border);border-radius:6px;padding:32px;text-decoration:none;color:var(--fg);transition:border-color .2s,box-shadow .2s;display:block;}
+.res-card:hover{border-color:var(--primary);box-shadow:0 4px 16px rgba(0,0,0,.06);}
+.res-card svg{width:28px;height:28px;color:var(--primary);margin-bottom:20px;}
+.res-card h3{font-family:var(--font-serif);font-size:1.1rem;margin-bottom:8px;}
+.res-card p{font-size:.88rem;color:var(--muted);font-weight:300;margin-bottom:20px;line-height:1.6;}
+.res-link{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:500;}
+
+/* TEAM MINI */
+.team-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:16px;}
+.team-header h2{font-family:var(--font-serif);font-size:2rem;}
+.team-header a{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);text-decoration:none;font-weight:500;}
+.member-row{display:flex;align-items:center;gap:16px;}
+.avatar{width:60px;height:60px;border-radius:50%;background:rgba(90,138,138,.15);border:1px solid rgba(90,138,138,.25);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1.2rem;color:var(--secondary);flex-shrink:0;}
+.member-name{font-family:var(--font-serif);font-size:1.1rem;}
+.member-role{color:var(--muted);font-size:.88rem;font-weight:300;}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);background:var(--card);padding:36px 24px;}
+.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+footer p{font-family:var(--font-serif);font-style:italic;font-size:1rem;}
+footer .meta{display:flex;gap:20px;font-size:.88rem;color:var(--muted);flex-wrap:wrap;justify-content:center;}
+footer .meta span::before{content:'·';margin-right:20px;color:var(--border);}
+footer .meta span:first-child::before{display:none;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Musée d'Orsay<span>LOD</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="knowledge.html">Knowledge Organization</a>
+      <a href="representation.html">Knowledge Representation</a>
+      <a href="team.html">Team</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <svg id="icon-open" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="icon-close" style="display:none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="knowledge.html">Knowledge Organization</a>
+    <a href="representation.html">Knowledge Representation</a>
+    <a href="team.html">Team</a>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <img class="hero-img" src="musee-dorsay-hero.jpg" alt="Musée d'Orsay exterior">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="badges">
+        <span class="badge">CIDOC CRM</span>
+        <span class="badge">RDF/Turtle</span>
+        <span class="badge">TEI XML</span>
+      </div>
+      <h1>Musée d'Orsay<br><em>Linked Open Data Project</em></h1>
+      <p>Once the grand Gare d'Orsay — a Beaux-Arts railway station built for the 1900 World Fair — transformed into one of the world's great museums, housing stunning Impressionist exhibitions and masterpieces by Monet, Van Gogh, Renoir, Degas, and Cézanne. This project models that transformation through semantic web technologies.</p>
+    </div>
+  </section>
+
+  <section class="section section-card">
+    <div class="section-inner two-col">
+      <div>
+        <h2 class="section-title">About the Project</h2>
+        <div class="prose">
+          <p>What stands today as the Musée d'Orsay began its life in 1898 as the Gare d'Orsay — a monumental railway terminus designed by Victor Laloux on the left bank of the Seine, constructed to serve the 1900 Exposition Universelle.</p>
+          <p>After decades of disuse and near demolition, the building was listed as a historic monument in 1978. Architect Gae Aulenti masterfully converted its vast interior into a museum space. It opened on 9 December 1986 and today houses one of the world's finest collections of Impressionist and Post-Impressionist art.</p>
+          <p>This Linked Open Data project models the building's full history using the CIDOC CRM event-based ontology, capturing actors, events, and temporal spans in a machine-readable semantic graph.</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">Key Facts</h2>
+        <ul class="facts">
+          <li><span class="label">Original function</span><span class="val">Railway station (Gare d'Orsay)</span></li>
+          <li><span class="label">Built</span><span class="val">1898–1900</span></li>
+          <li><span class="label">Architect</span><span class="val">Victor Laloux</span></li>
+          <li><span class="label">Location</span><span class="val">1 Rue de la Légion d'Honneur, Paris 7e</span></li>
+          <li><span class="label">Historic Monument</span><span class="val">1978</span></li>
+          <li><span class="label">Conversion Architect</span><span class="val">Gae Aulenti</span></li>
+          <li><span class="label">Museum Opening</span><span class="val">9 December 1986</span></li>
+          <li><span class="label">Collection Focus</span><span class="val">Art from 1848 to 1914</span></li>
+          <li><span class="label">Notable Artists</span><span class="val">Monet, Renoir, Degas, Van Gogh, Cézanne</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 style="font-family:var(--font-serif);font-size:2rem;margin-bottom:12px;text-align:center;">Project Resources</h2>
+      <p style="color:var(--muted);font-weight:300;text-align:center;margin-bottom:48px;">Access the underlying models that drive this semantic web initiative.</p>
+      <div class="cards-grid" style="margin:0 auto;">
+        <a href="representation.html" class="res-card">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          <h3>TEI XML</h3>
+          <p>Structured textual encoding of the museum's historical timeline and architectural evolution.</p>
+          <span class="res-link">View Source →</span>
+        </a>
+        <a href="representation.html" class="res-card">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg>
+          <h3>RDF / Turtle</h3>
+          <p>CIDOC CRM-compliant triples modeling the entities, events, and actors associated with the museum.</p>
+          <span class="res-link">View Source →</span>
+        </a>
+      </div>
+
+      <div style="border-top:1px solid var(--border);padding-top:56px;margin-top:64px;">
+        <div class="team-header">
+          <div>
+            <h2>Research Team</h2>
+            <p style="color:var(--muted);font-weight:300;margin-top:8px;">The researcher behind the knowledge modeling and ontology design.</p>
+          </div>
+          <a href="team.html">View Full Profile →</a>
+        </div>
+        <div class="member-row">
+          <div class="avatar">EP</div>
+          <div>
+            <div class="member-name">Eakterina Petukhova</div>
+            <div class="member-role">DHDK Student · University of Bologna</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p>Musée d'Orsay — Linked Open Data Project</p>
+    <div class="meta">
+      <span>Eakterina Petukhova</span>
+      <span>DHDK · University of Bologna</span>
+      <span>2025</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  var m=document.getElementById('mobile-menu');
+  var o=document.getElementById('icon-open');
+  var c=document.getElementById('icon-close');
+  var open=m.style.display==='flex';
+  m.style.display=open?'none':'flex';
+  o.style.display=open?'':'none';
+  c.style.display=open?'none':'';
+}
+</script>
+</body>
+</html>
