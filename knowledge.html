@@ -1,58 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Knowledge Organization — Musée d'Orsay LOD</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;}
-:root{--bg:#faf8f4;--fg:#1e2022;--muted:#7a7e85;--border:#e4dfd4;--card:#ffffff;--primary:#c4a04a;--secondary:#5a8a8a;--font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif;}
-body{font-family:var(--font-sans);background:var(--bg);color:var(--fg);min-height:100vh;display:flex;flex-direction:column;}
-nav{position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
-.nav-inner{margin:auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;}
-.nav-logo{font-family:var(--font-serif);font-size:1.2rem;color:var(--fg);text-decoration:none;}
-.nav-logo span{color:var(--primary);font-style:italic;font-weight:300;margin-left:4px;}
-.nav-links{display:flex;gap:32px;}
-.nav-links a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s;}
-.nav-links a:hover,.nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
-.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--muted);}
-.hamburger svg{width:22px;height:22px;}
-.mobile-menu{display:none;flex-direction:column;gap:0;padding:8px 24px 16px;border-top:1px solid var(--border);background:rgba(250,248,244,0.97);}
-.mobile-menu a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border);}
-.mobile-menu a:last-child{border-bottom:none;}
-.mobile-menu a.active{color:var(--primary);}
-@media(max-width:768px){.nav-links{display:none;}.hamburger{display:flex;align-items:center;justify-content:center;}}
-main{flex:1;max-width:1100px;margin:auto;padding:64px 24px 96px;width:100%;}
-h1{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);margin-bottom:16px;}
-.subtitle{font-size:1.1rem;color:var(--muted);font-weight:300;max-width:680px;line-height:1.7;margin-bottom:56px;}
-.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:48px;flex-wrap:wrap;}
-.tab-btn{background:none;border:none;border-bottom:2px solid transparent;padding:12px 20px;font-family:var(--font-serif);font-size:1rem;cursor:pointer;color:var(--muted);margin-bottom:-1px;transition:color .2s,border-color .2s;}
-.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);}
-.tab-content{display:none;}
-.tab-content.active{display:block;}
-.diagram-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:32px;overflow-x:auto;display:flex;justify-content:center;align-items:center;}
-.theory-prose p{color:var(--muted);font-weight:300;line-height:1.8;margin-bottom:16px;max-width:680px;}
-.theory-prose code{background:rgba(90,138,138,.1);color:var(--secondary);padding:2px 6px;border-radius:3px;font-family:monospace;font-size:.9em;}
-.code-block{background:#1e1e2e;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.05);}
-.code-header{background:#181825;padding:10px 20px;font-size:.8rem;font-family:monospace;color:#a6adc8;border-bottom:1px solid #313244;}
-.code-block pre{padding:24px;font-family:'JetBrains Mono','Menlo',monospace;font-size:.85rem;line-height:1.7;overflow-x:auto;color:#cdd6f4;margin:0;}
-.kw{color:#c678dd;} .str{color:#98c379;} .cmt{color:#7f848e;font-style:italic;}
-.entity-card{display:flex;gap:20px;align-items:flex-start;padding:24px;background:var(--card);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;}
-.entity-badge{width:60px;height:60px;border-radius:6px;background:rgba(196,160,74,.1);border:1px solid rgba(196,160,74,.25);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1rem;color:var(--primary);font-weight:600;flex-shrink:0;}
-.entity-card h4{font-family:var(--font-serif);font-size:1.15rem;margin-bottom:6px;}
-.entity-card p{color:var(--muted);font-size:.9rem;font-weight:300;line-height:1.6;margin-bottom:8px;}
-.entity-ex{font-family:monospace;font-size:.82rem;background:rgba(90,138,138,.1);color:var(--secondary);padding:4px 10px;border-radius:4px;display:inline-block;}
-footer{border-top:1px solid var(--border);background:var(--card);padding:36px 24px;}
-.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
-footer p{font-family:var(--font-serif);font-style:italic;font-size:1rem;}
-footer .meta{display:flex;gap:20px;font-size:.88rem;color:var(--muted);flex-wrap:wrap;justify-content:center;}
-footer .meta span::before{content:'·';margin-right:20px;color:var(--border);}
-footer .meta span:first-child::before{display:none;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Organization — Musée d'Orsay LOD</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div id="root">
+
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">Musée d'Orsay<span>LOD</span></a>
@@ -62,12 +18,15 @@ footer .meta span:first-child::before{display:none;}
       <a href="representation.html">Knowledge Representation</a>
       <a href="team.html">Team</a>
     </div>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <svg id="icon-open" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      <svg id="icon-close" style="display:none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <button class="hamburger" aria-label="Menu">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
     </button>
   </div>
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu">
     <a href="index.html">Home</a>
     <a href="knowledge.html" class="active">Knowledge Organization</a>
     <a href="representation.html">Knowledge Representation</a>
@@ -76,212 +35,211 @@ footer .meta span:first-child::before{display:none;}
 </nav>
 
 <main>
-  <h1>Knowledge Organization</h1>
-  <p class="subtitle">Exploring the conceptual and theoretical frameworks underpinning our semantic model. The museum is modeled using the event-centric CIDOC Conceptual Reference Model (CRM).</p>
+<div class="wrap">
+  <span class="eyebrow">02 · Knowledge Organization</span>
+  <h1 class="page-title">Knowledge <em style="color:var(--gold);font-style:italic">Organization</em></h1>
+  <p class="subtitle">
+    This section presents the knowledge-organization layer of the project: a theoretical
+    model of the domain in natural language / graphic form, and its formal conceptual model
+    — an OWL formalisation reusing Schema.org, FOAF, SKOS, Dublin Core Terms and BIBO.
+  </p>
 
-  <div class="tabs">
-    <button class="tab-btn active" onclick="showTab('map')">Conceptual Map</button>
-    <button class="tab-btn" onclick="showTab('er')">E/R Model</button>
-    <button class="tab-btn" onclick="showTab('theory')">Theoretical Model</button>
-    <button class="tab-btn" onclick="showTab('entities')">Conceptual Entities</button>
-  </div>
+  <div class="tabs-scope">
+    <div class="tabs">
+      <button class="tab-btn active">Theoretical Model</button>
+      <button class="tab-btn">Conceptual Model</button>
+      <button class="tab-btn">Entity Types</button>
+    </div>
 
-  <div id="tab-map" class="tab-content active">
-    <div class="diagram-box">
-      <svg width="800" height="500" viewBox="0 0 800 500" style="max-width:100%;height:auto;font-family:var(--font-sans);font-size:13px;">
-        <defs>
-          <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-            <polygon points="0 0,10 3.5,0 7" fill="#b0b5bf"/>
-          </marker>
-        </defs>
-        <line x1="400" y1="120" x2="400" y2="220" stroke="#ddd" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="400" y1="280" x2="400" y2="380" stroke="#ddd" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="260" y1="250" x2="180" y2="250" stroke="#ddd" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="540" y1="250" x2="620" y2="250" stroke="#ddd" stroke-width="1.5" marker-end="url(#arr)"/>
-        <line x1="400" y1="120" x2="200" y2="120" stroke="#ddd" stroke-width="1.5" marker-end="url(#arr)"/>
-        <text x="412" y="168" fill="#9a9fa8" font-size="11" font-family="monospace">P16 used specific object</text>
-        <text x="412" y="328" fill="#9a9fa8" font-size="11" font-family="monospace">P46 is composed of</text>
-        <text x="180" y="238" fill="#9a9fa8" font-size="11" font-family="monospace">P14 carried out by</text>
-        <text x="552" y="238" fill="#9a9fa8" font-size="11" font-family="monospace">P7 took place at</text>
-        <text x="260" y="108" fill="#9a9fa8" font-size="11" font-family="monospace">P108 has produced</text>
-        <rect x="260" y="60" width="280" height="60" rx="8" fill="white" stroke="#c4a04a" stroke-width="2"/>
-        <text x="400" y="84" text-anchor="middle" fill="#c4a04a" font-family="'Playfair Display',serif" font-size="15" font-weight="600">E12 Production</text>
-        <text x="400" y="104" text-anchor="middle" fill="#9a9fa8" font-family="monospace" font-size="11">(Building Construction)</text>
-        <rect x="260" y="220" width="280" height="60" rx="8" fill="#c4a04a" stroke="#c4a04a" stroke-width="2"/>
-        <text x="400" y="244" text-anchor="middle" fill="white" font-family="'Playfair Display',serif" font-size="15" font-weight="600">E22 Man-Made Object</text>
-        <text x="400" y="264" text-anchor="middle" fill="rgba(255,255,255,.8)" font-family="monospace" font-size="11">(Musée d'Orsay Building)</text>
-        <rect x="260" y="380" width="280" height="60" rx="8" fill="white" stroke="#5a8a8a" stroke-width="2"/>
-        <text x="400" y="404" text-anchor="middle" fill="#5a8a8a" font-family="'Playfair Display',serif" font-size="15" font-weight="600">E78 Collection</text>
-        <text x="400" y="424" text-anchor="middle" fill="#9a9fa8" font-family="monospace" font-size="11">(Impressionist Collection)</text>
-        <ellipse cx="100" cy="250" rx="80" ry="30" fill="white" stroke="#ddd" stroke-width="2"/>
-        <text x="100" y="245" text-anchor="middle" fill="#1e2022" font-family="'Playfair Display',serif" font-size="14">E39 Actor</text>
-        <text x="100" y="263" text-anchor="middle" fill="#9a9fa8" font-family="monospace" font-size="10">(Victor Laloux)</text>
-        <ellipse cx="700" cy="250" rx="80" ry="30" fill="white" stroke="#ddd" stroke-width="2"/>
-        <text x="700" y="245" text-anchor="middle" fill="#1e2022" font-family="'Playfair Display',serif" font-size="14">E53 Place</text>
-        <text x="700" y="263" text-anchor="middle" fill="#9a9fa8" font-family="monospace" font-size="10">(Paris)</text>
-        <rect x="120" y="90" width="160" height="60" rx="8" fill="white" stroke="#ddd" stroke-width="2"/>
-        <text x="200" y="114" text-anchor="middle" fill="#1e2022" font-family="'Playfair Display',serif" font-size="14">E22 Object</text>
-        <text x="200" y="134" text-anchor="middle" fill="#9a9fa8" font-family="monospace" font-size="10">(Gare d'Orsay)</text>
-      </svg>
-    </div>
-  </div>
+    <!-- TAB 1: Theoretical Model -->
+    <div class="tab-content active">
+      <p class="lede">
+        A mind map of the relations between the project's central topic and the entities
+        identified in the source text. The transformation itself —
+        <strong style="color:var(--spine,#a8681a)">Gare d'Orsay → transformed into → Musée d'Orsay</strong>
+        — is drawn as the bright, heavyweight spine of the diagram: everything about the
+        station's origins and decline branches off one hero node, and everything about the
+        museum's later development branches off the other. Dashed nodes mark entities added to
+        enrich the network beyond what is explicitly named in the page.
+      </p>
 
-  <div id="tab-er" class="tab-content">
-    <div class="diagram-box">
-      <svg width="800" height="400" viewBox="0 0 800 400" style="max-width:100%;height:auto;font-family:var(--font-sans);font-size:12px;">
-        <defs>
-          <marker id="cf" markerWidth="20" markerHeight="14" refX="0" refY="7" orient="auto">
-            <path d="M0,0 L20,7 L0,14 M20,7 L0,7" fill="none" stroke="#b0b5bf" stroke-width="1.5"/>
-          </marker>
-        </defs>
-        <g transform="translate(80,40)">
-          <rect width="180" height="120" fill="white" stroke="#e4dfd4"/>
-          <rect width="180" height="30" fill="#c4a04a" stroke="#e4dfd4"/>
-          <text x="90" y="21" text-anchor="middle" fill="white" font-family="'Playfair Display',serif" font-size="14" font-weight="600">BUILDING</text>
-          <text x="10" y="52" fill="#1e2022" font-size="11">PK id (INT)</text>
-          <text x="10" y="72" fill="#1e2022" font-size="11">name (VARCHAR)</text>
-          <text x="10" y="92" fill="#1e2022" font-size="11">built_year (INT)</text>
-          <text x="10" y="112" fill="#1e2022" font-size="11">location (VARCHAR)</text>
-        </g>
-        <g transform="translate(480,40)">
-          <rect width="180" height="100" fill="white" stroke="#e4dfd4"/>
-          <rect width="180" height="30" fill="#c4a04a" stroke="#e4dfd4"/>
-          <text x="90" y="21" text-anchor="middle" fill="white" font-family="'Playfair Display',serif" font-size="14" font-weight="600">ARCHITECT</text>
-          <text x="10" y="52" fill="#1e2022" font-size="11">PK id (INT)</text>
-          <text x="10" y="72" fill="#1e2022" font-size="11">name (VARCHAR)</text>
-          <text x="10" y="92" fill="#1e2022" font-size="11">nationality (VARCHAR)</text>
-        </g>
-        <g transform="translate(80,240)">
-          <rect width="180" height="120" fill="white" stroke="#e4dfd4"/>
-          <rect width="180" height="30" fill="#c4a04a" stroke="#e4dfd4"/>
-          <text x="90" y="21" text-anchor="middle" fill="white" font-family="'Playfair Display',serif" font-size="14" font-weight="600">COLLECTION</text>
-          <text x="10" y="52" fill="#1e2022" font-size="11">PK id (INT)</text>
-          <text x="10" y="72" fill="#1e2022" font-size="11">FK building_id (INT)</text>
-          <text x="10" y="92" fill="#1e2022" font-size="11">period_start (INT)</text>
-          <text x="10" y="112" fill="#1e2022" font-size="11">period_end (INT)</text>
-        </g>
-        <g transform="translate(480,240)">
-          <rect width="180" height="120" fill="white" stroke="#e4dfd4"/>
-          <rect width="180" height="30" fill="#c4a04a" stroke="#e4dfd4"/>
-          <text x="90" y="21" text-anchor="middle" fill="white" font-family="'Playfair Display',serif" font-size="14" font-weight="600">ARTWORK</text>
-          <text x="10" y="52" fill="#1e2022" font-size="11">PK id (INT)</text>
-          <text x="10" y="72" fill="#1e2022" font-size="11">FK collection_id (INT)</text>
-          <text x="10" y="92" fill="#1e2022" font-size="11">title (VARCHAR)</text>
-          <text x="10" y="112" fill="#1e2022" font-size="11">creator (VARCHAR)</text>
-        </g>
-        <line x1="260" y1="90" x2="480" y2="90" stroke="#ddd" stroke-width="1.5" marker-end="url(#cf)"/>
-        <text x="370" y="82" fill="#9a9fa8" font-size="11" text-anchor="middle">designs</text>
-        <line x1="170" y1="160" x2="170" y2="240" stroke="#ddd" stroke-width="1.5" marker-end="url(#cf)"/>
-        <text x="182" y="205" fill="#9a9fa8" font-size="11">houses</text>
-        <line x1="260" y1="300" x2="480" y2="300" stroke="#ddd" stroke-width="1.5" marker-end="url(#cf)"/>
-        <text x="370" y="292" fill="#9a9fa8" font-size="11" text-anchor="middle">contains</text>
-      </svg>
-    </div>
-  </div>
+      <div class="panel">
+        <div class="panel-toolbar">
+          <span>Theoretical Model — Mind Map</span>
+          <button onclick="this.closest('.panel').querySelector('.pz-viewport')._panzoom.fit()">Reset view</button>
+        </div>
+        <div class="pz-viewport">
+          <div class="pz-inner">
+            <img src="diagrams/index-3.svg" alt="Theoretical Model mind map" />
+          </div>
+        </div>
+      </div>
 
-  <div id="tab-theory" class="tab-content">
-    <div class="theory-prose" style="margin-bottom:32px;">
-      <p>The CIDOC Conceptual Reference Model (CRM) provides an extensible ontology for concepts and information in cultural heritage. In our approach, the Musée d'Orsay is not simply treated as a static <code>E22 Man-Made Object</code>, but rather as the nexus of multiple historical events.</p>
-      <p>By employing an event-centric methodology, we encapsulate the building's lifecycle through <code>E7 Activity</code> and its subclasses. The initial construction (1898-1900) is modeled as an <code>E12 Production</code> carried out by Victor Laloux. The structural conversion to a museum in the 1980s is another <code>E12 Production</code> event attributed to Gae Aulenti. This temporal modeling allows us to query the states of the building at different points in time using <code>E52 Time-Span</code>.</p>
-    </div>
-    <div class="code-block">
-      <div class="code-header">CRM Class Hierarchy</div>
-      <pre><span class="kw">E1</span> CRM Entity
-  ├── <span class="kw">E2</span> Temporal Entity
-  │   └── <span class="kw">E5</span> Event
-  │       └── <span class="kw">E7</span> Activity
-  │           └── <span class="kw">E11</span> Modification
-  │               └── <span class="kw">E12</span> Production
-  └── <span class="kw">E77</span> Persistent Item
-      ├── <span class="kw">E39</span> Actor
-      │   └── <span class="kw">E21</span> Person
-      └── <span class="kw">E70</span> Thing
-          └── <span class="kw">E72</span> Legal Object
-              └── <span class="kw">E18</span> Physical Thing
-                  └── <span class="kw">E24</span> Physical Man-Made Thing
-                      └── <span class="kw">E22</span> Man-Made Object</pre>
-    </div>
-  </div>
+      <div class="cards-grid" style="margin-top:1.5rem">
+        <a href="data/TheoreticalModel.csv" class="res-card" download>
+          <h3>TheoreticalModel.csv</h3>
+          <p>The full subject / predicate / object triple table behind the mind map.</p>
+          <span class="res-link">Download →</span>
+        </a>
+      </div>
 
-  <div id="tab-entities" class="tab-content">
-    <div class="entity-card">
-      <div class="entity-badge">E22</div>
-      <div>
-        <h4>Man-Made Object</h4>
-        <p>A physical object created by human activity.</p>
-        <span class="entity-ex">Ex: The Musée d'Orsay building, the 'Gare d'Orsay' structure.</span>
+      <div class="legend">
+        <span class="item"><span class="swatch" style="border-color:#a8534f"></span>Person</span>
+        <span class="item"><span class="swatch" style="border-color:#3d6d8c"></span>Place / Museum</span>
+        <span class="item"><span class="swatch" style="border-color:#6b4f96"></span>Organisation</span>
+        <span class="item"><span class="swatch" style="border-color:#3f7d43"></span>Event</span>
+        <span class="item"><span class="swatch" style="border-color:#a8672f"></span>Concept</span>
+        <span class="item"><span class="swatch" style="border-color:#5f6670"></span>Bibl. / digital resource</span>
+        <span class="item"><span class="swatch" style="border-color:#8a8378"></span>Descriptive literal</span>
+        <span class="item"><span class="swatch dashed" style="border-color:#b8860b"></span>Added to enrich the network</span>
+        <span class="item">[WD / VIAF / ISNI / GeoNames / LCSH] = authority-control link</span>
       </div>
     </div>
-    <div class="entity-card">
-      <div class="entity-badge">E39</div>
-      <div>
-        <h4>Actor</h4>
-        <p>People or groups who can perform actions.</p>
-        <span class="entity-ex">Ex: Victor Laloux (Architect), Gae Aulenti (Architect), French State.</span>
+
+    <!-- TAB 2: Conceptual Model -->
+    <div class="tab-content">
+      <p class="lede">
+        The formal OWL representation of the theoretical model, in Graffoo notation: classes
+        reused from Schema.org, FOAF and SKOS, connected by object and datatype properties from
+        Schema.org, Dublin Core Terms and BIBO, and reconciled to external authorities via
+        <span class="mono">owl:sameAs</span> and <span class="mono">skos:exactMatch</span>.
+        The <strong style="color:var(--spine,#a8681a)">LandmarksOrHistoricalBuildings → Museum</strong>
+        relation (<span class="mono">dcterms:relation</span>, standing in for
+        <span class="mono">transformedInto</span>) is drawn as the bright, heavyweight edge —
+        the one relation the whole ontology turns on.
+      </p>
+
+      <div class="panel">
+        <div class="panel-toolbar">
+          <span>Conceptual Model — Graffoo / OWL</span>
+          <button onclick="this.closest('.panel').querySelector('.pz-viewport')._panzoom.fit()">Reset view</button>
+        </div>
+        <div class="pz-viewport">
+          <div class="pz-inner">
+            <img src="diagrams/knowledge-3.svg" alt="Conceptual Model Graffoo diagram" />
+          </div>
+        </div>
+      </div>
+
+      <div class="cards-grid" style="margin-top:1.5rem">
+        <a href="data/ConceptualModel.csv" class="res-card" download>
+          <h3>ConceptualModel.csv</h3>
+          <p>The full OWL/RDF triple table behind the Graffoo diagram.</p>
+          <span class="res-link">Download →</span>
+        </a>
+      </div>
+
+      <div class="legend">
+        <span class="item"><span class="swatch" style="border-color:#a8792a"></span>Class</span>
+        <span class="item"><span class="swatch" style="border-color:#3d6d8c"></span>Object property</span>
+        <span class="item"><span class="swatch" style="border-color:#3f7d43"></span>Datatype property</span>
+        <span class="item"><span class="swatch" style="border-color:#5f6670"></span>External authority</span>
+        <span class="item"><span class="swatch" style="border-color:#a8534f"></span>Source document</span>
+        <span class="item"><span class="swatch" style="border-color:#8a8378"></span>Literal range (xsd:datatype)</span>
+        <span class="item">dashed = owl:sameAs / skos:exactMatch</span>
       </div>
     </div>
-    <div class="entity-card">
-      <div class="entity-badge">E7</div>
-      <div>
-        <h4>Activity</h4>
-        <p>Actions intentionally carried out by actors.</p>
-        <span class="entity-ex">Ex: The classification of the building as a Historic Monument in 1978.</span>
+
+    <!-- TAB 3: Entity Types -->
+    <div class="tab-content">
+      <p class="lede">
+        The eight entity types used across the TEI encoding and the RDF graph, each mapped to a
+        class reused from an existing vocabulary.
+      </p>
+
+      <div class="entity-card">
+        <div class="entity-badge">PER</div>
+        <div>
+          <h4>Person</h4>
+          <p>Historical agents connected to the design, redesign, or artistic identity of the museum.</p>
+          <span class="entity-ex">foaf:Person · Examples: Victor Laloux, Gae Aulenti, Claude Monet, Paul Gauguin</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">PLC</div>
+        <div>
+          <h4>Place</h4>
+          <p>Buildings, museums and cities that anchor the narrative geographically and architecturally.</p>
+          <span class="entity-ex">schema:Place (+ LandmarksOrHistoricalBuildings, Museum, City, CivicStructure) · Examples: Gare d'Orsay, Musée d'Orsay, Paris, Louvre Museum</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">ORG</div>
+        <div>
+          <h4>Organisation</h4>
+          <p>Institutions and groups involved in the transformation or its digital afterlife.</p>
+          <span class="entity-ex">foaf:Organization · Examples: ACT architecture group, Google Arts &amp; Culture</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">EVT</div>
+        <div>
+          <h4>Event</h4>
+          <p>Historical occurrences that motivate or frame the transformation.</p>
+          <span class="entity-ex">schema:Event · Examples: Exposition Universelle of 1900, opening of the Musée d'Orsay</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">CON</div>
+        <div>
+          <h4>Concept</h4>
+          <p>Abstract categories used to classify architecture, art movements, and the transformation itself.</p>
+          <span class="entity-ex">skos:Concept · Examples: Beaux-Arts style, Impressionism, Post-Impressionism, adaptive reuse</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">MOV</div>
+        <div>
+          <h4>Movie</h4>
+          <p>A documentary included as a cultural representation of the museum beyond its institutional role.</p>
+          <span class="entity-ex">schema:Movie / bibo:AudioVisualDocument · Example: One Night in Orsay Museum</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">WEB</div>
+        <div>
+          <h4>WebSite</h4>
+          <p>A digital resource extending access to the museum beyond the physical building.</p>
+          <span class="entity-ex">schema:WebSite · Example: Google Arts &amp; Culture virtual tour</span>
+        </div>
+      </div>
+
+      <div class="entity-card">
+        <div class="entity-badge">CW</div>
+        <div>
+          <h4>CreativeWork</h4>
+          <p>The project itself, and other authored works referenced by it.</p>
+          <span class="entity-ex">schema:CreativeWork · Example: this project, dcterms:creator → Ekaterina Petukhova</span>
+        </div>
       </div>
     </div>
-    <div class="entity-card">
-      <div class="entity-badge">E12</div>
-      <div>
-        <h4>Production</h4>
-        <p>An activity that results in a new man-made object.</p>
-        <span class="entity-ex">Ex: The construction of the railway station (1898-1900).</span>
-      </div>
-    </div>
-    <div class="entity-card">
-      <div class="entity-badge">E53</div>
-      <div>
-        <h4>Place</h4>
-        <p>A geometric extent in space.</p>
-        <span class="entity-ex">Ex: 1 Rue de la Légion d'Honneur, Paris 7e.</span>
-      </div>
-    </div>
-    <div class="entity-card">
-      <div class="entity-badge">E52</div>
-      <div>
-        <h4>Time-Span</h4>
-        <p>An abstract temporal extent.</p>
-        <span class="entity-ex">Ex: The year 1986, the period from 1848 to 1914.</span>
-      </div>
-    </div>
-  </div>
+
+  </div><!-- /.tabs-scope -->
+</div>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <p>Musée d'Orsay — Linked Open Data Project</p>
+<footer class="wrap">
+  <div class="top">
+    <div>
+      <h3>From Railway Station to Museum</h3>
+      <p style="color:var(--text-dim);max-width:40ch;margin-top:.6rem">
+        A Linked Open Data Project on the Musée d'Orsay.
+      </p>
+    </div>
     <div class="meta">
-      <span>Ekaterina Petukhova</span>
-      <span>DHDK · University of Bologna</span>
-      <span>2025</span>
+      Information Science &amp; Cultural Heritage · 2025–2026<br>
+      Ekaterina Petukhova · University of Bologna
     </div>
   </div>
 </footer>
 
-<script>
-function showTab(id){
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById('tab-'+id).classList.add('active');
-  event.target.classList.add('active');
-}
-function toggleMenu(){
-  var m=document.getElementById('mobile-menu');
-  var o=document.getElementById('icon-open');
-  var c=document.getElementById('icon-close');
-  var open=m.style.display==='flex';
-  m.style.display=open?'none':'flex';
-  o.style.display=open?'':'none';
-  c.style.display=open?'none':'';
-}
-</script>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

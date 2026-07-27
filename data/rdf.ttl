@@ -1,0 +1,324 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geonames: <https://www.geonames.org/> .
+@prefix isni: <https://isni.org/isni/> .
+@prefix orsay: <https://example.org/orsay/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix wd: <https://www.wikidata.org/wiki/> .
+
+orsay:adaptiveReuse a skos:Concept ;
+    rdfs:label "Adaptive reuse" ;
+    owl:sameAs wd:Q4688776 ;
+    skos:definition "Adaptive reuse is the process of reusing an old site or building for a purpose other than the one it was built or designed for. Where a building can no longer function with its original use, a new use through adaptation may be the only way to preserve its heritage significance." ;
+    orsay:relationName "documentedIn" ;
+    dcterms:relation orsay:wikipediaAdaptiveReuse,
+        orsay:adaptiveReuseBuiltHeritageBook ;
+    skos:prefLabel "Adaptive reuse" .
+
+orsay:wikimediaFoundation a foaf:Organization ;
+    rdfs:label "Wikimedia Foundation" ;
+    foaf:name "Wikimedia Foundation" ;
+    owl:sameAs wd:Q180 .
+
+orsay:wikipediaAdaptiveReuse a bibo:Document,
+        schema:WebPage ;
+    rdfs:label "Adaptive reuse" ;
+    dcterms:description "Wikipedia encyclopedia entry giving a general overview of adaptive reuse as an architectural and urban-planning concept." ;
+    dcterms:publisher orsay:wikimediaFoundation ;
+    dcterms:subject orsay:adaptiveReuse ;
+    dcterms:title "Adaptive reuse" ;
+    orsay:relationName "publishedBy" ;
+    schema:url <https://en.wikipedia.org/wiki/Adaptive_reuse> .
+
+orsay:adaptiveReuseBuiltHeritageBook a bibo:Book ;
+    rdfs:label "Adaptive Reuse of the Built Heritage: Concepts and Cases of an Emerging Discipline" ;
+    dcterms:creator orsay:biePlevoets,
+        orsay:koenraadVanCleempoel ;
+    dcterms:publisher "Routledge" ;
+    dcterms:subject orsay:adaptiveReuse ;
+    dcterms:title "Adaptive Reuse of the Built Heritage: Concepts and Cases of an Emerging Discipline" .
+
+orsay:biePlevoets a foaf:Person ;
+    rdfs:label "Bie Plevoets" ;
+    foaf:name "Bie Plevoets" .
+
+orsay:koenraadVanCleempoel a foaf:Person ;
+    rdfs:label "Koenraad Van Cleempoel" ;
+    foaf:name "Koenraad Van Cleempoel" .
+
+orsay:architecturalCompetition1978 a schema:Event ;
+    rdfs:label "Architectural competition for the transformation of the Gare d’Orsay" ;
+    dcterms:relation orsay:actArchitectureGroup ;
+    orsay:relationName "awardedTo" ;
+    schema:name "Architectural competition for the transformation of the Gare d’Orsay" ;
+    schema:startDate "1978" .
+
+orsay:culturalHeritage a skos:Concept ;
+    rdfs:label "Cultural heritage" ;
+    owl:sameAs wd:Q210272 ;
+    skos:prefLabel "Cultural heritage" .
+
+orsay:icamt a foaf:Organization ;
+    rdfs:label "ARCHI-TECHS" ;
+    foaf:name "ARCHI-TECHS" ;
+    skos:altLabel "ICOM International Committee for Architecture and Museum Techniques (ICAMT)" .
+
+orsay:icamtAdaptiveReuseArticle a bibo:Document,
+        schema:WebPage ;
+    rdfs:label "Adaptive Reuse" ;
+    dcterms:description "ICOM-ICAMT reference page on adaptive reuse in museums, naming the Musée d’Orsay a successful and well-known case of a Beaux-Arts railway station adapted for museum use, and noting the surviving ornate gold clock as a trace of its past." ;
+    dcterms:publisher orsay:icamt ;
+    dcterms:relation orsay:museeOrsay ;
+    dcterms:subject orsay:adaptiveReuse ;
+    dcterms:title "Adaptive Reuse" ;
+    orsay:relationName "citesAsCaseStudy",
+        "highlightsConcept",
+        "publishedBy" ;
+    schema:url <https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/> .
+
+orsay:gareOrsay a schema:LandmarksOrHistoricalBuildings,
+        schema:Place ;
+    rdfs:label "Gare d’Orsay" ;
+    dcterms:relation orsay:expo1900,
+        orsay:museeOrsay ;
+    dcterms:subject orsay:culturalHeritageTransformation ;
+    owl:sameAs wd:Q2698691 ;
+    orsay:relationName "designedBy",
+        "hasArchitecturalStyle",
+        "isCaseOf",
+        "locatedIn",
+        "openedFor",
+        "openedOn",
+        "transformedInto" ;
+    schema:architecturalStyle orsay:beauxArtsStyle ;
+    schema:creator orsay:victorLaloux ;
+    schema:event orsay:openingGareOrsay ;
+    schema:location orsay:paris ;
+    schema:name "Gare d’Orsay" .
+
+orsay:project a schema:CreativeWork ;
+    dcterms:hasPart orsay:quote_from_tei_text ;
+    dcterms:subject "Cultural heritage transformation" ;
+    dcterms:title "From Railway Station to Museum: The Story of the Musée d’Orsay" .
+
+orsay:actArchitectureGroup a foaf:Organization ;
+    rdfs:label "ACT architecture group" ;
+    foaf:name "ACT architecture group" ;
+    orsay:relationName "ledBy" ;
+    schema:founder orsay:pierreColboc .
+
+orsay:beauxArtsStyle a skos:Concept ;
+    rdfs:label "Beaux-Arts style" ;
+    owl:sameAs wd:Q170292 ;
+    skos:prefLabel "Beaux-Arts style" .
+
+orsay:centrePompidou a schema:Place ;
+    rdfs:label "Centre Pompidou" ;
+    owl:sameAs wd:Q19964 ;
+    schema:name "Centre Pompidou" .
+
+orsay:claudeMonet a foaf:Person ;
+    rdfs:label "Claude Monet" ;
+    owl:sameAs isni:0000000121244328,
+        viaf:36925787,
+        wd:Q296 ;
+    foaf:name "Claude Monet" ;
+    schema:jobTitle "Painter" .
+
+orsay:edgarDegas a foaf:Person ;
+    rdfs:label "Edgar Degas" ;
+    owl:sameAs wd:Q46373 ;
+    foaf:name "Edgar Degas" ;
+    schema:jobTitle "Painter" .
+
+orsay:edouardManet a foaf:Person ;
+    rdfs:label "Édouard Manet" ;
+    owl:sameAs wd:Q40599 ;
+    foaf:name "Édouard Manet" ;
+    schema:jobTitle "Painter" .
+
+orsay:expo1900 a schema:Event ;
+    rdfs:label "Exposition Universelle of 1900" ;
+    owl:sameAs wd:Q170558 ;
+    schema:name "Exposition Universelle of 1900" ;
+    schema:startDate "1900" .
+
+orsay:gaeAulenti a foaf:Person ;
+    rdfs:label "Gae Aulenti" ;
+    owl:sameAs viaf:24604246,
+        wd:Q8867 ;
+    foaf:name "Gae Aulenti" ;
+    schema:jobTitle "Architect and designer" .
+
+orsay:georgesPompidou a foaf:Person ;
+    rdfs:label "Georges Pompidou" ;
+    owl:sameAs viaf:106963537,
+        wd:Q7522 ;
+    foaf:name "Georges Pompidou" ;
+    schema:jobTitle "President of France" .
+
+orsay:googleArtsCulture a foaf:Organization ;
+    rdfs:label "Google Arts & Culture" ;
+    owl:sameAs wd:Q369089 ;
+    foaf:name "Google Arts & Culture" .
+
+orsay:googleVirtualTour a schema:WebSite ;
+    rdfs:label "Virtual tour of the Musée d’Orsay" ;
+    dcterms:description "Digital cultural resource allowing online exploration of the museum space." ;
+    dcterms:title "Virtual tour of the Musée d’Orsay" ;
+    orsay:relationName "providedBy" ;
+    schema:provider orsay:googleArtsCulture .
+
+orsay:impressionism a skos:Concept ;
+    rdfs:label "Impressionism" ;
+    owl:sameAs <https://id.loc.gov/authorities/subjects/sh85064413>,
+        wd:Q40415 ;
+    skos:prefLabel "Impressionism" .
+
+orsay:louvre a schema:Museum,
+        schema:Place ;
+    rdfs:label "Louvre Museum" ;
+    owl:sameAs wd:Q19675 ;
+    schema:name "Louvre Museum" .
+
+orsay:museeOrsay a schema:Museum,
+        schema:Place ;
+    rdfs:label "Musée d’Orsay" ;
+    dcterms:isReferencedBy orsay:oneNightOrsayMuseum,
+        orsay:icamtAdaptiveReuseArticle ;
+    dcterms:relation orsay:centrePompidou,
+        orsay:louvre,
+        orsay:nationalMuseumModernArt ;
+    dcterms:subject orsay:culturalHeritageTransformation,
+        orsay:impressionism,
+        orsay:postImpressionism ;
+    owl:sameAs isni:0000000121572575,
+        viaf:130307757,
+        wd:Q23402 ;
+    orsay:relationName "digitallyRepresentedBy",
+        "fillsChronologicalGapBetween",
+        "housesWorksBy",
+        "interiorDesignedBy",
+        "isCaseOf",
+        "locatedIn",
+        "openedAs",
+        "referencedIn",
+        "representedIn",
+        "representsArtMovement",
+        "supportedBy" ;
+    schema:creator orsay:claudeMonet,
+        orsay:edgarDegas,
+        orsay:edouardManet,
+        orsay:gaeAulenti,
+        orsay:paulCezanne,
+        orsay:paulGauguin,
+        orsay:pierreAugusteRenoir,
+        orsay:vincentVanGogh ;
+    schema:event orsay:openingMuseeOrsay ;
+    schema:location orsay:paris ;
+    schema:name "Musée d’Orsay" ;
+    schema:sponsor orsay:georgesPompidou,
+        orsay:valeryGiscard ;
+    schema:subjectOf orsay:googleVirtualTour .
+
+orsay:nationalMuseumModernArt a schema:Museum,
+        schema:Place ;
+    rdfs:label "National Museum of Modern Art" ;
+    owl:sameAs wd:Q1895953 ;
+    schema:name "National Museum of Modern Art" .
+
+orsay:oneNightOrsayMuseum a bibo:AudioVisualDocument,
+        schema:Movie ;
+    rdfs:label "One Night in Orsay Museum" ;
+    dcterms:creator orsay:olivierLemaire ;
+    dcterms:description "Documentary film mentioned as a media representation of the Musée d’Orsay." ;
+    dcterms:title "One Night in Orsay Museum" ;
+    orsay:relationName "directedBy" ;
+    schema:director orsay:olivierLemaire .
+
+orsay:openingGareOrsay a schema:Event ;
+    rdfs:label "Opening of the Gare d’Orsay" ;
+    schema:name "Opening of the Gare d’Orsay" ;
+    schema:startDate "1900-05-28" .
+
+orsay:openingMuseeOrsay a schema:Event ;
+    rdfs:label "Opening of the Musée d’Orsay" ;
+    schema:name "Opening of the Musée d’Orsay" ;
+    schema:startDate "1986-12" .
+
+orsay:paulCezanne a foaf:Person ;
+    rdfs:label "Paul Cézanne" ;
+    owl:sameAs wd:Q35548 ;
+    foaf:name "Paul Cézanne" ;
+    schema:jobTitle "Painter" .
+
+orsay:paulGauguin a foaf:Person ;
+    rdfs:label "Paul Gauguin" ;
+    owl:sameAs viaf:7386389,
+        wd:Q37693 ;
+    foaf:name "Paul Gauguin" ;
+    schema:jobTitle "Painter" .
+
+orsay:pierreAugusteRenoir a foaf:Person ;
+    rdfs:label "Pierre-Auguste Renoir" ;
+    owl:sameAs wd:Q39931 ;
+    foaf:name "Pierre-Auguste Renoir" ;
+    schema:jobTitle "Painter" .
+
+orsay:pierreColboc a foaf:Person ;
+    rdfs:label "Pierre Colboc" ;
+    owl:sameAs wd:Q3384743 ;
+    foaf:name "Pierre Colboc" ;
+    schema:jobTitle "Architect" .
+
+orsay:postImpressionism a skos:Concept ;
+    rdfs:label "Post-Impressionism" ;
+    owl:sameAs wd:Q189085 ;
+    skos:prefLabel "Post-Impressionism" .
+
+orsay:quote_from_tei_text a schema:Quotation ;
+    rdfs:label "from a railway station into a space dedicated to art" ;
+    schema:text "from a railway station into a space dedicated to art" .
+
+orsay:valeryGiscard a foaf:Person ;
+    rdfs:label "Valéry Giscard d’Estaing" ;
+    owl:sameAs viaf:36940489,
+        wd:Q57274 ;
+    foaf:name "Valéry Giscard d’Estaing" ;
+    schema:jobTitle "President of France" .
+
+orsay:victorLaloux a foaf:Person ;
+    rdfs:label "Victor Laloux" ;
+    owl:sameAs isni:0000000071407773,
+        viaf:34723705,
+        wd:Q924704 ;
+    foaf:name "Victor Laloux" ;
+    schema:jobTitle "Architect" .
+
+orsay:vincentVanGogh a foaf:Person ;
+    rdfs:label "Vincent van Gogh" ;
+    owl:sameAs wd:Q5582 ;
+    foaf:name "Vincent van Gogh" ;
+    schema:jobTitle "Painter" .
+
+orsay:culturalHeritageTransformation a skos:Concept ;
+    rdfs:label "Cultural heritage transformation" ;
+    skos:prefLabel "Cultural heritage transformation" .
+
+orsay:olivierLemaire a foaf:Person ;
+    rdfs:label "Olivier Lemaire" ;
+    foaf:name "Olivier Lemaire" ;
+    schema:jobTitle "Film director" .
+
+orsay:paris a schema:City,
+        schema:Place ;
+    rdfs:label "Paris" ;
+    owl:sameAs geonames:2988507,
+        wd:Q90 ;
+    schema:name "Paris" .
+

@@ -1,0 +1,464 @@
+<svg width="100%" height="100%"
+ viewBox="0.00 0.00 3685.50 1687.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1683)">
+<title>ConceptualModel</title>
+<polygon fill="#faf8f4" stroke="transparent" points="-4,4 -4,-1683 3681.5,-1683 3681.5,4 -4,4"/>
+<!-- CreativeWork -->
+<g id="node1" class="node">
+<title>CreativeWork</title>
+<path fill="#ffffff" stroke="#a8792a" d="M940.5,-231C940.5,-231 772.5,-231 772.5,-231 766.5,-231 760.5,-225 760.5,-219 760.5,-219 760.5,-199 760.5,-199 760.5,-193 766.5,-187 772.5,-187 772.5,-187 940.5,-187 940.5,-187 946.5,-187 952.5,-193 952.5,-199 952.5,-199 952.5,-219 952.5,-219 952.5,-225 946.5,-231 940.5,-231"/>
+<text text-anchor="middle" x="856.5" y="-212.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">CreativeWork</text>
+<text text-anchor="middle" x="856.5" y="-199.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:CreativeWork</text>
+</g>
+<!-- Person -->
+<g id="node7" class="node">
+<title>Person</title>
+<path fill="#ffffff" stroke="#a8792a" d="M2990.5,-1225C2990.5,-1225 2880.5,-1225 2880.5,-1225 2874.5,-1225 2868.5,-1219 2868.5,-1213 2868.5,-1213 2868.5,-1193 2868.5,-1193 2868.5,-1187 2874.5,-1181 2880.5,-1181 2880.5,-1181 2990.5,-1181 2990.5,-1181 2996.5,-1181 3002.5,-1187 3002.5,-1193 3002.5,-1193 3002.5,-1213 3002.5,-1213 3002.5,-1219 2996.5,-1225 2990.5,-1225"/>
+<text text-anchor="middle" x="2935.5" y="-1206.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Person</text>
+<text text-anchor="middle" x="2935.5" y="-1193.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;foaf:Person</text>
+</g>
+<!-- CreativeWork&#45;&gt;Person -->
+<g id="edge6" class="edge">
+<title>CreativeWork&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M952.54,-197.99C1239.16,-166.56 2089.71,-86.92 2325,-219 2717.33,-439.24 2889.62,-1026.92 2926.66,-1170.85"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2923.33,-1171.98 2929.19,-1180.81 2930.12,-1170.25 2923.33,-1171.98"/>
+<text text-anchor="middle" x="1896" y="-158.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:creator</text>
+</g>
+<!-- Concept -->
+<g id="node10" class="node">
+<title>Concept</title>
+<path fill="#ffffff" stroke="#a8792a" d="M1611,-114C1611,-114 1488,-114 1488,-114 1482,-114 1476,-108 1476,-102 1476,-102 1476,-82 1476,-82 1476,-76 1482,-70 1488,-70 1488,-70 1611,-70 1611,-70 1617,-70 1623,-76 1623,-82 1623,-82 1623,-102 1623,-102 1623,-108 1617,-114 1611,-114"/>
+<text text-anchor="middle" x="1549.5" y="-95.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Concept</text>
+<text text-anchor="middle" x="1549.5" y="-82.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;skos:Concept</text>
+</g>
+<!-- CreativeWork&#45;&gt;Concept -->
+<g id="edge8" class="edge">
+<title>CreativeWork&#45;&gt;Concept</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M952.72,-188.23C1010.5,-175.98 1085.82,-160.65 1153,-149 1260.66,-130.33 1385.57,-113.05 1465.74,-102.53"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1466.31,-105.98 1475.77,-101.21 1465.4,-99.04 1466.31,-105.98"/>
+<text text-anchor="middle" x="1203" y="-151.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:subject</text>
+</g>
+<!-- WikipediaSource -->
+<g id="node18" class="node">
+<title>WikipediaSource</title>
+<path fill="#ffffff" stroke="#a8534f" d="M1625,-353C1625,-353 1474,-353 1474,-353 1468,-353 1462,-347 1462,-341 1462,-341 1462,-327 1462,-327 1462,-321 1468,-315 1474,-315 1474,-315 1625,-315 1625,-315 1631,-315 1637,-321 1637,-327 1637,-327 1637,-341 1637,-341 1637,-347 1631,-353 1625,-353"/>
+<text text-anchor="middle" x="1549.5" y="-337.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#a8534f">Wikipedia source articles</text>
+<text text-anchor="middle" x="1549.5" y="-325.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#a8534f">(Gare d’Orsay / Musée d’Orsay)</text>
+</g>
+<!-- CreativeWork&#45;&gt;WikipediaSource -->
+<g id="edge7" class="edge">
+<title>CreativeWork&#45;&gt;WikipediaSource</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M952.86,-226.25C1084.2,-250.01 1319.49,-292.57 1451.63,-316.48"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1451.28,-319.97 1461.74,-318.31 1452.53,-313.08 1451.28,-319.97"/>
+<text text-anchor="middle" x="1203" y="-281.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:source</text>
+</g>
+<!-- dp_title -->
+<g id="node19" class="node">
+<title>dp_title</title>
+<ellipse fill="#ffffff" stroke="#3f7d43" cx="1549.5" cy="-257" rx="41.59" ry="18"/>
+<text text-anchor="middle" x="1549.5" y="-254.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#3f7d43">dcterms:title</text>
+</g>
+<!-- CreativeWork&#45;&gt;dp_title -->
+<g id="edge35" class="edge">
+<title>CreativeWork&#45;&gt;dp_title</title>
+<path fill="none" stroke="#3f7d43" d="M952.86,-215.62C1105.95,-226.26 1400.27,-246.7 1507.84,-254.18"/>
+</g>
+<!-- Place -->
+<g id="node2" class="node">
+<title>Place</title>
+<path fill="#ffffff" stroke="#a8792a" d="M1612.5,-650C1612.5,-650 1486.5,-650 1486.5,-650 1480.5,-650 1474.5,-644 1474.5,-638 1474.5,-638 1474.5,-618 1474.5,-618 1474.5,-612 1480.5,-606 1486.5,-606 1486.5,-606 1612.5,-606 1612.5,-606 1618.5,-606 1624.5,-612 1624.5,-618 1624.5,-618 1624.5,-638 1624.5,-638 1624.5,-644 1618.5,-650 1612.5,-650"/>
+<text text-anchor="middle" x="1549.5" y="-631.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Place</text>
+<text text-anchor="middle" x="1549.5" y="-618.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:Place</text>
+</g>
+<!-- Place&#45;&gt;Place -->
+<g id="edge23" class="edge">
+<title>Place&#45;&gt;Place</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M1495.33,-650.25C1470.62,-669.57 1488.68,-690 1549.5,-690 1602.72,-690 1623.19,-674.35 1610.93,-657.5"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1613.22,-654.84 1603.67,-650.25 1608.27,-659.79 1613.22,-654.84"/>
+<text text-anchor="middle" x="1549.5" y="-692.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:relation</text>
+</g>
+<!-- dp_labelplace -->
+<g id="node21" class="node">
+<title>dp_labelplace</title>
+<ellipse fill="#ffffff" stroke="#3f7d43" cx="2242.5" cy="-628" rx="55.31" ry="21.43"/>
+<text text-anchor="middle" x="2242.5" y="-631" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#3f7d43">rdfs:label /</text>
+<text text-anchor="middle" x="2242.5" y="-620" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#3f7d43">schema:name</text>
+</g>
+<!-- Place&#45;&gt;dp_labelplace -->
+<g id="edge37" class="edge">
+<title>Place&#45;&gt;dp_labelplace</title>
+<path fill="none" stroke="#3f7d43" d="M1624.78,-628C1764.73,-628 2064.43,-628 2187.28,-628"/>
+</g>
+<!-- Landmark -->
+<g id="node3" class="node">
+<title>Landmark</title>
+<path fill="#ffffff" stroke="#a8681a" stroke-width="2.4" d="M315,-958C315,-958 12,-958 12,-958 6,-958 0,-952 0,-946 0,-946 0,-918 0,-918 0,-912 6,-906 12,-906 12,-906 315,-906 315,-906 321,-906 327,-912 327,-918 327,-918 327,-946 327,-946 327,-952 321,-958 315,-958"/>
+<text text-anchor="middle" x="163.5" y="-935.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#a8681a">LandmarksOrHistoricalBuildings</text>
+<text text-anchor="middle" x="163.5" y="-921.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#a8681a">«class» &#160;schema:LandmarksOrHistoricalBuildings</text>
+</g>
+<!-- Landmark&#45;&gt;Place -->
+<g id="edge1" class="edge">
+<title>Landmark&#45;&gt;Place</title>
+<path fill="none" stroke="#a8792a" stroke-width="1.1" d="M236.45,-905.98C397.89,-848.87 802.33,-712.87 1153,-653 1259.34,-634.84 1383.78,-629.55 1464.26,-628.17"/>
+<polygon fill="none" stroke="#a8792a" stroke-width="1.1" points="1464.39,-631.67 1474.34,-628.02 1464.29,-624.67 1464.39,-631.67"/>
+<text text-anchor="middle" x="856.5" y="-741.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#a8792a">rdfs:subClassOf</text>
+</g>
+<!-- Landmark&#45;&gt;Place -->
+<g id="edge10" class="edge">
+<title>Landmark&#45;&gt;Place</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M200.91,-905.95C249,-872.51 337.24,-814.48 419.5,-778 782.42,-617.07 1270.55,-616.31 1464.24,-623.46"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1464.22,-626.97 1474.35,-623.85 1464.49,-619.97 1464.22,-626.97"/>
+<text text-anchor="middle" x="856.5" y="-674.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:location</text>
+</g>
+<!-- Museum -->
+<g id="node4" class="node">
+<title>Museum</title>
+<path fill="#ffffff" stroke="#a8681a" stroke-width="2.4" d="M937.5,-958C937.5,-958 775.5,-958 775.5,-958 769.5,-958 763.5,-952 763.5,-946 763.5,-946 763.5,-918 763.5,-918 763.5,-912 769.5,-906 775.5,-906 775.5,-906 937.5,-906 937.5,-906 943.5,-906 949.5,-912 949.5,-918 949.5,-918 949.5,-946 949.5,-946 949.5,-952 943.5,-958 937.5,-958"/>
+<text text-anchor="middle" x="856.5" y="-935.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#a8681a">Museum</text>
+<text text-anchor="middle" x="856.5" y="-921.6" font-family="Helvetica,Arial,sans-serif" font-size="13.00" fill="#a8681a">«class» &#160;schema:Museum</text>
+</g>
+<!-- Landmark&#45;&gt;Museum -->
+<g id="edge5" class="edge">
+<title>Landmark&#45;&gt;Museum</title>
+<path fill="none" stroke="#a8681a" stroke-width="3.4" d="M327.38,-932C458.47,-932 638.77,-932 751.15,-932"/>
+<polygon fill="#a8681a" stroke="#a8681a" stroke-width="3.4" points="751.16,-936.2 763.16,-932 751.16,-927.8 751.16,-936.2"/>
+<text text-anchor="middle" x="510" y="-935.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8681a">dcterms:relation &#160;(transformedInto)</text>
+</g>
+<!-- Landmark&#45;&gt;Person -->
+<g id="edge9" class="edge">
+<title>Landmark&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M175.9,-958.08C231.09,-1079.9 483.17,-1587 855.5,-1587 855.5,-1587 855.5,-1587 2243.5,-1587 2535.22,-1587 2818.88,-1322.28 2906.76,-1232.42"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2909.48,-1234.64 2913.94,-1225.02 2904.46,-1229.76 2909.48,-1234.64"/>
+<text text-anchor="middle" x="1549.5" y="-1589.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:creator</text>
+</g>
+<!-- Event -->
+<g id="node9" class="node">
+<title>Event</title>
+<path fill="#ffffff" stroke="#a8792a" d="M1612.5,-437C1612.5,-437 1486.5,-437 1486.5,-437 1480.5,-437 1474.5,-431 1474.5,-425 1474.5,-425 1474.5,-405 1474.5,-405 1474.5,-399 1480.5,-393 1486.5,-393 1486.5,-393 1612.5,-393 1612.5,-393 1618.5,-393 1624.5,-399 1624.5,-405 1624.5,-405 1624.5,-425 1624.5,-425 1624.5,-431 1618.5,-437 1612.5,-437"/>
+<text text-anchor="middle" x="1549.5" y="-418.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Event</text>
+<text text-anchor="middle" x="1549.5" y="-405.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:Event</text>
+</g>
+<!-- Landmark&#45;&gt;Event -->
+<g id="edge11" class="edge">
+<title>Landmark&#45;&gt;Event</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M180.5,-905.71C241.14,-808.96 468.25,-472.17 759.5,-354 885.4,-302.92 1287.72,-367.18 1464.19,-399.05"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1463.74,-402.52 1474.2,-400.87 1464.99,-395.64 1463.74,-402.52"/>
+<text text-anchor="middle" x="856.5" y="-356.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:event</text>
+</g>
+<!-- Landmark&#45;&gt;Concept -->
+<g id="edge12" class="edge">
+<title>Landmark&#45;&gt;Concept</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M173.52,-905.74C201.16,-827.77 290.75,-593.15 419.5,-434 542.09,-282.47 578.76,-229.96 759.5,-157 1001.12,-59.47 1317.56,-70.74 1465.51,-83.16"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1465.6,-86.68 1475.87,-84.05 1466.2,-79.71 1465.6,-86.68"/>
+<text text-anchor="middle" x="856.5" y="-159.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:architecturalStyle</text>
+</g>
+<!-- Landmark&#45;&gt;Concept -->
+<g id="edge13" class="edge">
+<title>Landmark&#45;&gt;Concept</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M166.64,-905.86C176.23,-805.03 223.82,-436.68 419.5,-230 698.16,64.34 1255.79,-24.61 1465.88,-71.43"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1465.39,-74.91 1475.92,-73.69 1466.93,-68.08 1465.39,-74.91"/>
+<text text-anchor="middle" x="856.5" y="-50.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:subject</text>
+</g>
+<!-- Wikidata -->
+<g id="node13" class="node">
+<title>Wikidata</title>
+<path fill="#ffffff" stroke="#5f6670" d="M3648.5,-1505C3648.5,-1505 3608.5,-1505 3608.5,-1505 3602.5,-1505 3596.5,-1499 3596.5,-1493 3596.5,-1493 3596.5,-1479 3596.5,-1479 3596.5,-1473 3602.5,-1467 3608.5,-1467 3608.5,-1467 3648.5,-1467 3648.5,-1467 3654.5,-1467 3660.5,-1473 3660.5,-1479 3660.5,-1479 3660.5,-1493 3660.5,-1493 3660.5,-1499 3654.5,-1505 3648.5,-1505"/>
+<text text-anchor="middle" x="3628.5" y="-1489.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">Wikidata</text>
+<text text-anchor="middle" x="3628.5" y="-1477.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">entity</text>
+</g>
+<!-- Landmark&#45;&gt;Wikidata -->
+<g id="edge27" class="edge">
+<title>Landmark&#45;&gt;Wikidata</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M170.47,-958.26C190.82,-1042.32 264.95,-1308.25 419.5,-1462 571.57,-1613.29 640.99,-1669 855.5,-1669 855.5,-1669 855.5,-1669 2936.5,-1669 3191.33,-1669 3481.93,-1551.26 3586.97,-1504.66"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="3588.55,-1507.79 3596.25,-1500.51 3585.7,-1501.4 3588.55,-1507.79"/>
+<text text-anchor="middle" x="1896" y="-1671.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- Museum&#45;&gt;Place -->
+<g id="edge2" class="edge">
+<title>Museum&#45;&gt;Place</title>
+<path fill="none" stroke="#a8792a" stroke-width="1.1" d="M949.7,-931.12C1032.43,-927.24 1155.47,-913.66 1253,-870 1367.85,-818.59 1474.8,-710.43 1522.45,-657.9"/>
+<polygon fill="none" stroke="#a8792a" stroke-width="1.1" points="1525.23,-660.04 1529.32,-650.26 1520.03,-655.36 1525.23,-660.04"/>
+<text text-anchor="middle" x="1203" y="-903.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#a8792a">rdfs:subClassOf</text>
+</g>
+<!-- Museum&#45;&gt;Place -->
+<g id="edge14" class="edge">
+<title>Museum&#45;&gt;Place</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M949.6,-912.4C1031.45,-893.21 1153.23,-860.26 1253,-815 1351.92,-770.12 1456.92,-696.62 1511.18,-656.44"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1513.51,-659.07 1519.44,-650.28 1509.33,-653.45 1513.51,-659.07"/>
+<text text-anchor="middle" x="1203" y="-854.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:location</text>
+</g>
+<!-- Museum&#45;&gt;Place -->
+<g id="edge19" class="edge">
+<title>Museum&#45;&gt;Place</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M917.89,-905.96C995.52,-872.43 1134.47,-812.25 1253,-760 1335.48,-723.64 1430.62,-681.02 1490.17,-654.26"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1491.73,-657.4 1499.42,-650.1 1488.86,-651.01 1491.73,-657.4"/>
+<text text-anchor="middle" x="1203" y="-804.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:relation</text>
+</g>
+<!-- Museum&#45;&gt;Person -->
+<g id="edge16" class="edge">
+<title>Museum&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M870.07,-958.42C904.16,-1026.54 1005.81,-1207.53 1153,-1275 1449.85,-1411.08 2298.04,-1311.95 2622.5,-1275 2704.29,-1265.69 2795.85,-1243.06 2858.51,-1225.63"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2859.63,-1228.95 2868.31,-1222.88 2857.74,-1222.21 2859.63,-1228.95"/>
+<text text-anchor="middle" x="1896" y="-1345.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:creator</text>
+</g>
+<!-- Museum&#45;&gt;Person -->
+<g id="edge17" class="edge">
+<title>Museum&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M894.06,-958.1C948.28,-995.78 1054.26,-1065.54 1153,-1108 1258.21,-1153.25 1288.01,-1159.29 1401,-1178 1953.68,-1269.5 2633.69,-1227.49 2858.45,-1209.62"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2858.8,-1213.1 2868.49,-1208.81 2858.24,-1206.12 2858.8,-1213.1"/>
+<text text-anchor="middle" x="1896" y="-1234.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:sponsor</text>
+</g>
+<!-- Organization -->
+<g id="node8" class="node">
+<title>Organization</title>
+<path fill="#ffffff" stroke="#a8792a" d="M2313,-1183C2313,-1183 2172,-1183 2172,-1183 2166,-1183 2160,-1177 2160,-1171 2160,-1171 2160,-1151 2160,-1151 2160,-1145 2166,-1139 2172,-1139 2172,-1139 2313,-1139 2313,-1139 2319,-1139 2325,-1145 2325,-1151 2325,-1151 2325,-1171 2325,-1171 2325,-1177 2319,-1183 2313,-1183"/>
+<text text-anchor="middle" x="2242.5" y="-1164.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Organization</text>
+<text text-anchor="middle" x="2242.5" y="-1151.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;foaf:Organization</text>
+</g>
+<!-- Museum&#45;&gt;Organization -->
+<g id="edge18" class="edge">
+<title>Museum&#45;&gt;Organization</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M906.61,-958.07C964.18,-987.65 1063.17,-1035.46 1153,-1064 1508.11,-1176.81 1958.96,-1173.62 2149.68,-1166.02"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2150.1,-1169.51 2159.94,-1165.6 2149.81,-1162.51 2150.1,-1169.51"/>
+<text text-anchor="middle" x="1549.5" y="-1160.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:relation</text>
+</g>
+<!-- Museum&#45;&gt;Event -->
+<g id="edge15" class="edge">
+<title>Museum&#45;&gt;Event</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M895.68,-905.95C951.03,-868.73 1057.42,-799.31 1153,-749 1195.97,-726.38 1216.61,-737.15 1253,-705 1349.19,-620.01 1299.21,-535.2 1401,-457 1419.39,-442.87 1442.35,-433.49 1464.63,-427.27"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1465.66,-430.62 1474.46,-424.71 1463.9,-423.84 1465.66,-430.62"/>
+<text text-anchor="middle" x="1203" y="-751.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:event</text>
+</g>
+<!-- Museum&#45;&gt;Concept -->
+<g id="edge20" class="edge">
+<title>Museum&#45;&gt;Concept</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M894.78,-905.92C971.17,-850.84 1147.17,-715.31 1253,-565 1349.29,-428.24 1302.18,-353.94 1401,-219 1430.14,-179.21 1474,-143.51 1506.32,-120.17"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1508.57,-122.86 1514.69,-114.21 1504.51,-117.16 1508.57,-122.86"/>
+<text text-anchor="middle" x="1203" y="-680.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:subject</text>
+</g>
+<!-- Movie -->
+<g id="node11" class="node">
+<title>Movie</title>
+<path fill="#ffffff" stroke="#a8792a" d="M2040,-1043C2040,-1043 1752,-1043 1752,-1043 1746,-1043 1740,-1037 1740,-1031 1740,-1031 1740,-1011 1740,-1011 1740,-1005 1746,-999 1752,-999 1752,-999 2040,-999 2040,-999 2046,-999 2052,-1005 2052,-1011 2052,-1011 2052,-1031 2052,-1031 2052,-1037 2046,-1043 2040,-1043"/>
+<text text-anchor="middle" x="1896" y="-1024.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">Movie</text>
+<text text-anchor="middle" x="1896" y="-1011.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:Movie &#160;/ &#160;bibo:AudioVisualDocument</text>
+</g>
+<!-- Museum&#45;&gt;Movie -->
+<g id="edge21" class="edge">
+<title>Museum&#45;&gt;Movie</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M949.81,-946.15C1007.99,-954.66 1084.75,-965.14 1153,-972 1350.77,-991.89 1579.04,-1005.58 1729.59,-1013.33"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1729.67,-1016.84 1739.84,-1013.86 1730.03,-1009.85 1729.67,-1016.84"/>
+<text text-anchor="middle" x="1203" y="-982.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">dcterms:isReferencedBy</text>
+</g>
+<!-- WebSite -->
+<g id="node12" class="node">
+<title>WebSite</title>
+<path fill="#ffffff" stroke="#a8792a" d="M1686,-1093C1686,-1093 1413,-1093 1413,-1093 1407,-1093 1401,-1087 1401,-1081 1401,-1081 1401,-1061 1401,-1061 1401,-1055 1407,-1049 1413,-1049 1413,-1049 1686,-1049 1686,-1049 1692,-1049 1698,-1055 1698,-1061 1698,-1061 1698,-1081 1698,-1081 1698,-1087 1692,-1093 1686,-1093"/>
+<text text-anchor="middle" x="1549.5" y="-1074.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">WebSite</text>
+<text text-anchor="middle" x="1549.5" y="-1061.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:WebSite &#160;/ &#160;schema:CreativeWork</text>
+</g>
+<!-- Museum&#45;&gt;WebSite -->
+<g id="edge22" class="edge">
+<title>Museum&#45;&gt;WebSite</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M925.11,-958.02C984.33,-979.77 1073.17,-1009.91 1153,-1027 1230.43,-1043.58 1317.79,-1054.13 1390.69,-1060.73"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1390.6,-1064.24 1400.87,-1061.64 1391.22,-1057.26 1390.6,-1064.24"/>
+<text text-anchor="middle" x="1203" y="-1046.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:subjectOf</text>
+</g>
+<!-- Museum&#45;&gt;Wikidata -->
+<g id="edge28" class="edge">
+<title>Museum&#45;&gt;Wikidata</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M864.93,-958.15C889.92,-1040.91 979.24,-1298.6 1153,-1417 1300.45,-1517.48 1370.07,-1486 1548.5,-1486 1548.5,-1486 1548.5,-1486 2936.5,-1486 3182.92,-1486 3478.77,-1486 3586.08,-1486"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="3586.16,-1489.5 3596.16,-1486 3586.16,-1482.5 3586.16,-1489.5"/>
+<text text-anchor="middle" x="2242.5" y="-1488.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- VIAF -->
+<g id="node14" class="node">
+<title>VIAF</title>
+<path fill="#ffffff" stroke="#5f6670" d="M3665.5,-1000C3665.5,-1000 3591.5,-1000 3591.5,-1000 3585.5,-1000 3579.5,-994 3579.5,-988 3579.5,-988 3579.5,-974 3579.5,-974 3579.5,-968 3585.5,-962 3591.5,-962 3591.5,-962 3665.5,-962 3665.5,-962 3671.5,-962 3677.5,-968 3677.5,-974 3677.5,-974 3677.5,-988 3677.5,-988 3677.5,-994 3671.5,-1000 3665.5,-1000"/>
+<text text-anchor="middle" x="3628.5" y="-984.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">VIAF</text>
+<text text-anchor="middle" x="3628.5" y="-972.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">authority record</text>
+</g>
+<!-- Museum&#45;&gt;VIAF -->
+<g id="edge29" class="edge">
+<title>Museum&#45;&gt;VIAF</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M949.72,-929.42C1186.2,-922.86 1802.15,-906 1895,-906 1895,-906 1895,-906 2936.5,-906 3172.18,-906 3450.44,-949.65 3569.14,-970.35"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="3568.65,-973.82 3579.11,-972.1 3569.86,-966.93 3568.65,-973.82"/>
+<text text-anchor="middle" x="2242.5" y="-908.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- ISNI -->
+<g id="node15" class="node">
+<title>ISNI</title>
+<path fill="#ffffff" stroke="#5f6670" d="M1569,-1425C1569,-1425 1530,-1425 1530,-1425 1524,-1425 1518,-1419 1518,-1413 1518,-1413 1518,-1399 1518,-1399 1518,-1393 1524,-1387 1530,-1387 1530,-1387 1569,-1387 1569,-1387 1575,-1387 1581,-1393 1581,-1399 1581,-1399 1581,-1413 1581,-1413 1581,-1419 1575,-1425 1569,-1425"/>
+<text text-anchor="middle" x="1549.5" y="-1409.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">ISNI</text>
+<text text-anchor="middle" x="1549.5" y="-1397.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">identifier</text>
+</g>
+<!-- Museum&#45;&gt;ISNI -->
+<g id="edge30" class="edge">
+<title>Museum&#45;&gt;ISNI</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M866.84,-958.24C895.64,-1034.89 991.06,-1259.21 1153,-1357 1266.56,-1425.57 1431.86,-1418.92 1507.71,-1411.25"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1508.23,-1414.72 1517.8,-1410.17 1507.48,-1407.76 1508.23,-1414.72"/>
+<text text-anchor="middle" x="1203" y="-1399.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- City -->
+<g id="node5" class="node">
+<title>City</title>
+<path fill="#ffffff" stroke="#a8792a" d="M914.5,-512C914.5,-512 798.5,-512 798.5,-512 792.5,-512 786.5,-506 786.5,-500 786.5,-500 786.5,-480 786.5,-480 786.5,-474 792.5,-468 798.5,-468 798.5,-468 914.5,-468 914.5,-468 920.5,-468 926.5,-474 926.5,-480 926.5,-480 926.5,-500 926.5,-500 926.5,-506 920.5,-512 914.5,-512"/>
+<text text-anchor="middle" x="856.5" y="-493.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">City</text>
+<text text-anchor="middle" x="856.5" y="-480.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:City</text>
+</g>
+<!-- City&#45;&gt;Place -->
+<g id="edge3" class="edge">
+<title>City&#45;&gt;Place</title>
+<path fill="none" stroke="#a8792a" stroke-width="1.1" d="M926.58,-496.73C1005.9,-505.13 1139.68,-521.32 1253,-545 1327.73,-560.62 1411.37,-584.75 1470.54,-602.98"/>
+<polygon fill="none" stroke="#a8792a" stroke-width="1.1" points="1469.6,-606.35 1480.19,-605.96 1471.67,-599.66 1469.6,-606.35"/>
+<text text-anchor="middle" x="1203" y="-547.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#a8792a">rdfs:subClassOf</text>
+</g>
+<!-- GeoNames -->
+<g id="node16" class="node">
+<title>GeoNames</title>
+<path fill="#ffffff" stroke="#5f6670" d="M1576,-515C1576,-515 1523,-515 1523,-515 1517,-515 1511,-509 1511,-503 1511,-503 1511,-489 1511,-489 1511,-483 1517,-477 1523,-477 1523,-477 1576,-477 1576,-477 1582,-477 1588,-483 1588,-489 1588,-489 1588,-503 1588,-503 1588,-509 1582,-515 1576,-515"/>
+<text text-anchor="middle" x="1549.5" y="-499.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">GeoNames</text>
+<text text-anchor="middle" x="1549.5" y="-487.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">place ID</text>
+</g>
+<!-- City&#45;&gt;GeoNames -->
+<g id="edge33" class="edge">
+<title>City&#45;&gt;GeoNames</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M926.8,-489.57C1005.77,-489.19 1138.68,-488.84 1253,-490 1340.37,-490.89 1442.25,-493.25 1500.68,-494.73"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="1500.63,-498.23 1510.72,-494.99 1500.81,-491.23 1500.63,-498.23"/>
+<text text-anchor="middle" x="1203" y="-492.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- CivicStructure -->
+<g id="node6" class="node">
+<title>CivicStructure</title>
+<path fill="#ffffff" stroke="#a8792a" d="M941.5,-428C941.5,-428 771.5,-428 771.5,-428 765.5,-428 759.5,-422 759.5,-416 759.5,-416 759.5,-396 759.5,-396 759.5,-390 765.5,-384 771.5,-384 771.5,-384 941.5,-384 941.5,-384 947.5,-384 953.5,-390 953.5,-396 953.5,-396 953.5,-416 953.5,-416 953.5,-422 947.5,-428 941.5,-428"/>
+<text text-anchor="middle" x="856.5" y="-409.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">CivicStructure</text>
+<text text-anchor="middle" x="856.5" y="-396.4" font-family="Helvetica,Arial,sans-serif" font-size="12.00" fill="#a8792a">«class» &#160;schema:CivicStructure</text>
+</g>
+<!-- CivicStructure&#45;&gt;Place -->
+<g id="edge4" class="edge">
+<title>CivicStructure&#45;&gt;Place</title>
+<path fill="none" stroke="#a8792a" stroke-width="1.1" d="M953.54,-412.25C1035,-419.67 1154.03,-435.56 1253,-469 1349.66,-501.66 1452.36,-564.04 1507.6,-600.2"/>
+<polygon fill="none" stroke="#a8792a" stroke-width="1.1" points="1505.78,-603.19 1516.05,-605.77 1509.63,-597.34 1505.78,-603.19"/>
+<text text-anchor="middle" x="1203" y="-471.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#a8792a">rdfs:subClassOf</text>
+</g>
+<!-- Person&#45;&gt;Wikidata -->
+<g id="edge31" class="edge">
+<title>Person&#45;&gt;Wikidata</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M2990.43,-1225.09C3124.05,-1279.81 3468.17,-1420.75 3586.68,-1469.28"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="3585.55,-1472.6 3596.13,-1473.15 3588.2,-1466.12 3585.55,-1472.6"/>
+<text text-anchor="middle" x="3282" y="-1354.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- Person&#45;&gt;VIAF -->
+<g id="edge32" class="edge">
+<title>Person&#45;&gt;VIAF</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M3002.76,-1181.71C3137.74,-1138.35 3442.56,-1040.42 3569.9,-999.51"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="3571.03,-1002.82 3579.48,-996.43 3568.89,-996.15 3571.03,-1002.82"/>
+<text text-anchor="middle" x="3282" y="-1100.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">owl:sameAs</text>
+</g>
+<!-- Organization&#45;&gt;Person -->
+<g id="edge24" class="edge">
+<title>Organization&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M2325.14,-1165.96C2459.88,-1174.15 2726.92,-1190.38 2858.12,-1198.36"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2858.28,-1201.87 2868.48,-1198.99 2858.71,-1194.89 2858.28,-1201.87"/>
+<text text-anchor="middle" x="2589" y="-1185.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:founder</text>
+</g>
+<!-- dp_startdate -->
+<g id="node23" class="node">
+<title>dp_startdate</title>
+<ellipse fill="#ffffff" stroke="#3f7d43" cx="2242.5" cy="-415" rx="55.85" ry="18"/>
+<text text-anchor="middle" x="2242.5" y="-412.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#3f7d43">schema:startDate</text>
+</g>
+<!-- Event&#45;&gt;dp_startdate -->
+<g id="edge39" class="edge">
+<title>Event&#45;&gt;dp_startdate</title>
+<path fill="none" stroke="#3f7d43" d="M1624.78,-415C1764.38,-415 2062.94,-415 2186.36,-415"/>
+</g>
+<!-- LCSH -->
+<g id="node17" class="node">
+<title>LCSH</title>
+<path fill="#ffffff" stroke="#5f6670" d="M2289,-114C2289,-114 2196,-114 2196,-114 2190,-114 2184,-108 2184,-102 2184,-102 2184,-88 2184,-88 2184,-82 2190,-76 2196,-76 2196,-76 2289,-76 2289,-76 2295,-76 2301,-82 2301,-88 2301,-88 2301,-102 2301,-102 2301,-108 2295,-114 2289,-114"/>
+<text text-anchor="middle" x="2242.5" y="-98.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">Library of Congress</text>
+<text text-anchor="middle" x="2242.5" y="-86.2" font-family="Helvetica,Arial,sans-serif" font-size="11.00" fill="#5f6670">Subject Heading</text>
+</g>
+<!-- Concept&#45;&gt;LCSH -->
+<g id="edge34" class="edge">
+<title>Concept&#45;&gt;LCSH</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" stroke-dasharray="5,2" d="M1623.14,-92.32C1757.42,-92.9 2042.65,-94.14 2173.42,-94.7"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2173.68,-98.21 2183.7,-94.75 2173.71,-91.21 2173.68,-98.21"/>
+<text text-anchor="middle" x="1896" y="-97.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">skos:exactMatch</text>
+</g>
+<!-- dp_preflabel -->
+<g id="node25" class="node">
+<title>dp_preflabel</title>
+<ellipse fill="#ffffff" stroke="#3f7d43" cx="2242.5" cy="-18" rx="47.19" ry="18"/>
+<text text-anchor="middle" x="2242.5" y="-15.5" font-family="Helvetica,Arial,sans-serif" font-size="10.00" fill="#3f7d43">skos:prefLabel</text>
+</g>
+<!-- Concept&#45;&gt;dp_preflabel -->
+<g id="edge41" class="edge">
+<title>Concept&#45;&gt;dp_preflabel</title>
+<path fill="none" stroke="#3f7d43" d="M1623.14,-84.22C1766.08,-68.91 2080.07,-35.29 2196.71,-22.8"/>
+</g>
+<!-- Movie&#45;&gt;Person -->
+<g id="edge25" class="edge">
+<title>Movie&#45;&gt;Person</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M2022.66,-1043.04C2240.3,-1081.22 2681.07,-1158.54 2858.23,-1189.62"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2857.79,-1193.1 2868.25,-1191.38 2859,-1186.2 2857.79,-1193.1"/>
+<text text-anchor="middle" x="2242.5" y="-1094.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:director</text>
+</g>
+<!-- WebSite&#45;&gt;Organization -->
+<g id="edge26" class="edge">
+<title>WebSite&#45;&gt;Organization</title>
+<path fill="none" stroke="#3d6d8c" stroke-width="1.3" d="M1698.23,-1087.76C1798.2,-1099.39 1933.17,-1115.69 2052,-1132 2083.98,-1136.39 2118.94,-1141.62 2150.02,-1146.42"/>
+<polygon fill="#3d6d8c" stroke="#3d6d8c" stroke-width="1.3" points="2149.55,-1149.89 2159.96,-1147.96 2150.62,-1142.97 2149.55,-1149.89"/>
+<text text-anchor="middle" x="1896" y="-1134.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#3d6d8c">schema:provider</text>
+</g>
+<!-- lit_title -->
+<g id="node20" class="node">
+<title>lit_title</title>
+<path fill="#ffffff" stroke="#8a8378" d="M2258.5,-275C2258.5,-275 2226.5,-275 2226.5,-275 2220.5,-275 2214.5,-269 2214.5,-263 2214.5,-263 2214.5,-251 2214.5,-251 2214.5,-245 2220.5,-239 2226.5,-239 2226.5,-239 2258.5,-239 2258.5,-239 2264.5,-239 2270.5,-245 2270.5,-251 2270.5,-251 2270.5,-263 2270.5,-263 2270.5,-269 2264.5,-275 2258.5,-275"/>
+<text text-anchor="middle" x="2242.5" y="-254.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#8a8378">xsd:string</text>
+</g>
+<!-- dp_title&#45;&gt;lit_title -->
+<g id="edge36" class="edge">
+<title>dp_title&#45;&gt;lit_title</title>
+<path fill="none" stroke="#3f7d43" d="M1591.4,-257C1715.37,-257 2085.7,-257 2204.43,-257"/>
+<polygon fill="#3f7d43" stroke="#3f7d43" points="2204.48,-260.5 2214.48,-257 2204.48,-253.5 2204.48,-260.5"/>
+</g>
+<!-- lit_labelplace -->
+<g id="node22" class="node">
+<title>lit_labelplace</title>
+<path fill="#ffffff" stroke="#8a8378" d="M2951.5,-646C2951.5,-646 2919.5,-646 2919.5,-646 2913.5,-646 2907.5,-640 2907.5,-634 2907.5,-634 2907.5,-622 2907.5,-622 2907.5,-616 2913.5,-610 2919.5,-610 2919.5,-610 2951.5,-610 2951.5,-610 2957.5,-610 2963.5,-616 2963.5,-622 2963.5,-622 2963.5,-634 2963.5,-634 2963.5,-640 2957.5,-646 2951.5,-646"/>
+<text text-anchor="middle" x="2935.5" y="-625.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#8a8378">xsd:string</text>
+</g>
+<!-- dp_labelplace&#45;&gt;lit_labelplace -->
+<g id="edge38" class="edge">
+<title>dp_labelplace&#45;&gt;lit_labelplace</title>
+<path fill="none" stroke="#3f7d43" d="M2297.72,-628C2432.86,-628 2782.01,-628 2897.09,-628"/>
+<polygon fill="#3f7d43" stroke="#3f7d43" points="2897.17,-631.5 2907.17,-628 2897.17,-624.5 2897.17,-631.5"/>
+</g>
+<!-- lit_startdate -->
+<g id="node24" class="node">
+<title>lit_startdate</title>
+<path fill="#ffffff" stroke="#8a8378" d="M2950.5,-433C2950.5,-433 2920.5,-433 2920.5,-433 2914.5,-433 2908.5,-427 2908.5,-421 2908.5,-421 2908.5,-409 2908.5,-409 2908.5,-403 2914.5,-397 2920.5,-397 2920.5,-397 2950.5,-397 2950.5,-397 2956.5,-397 2962.5,-403 2962.5,-409 2962.5,-409 2962.5,-421 2962.5,-421 2962.5,-427 2956.5,-433 2950.5,-433"/>
+<text text-anchor="middle" x="2935.5" y="-412.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#8a8378">xsd:date</text>
+</g>
+<!-- dp_startdate&#45;&gt;lit_startdate -->
+<g id="edge40" class="edge">
+<title>dp_startdate&#45;&gt;lit_startdate</title>
+<path fill="none" stroke="#3f7d43" d="M2298.59,-415C2434.72,-415 2784.19,-415 2898.04,-415"/>
+<polygon fill="#3f7d43" stroke="#3f7d43" points="2898.31,-418.5 2908.31,-415 2898.31,-411.5 2898.31,-418.5"/>
+</g>
+<!-- lit_preflabel -->
+<g id="node26" class="node">
+<title>lit_preflabel</title>
+<path fill="#ffffff" stroke="#8a8378" d="M2951.5,-36C2951.5,-36 2919.5,-36 2919.5,-36 2913.5,-36 2907.5,-30 2907.5,-24 2907.5,-24 2907.5,-12 2907.5,-12 2907.5,-6 2913.5,0 2919.5,0 2919.5,0 2951.5,0 2951.5,0 2957.5,0 2963.5,-6 2963.5,-12 2963.5,-12 2963.5,-24 2963.5,-24 2963.5,-30 2957.5,-36 2951.5,-36"/>
+<text text-anchor="middle" x="2935.5" y="-15.8" font-family="Helvetica,Arial,sans-serif" font-size="9.00" fill="#8a8378">xsd:string</text>
+</g>
+<!-- dp_preflabel&#45;&gt;lit_preflabel -->
+<g id="edge42" class="edge">
+<title>dp_preflabel&#45;&gt;lit_preflabel</title>
+<path fill="none" stroke="#3f7d43" d="M2289.64,-18C2418.36,-18 2779.61,-18 2897.08,-18"/>
+<polygon fill="#3f7d43" stroke="#3f7d43" points="2897.36,-21.5 2907.36,-18 2897.36,-14.5 2897.36,-21.5"/>
+</g>
+</g>
+</svg>

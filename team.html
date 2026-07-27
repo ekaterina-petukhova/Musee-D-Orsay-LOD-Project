@@ -1,50 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Team — Musée d'Orsay LOD</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;}
-:root{--bg:#faf8f4;--fg:#1e2022;--muted:#7a7e85;--border:#e4dfd4;--card:#ffffff;--primary:#c4a04a;--secondary:#5a8a8a;--font-serif:'Playfair Display',serif;--font-sans:'Inter',sans-serif;}
-body{font-family:var(--font-sans);background:var(--bg);color:var(--fg);min-height:100vh;display:flex;flex-direction:column;}
-nav{position:sticky;top:0;z-index:50;background:rgba(250,248,244,0.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
-.nav-inner{margin:auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;}
-.nav-logo{font-family:var(--font-serif);font-size:1.2rem;color:var(--fg);text-decoration:none;}
-.nav-logo span{color:var(--primary);font-style:italic;font-weight:300;margin-left:4px;}
-.nav-links{display:flex;gap:32px;}
-.nav-links a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;transition:color .2s;}
-.nav-links a:hover,.nav-links a.active{color:var(--primary);border-bottom:1px solid var(--primary);padding-bottom:2px;}
-.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--muted);}
-.hamburger svg{width:22px;height:22px;}
-.mobile-menu{display:none;flex-direction:column;gap:0;padding:8px 24px 16px;border-top:1px solid var(--border);background:rgba(250,248,244,0.97);}
-.mobile-menu a{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;font-weight:500;padding:12px 0;border-bottom:1px solid var(--border);}
-.mobile-menu a:last-child{border-bottom:none;}
-.mobile-menu a.active{color:var(--primary);}
-@media(max-width:768px){.nav-links{display:none;}.hamburger{display:flex;align-items:center;justify-content:center;}}
-main{flex:1;max-width:1100px;margin:auto;padding:64px 24px 96px;width:100%;}
-h1{font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);margin-bottom:16px;}
-.subtitle{font-size:1.1rem;color:var(--muted);font-weight:300;max-width:680px;line-height:1.7;margin-bottom:56px;}
-.profile-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:48px;max-width:480px;transition:border-color .2s;}
-.profile-card:hover{border-color:rgba(196,160,74,.4);}
-.avatar{width:96px;height:96px;border-radius:50%;background:rgba(90,138,138,.2);border:2px solid var(--bg);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:1.8rem;color:var(--secondary);margin:0 auto 20px;}
-.profile-name{font-family:var(--font-serif);font-size:1.5rem;text-align:center;margin-bottom:6px;}
-.profile-role{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:500;text-align:center;margin-bottom:4px;}
-.profile-uni{font-size:.9rem;color:var(--muted);font-style:italic;text-align:center;margin-bottom:32px;line-height:1.5;}
-.section-label{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:8px;}
-.section-text{font-size:.9rem;color:rgba(30,32,34,.8);font-weight:300;line-height:1.7;}
-.divider{border:none;border-top:1px solid var(--border);margin:20px 0;}
-footer{border-top:1px solid var(--border);background:var(--card);padding:36px 24px;}
-.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
-footer p{font-family:var(--font-serif);font-style:italic;font-size:1rem;}
-footer .meta{display:flex;gap:20px;font-size:.88rem;color:var(--muted);flex-wrap:wrap;justify-content:center;}
-footer .meta span::before{content:'·';margin-right:20px;color:var(--border);}
-footer .meta span:first-child::before{display:none;}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team — Musée d'Orsay LOD</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div id="root">
+
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">Musée d'Orsay<span>LOD</span></a>
@@ -54,12 +18,15 @@ footer .meta span:first-child::before{display:none;}
       <a href="representation.html">Knowledge Representation</a>
       <a href="team.html" class="active">Team</a>
     </div>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-      <svg id="icon-open" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      <svg id="icon-close" style="display:none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    <button class="hamburger" aria-label="Menu">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
     </button>
   </div>
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu">
     <a href="index.html">Home</a>
     <a href="knowledge.html">Knowledge Organization</a>
     <a href="representation.html">Knowledge Representation</a>
@@ -68,46 +35,58 @@ footer .meta span:first-child::before{display:none;}
 </nav>
 
 <main>
-  <h1>Research Team</h1>
-  <p class="subtitle">The researcher behind this Linked Open Data project on the Musée d'Orsay.</p>
+<div class="wrap">
+  <span class="eyebrow">04 · Team</span>
+  <h1 class="page-title">Research <em style="color:var(--gold);font-style:italic">Team</em></h1>
+  <p class="subtitle">
+    The researcher behind this Linked Open Data project on the Musée d'Orsay.
+  </p>
 
   <div class="profile-card">
     <div class="avatar">EP</div>
     <div class="profile-name">Ekaterina Petukhova</div>
     <div class="profile-role">Student</div>
-    <div class="profile-uni">Digital Humanities and Digital Knowledge (DHDK)<br>University of Bologna</div>
+    <div class="profile-uni">
+      Information Science &amp; Cultural Heritage<br>
+      University of Bologna
+    </div>
 
     <div class="section-label">Programme</div>
-    <p class="section-text">Master's degree in Digital Humanities and Digital Knowledge at the University of Bologna — an interdisciplinary programme bridging computer science, information science, and the humanities.</p>
+    <p class="section-text">
+      Coursework in Information Science and Cultural Heritage at the University of Bologna —
+      an interdisciplinary programme bridging computer science, information science, and the
+      humanities.
+    </p>
 
-    <hr class="divider">
+    <hr class="divider" />
 
     <div class="section-label">Project Contribution</div>
-    <p class="section-text">Responsible for the full scope of the project: ontological modeling with CIDOC CRM, RDF/Turtle serialization, TEI XML encoding of historical sources, and the design of this knowledge representation portal.</p>
+    <p class="section-text">
+      Responsible for the full scope of the project: domain modelling and entity selection, a
+      conceptual (OWL) model reusing Schema.org, FOAF, SKOS, Dublin Core Terms and BIBO,
+      RDF/Turtle serialization, TEI/XML encoding of the source text, and the design of this
+      knowledge representation portal.
+    </p>
   </div>
+</div>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <p>Musée d'Orsay — Linked Open Data Project</p>
+<footer class="wrap">
+  <div class="top">
+    <div>
+      <h3>From Railway Station to Museum</h3>
+      <p style="color:var(--text-dim);max-width:40ch;margin-top:.6rem">
+        A Linked Open Data Project on the Musée d'Orsay.
+      </p>
+    </div>
     <div class="meta">
-      <span>Ekaterina Petukhova</span>
-      <span>DHDK · University of Bologna</span>
-      <span>2025</span>
+      Information Science &amp; Cultural Heritage · 2025–2026<br>
+      Ekaterina Petukhova · University of Bologna
     </div>
   </div>
 </footer>
 
-<script>
-function toggleMenu(){
-  var m=document.getElementById('mobile-menu');
-  var o=document.getElementById('icon-open');
-  var c=document.getElementById('icon-close');
-  var open=m.style.display==='flex';
-  m.style.display=open?'none':'flex';
-  o.style.display=open?'':'none';
-  c.style.display=open?'none':'';
-}
-</script>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

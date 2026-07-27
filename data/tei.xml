@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>From Railway Station to Museum: The Story of the Musée d’Orsay</title>
+            <subtitle>A Case of Cultural Heritage Transformation</subtitle>
+            <author>Ekaterina Petukhova</author>
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>University of Bologna – Digital Humanities</publisher>
+            <date when="2025-2026"/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <bibl>
+               <title>Gare d’Orsay</title>
+               <publisher>Wikipedia</publisher>
+               <ptr target="https://en.wikipedia.org/wiki/Gare_d%27Orsay"/>
+            </bibl>
+            <bibl>
+               <title>Musée d’Orsay</title>
+               <publisher>Wikipedia</publisher>
+               <ptr target="https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>
+               This TEI document encodes a Linked Open Data project about the transformation of
+               the Gare d’Orsay into the Musée d’Orsay. It annotates real-world entities,
+               concepts, events, bibliographic entities, digital resources, and textual phenomena.
+               Entities are connected to authority files such as Wikidata, VIAF, ISNI, GeoNames,
+               and Library of Congress Subject Headings.
+            </p>
+         </projectDesc>
+
+         <listPrefixDef>
+            <prefixDef ident="wikidata" matchPattern="(.+)"
+               replacementPattern="https://www.wikidata.org/wiki/$1"/>
+            <prefixDef ident="viaf" matchPattern="(.+)"
+               replacementPattern="https://viaf.org/viaf/$1"/>
+            <prefixDef ident="isni" matchPattern="(.+)"
+               replacementPattern="https://isni.org/isni/$1"/>
+            <prefixDef ident="geonames" matchPattern="(.+)"
+               replacementPattern="https://www.geonames.org/$1"/>
+            <prefixDef ident="loc" matchPattern="(.+)"
+               replacementPattern="https://id.loc.gov/authorities/$1"/>
+         </listPrefixDef>
+      </encodingDesc>
+
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="victorLaloux">
+                  <persName>Victor Laloux</persName>
+                  <occupation>Architect</occupation>
+                  <idno type="wikidata">wikidata:Q924704</idno>
+                  <idno type="viaf">viaf:34723705</idno>
+                  <idno type="isni">isni:0000000071407773</idno>
+               </person>
+
+               <person xml:id="gaeAulenti">
+                  <persName>Gae Aulenti</persName>
+                  <occupation>Architect and designer</occupation>
+                  <idno type="wikidata">wikidata:Q8867</idno>
+                  <idno type="viaf">viaf:24604246</idno>
+               </person>
+
+               <person xml:id="claudeMonet">
+                  <persName>Claude Monet</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q296</idno>
+                  <idno type="viaf">viaf:36925787</idno>
+                  <idno type="isni">isni:0000000121244328</idno>
+               </person>
+
+               <person xml:id="paulGauguin">
+                  <persName>Paul Gauguin</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q37693</idno>
+                  <idno type="viaf">viaf:7386389</idno>
+               </person>
+
+               <person xml:id="olivierLemaire">
+                  <persName>Olivier Lemaire</persName>
+                  <occupation>Film director</occupation>
+                  <note>No stable authority identifier was identified for this project.</note>
+               </person>
+
+               <person xml:id="georgesPompidou">
+                  <persName>Georges Pompidou</persName>
+                  <occupation>President of France</occupation>
+                  <idno type="wikidata">wikidata:Q7522</idno>
+                  <idno type="viaf">viaf:106963537</idno>
+               </person>
+
+               <person xml:id="valeryGiscard">
+                  <persName>Valéry Giscard d’Estaing</persName>
+                  <occupation>President of France</occupation>
+                  <idno type="wikidata">wikidata:Q57274</idno>
+                  <idno type="viaf">viaf:36940489</idno>
+               </person>
+
+               <person xml:id="pierreColboc">
+                  <persName>Pierre Colboc</persName>
+                  <occupation>Architect</occupation>
+                  <idno type="wikidata">wikidata:Q3384743</idno>
+               </person>
+
+               <person xml:id="vincentVanGogh">
+                  <persName>Vincent van Gogh</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q5582</idno>
+               </person>
+
+               <person xml:id="edouardManet">
+                  <persName>Édouard Manet</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q40599</idno>
+               </person>
+
+               <person xml:id="edgarDegas">
+                  <persName>Edgar Degas</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q46373</idno>
+               </person>
+
+               <person xml:id="pierreAugusteRenoir">
+                  <persName>Pierre-Auguste Renoir</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q39931</idno>
+               </person>
+
+               <person xml:id="paulCezanne">
+                  <persName>Paul Cézanne</persName>
+                  <occupation>Painter</occupation>
+                  <idno type="wikidata">wikidata:Q35548</idno>
+               </person>
+
+               <person xml:id="biePlevoets">
+                  <persName>Bie Plevoets</persName>
+                  <occupation>Author and researcher on adaptive reuse</occupation>
+               </person>
+
+               <person xml:id="koenraadVanCleempoel">
+                  <persName>Koenraad Van Cleempoel</persName>
+                  <occupation>Author and researcher on adaptive reuse</occupation>
+               </person>
+            </listPerson>
+         </particDesc>
+
+         <settingDesc>
+            <listPlace>
+               <place xml:id="gareOrsay" type="building">
+                  <placeName>Gare d’Orsay</placeName>
+                  <idno type="wikidata">wikidata:Q2698691</idno>
+               </place>
+
+               <place xml:id="museeOrsay" type="museum">
+                  <placeName>Musée d’Orsay</placeName>
+                  <idno type="wikidata">wikidata:Q23402</idno>
+                  <idno type="viaf">viaf:130307757</idno>
+                  <idno type="isni">isni:0000000121572575</idno>
+               </place>
+
+               <place xml:id="paris" type="city">
+                  <placeName>Paris</placeName>
+                  <idno type="wikidata">wikidata:Q90</idno>
+                  <idno type="geonames">geonames:2988507</idno>
+               </place>
+
+               <place xml:id="louvre" type="museum">
+                  <placeName>Louvre Museum</placeName>
+                  <idno type="wikidata">wikidata:Q19675</idno>
+               </place>
+
+               <place xml:id="centrePompidou" type="culturalCentre">
+                  <placeName>Centre Pompidou</placeName>
+                  <idno type="wikidata">wikidata:Q19964</idno>
+               </place>
+
+               <place xml:id="nationalMuseumModernArt" type="museum">
+                  <placeName>National Museum of Modern Art</placeName>
+                  <idno type="wikidata">wikidata:Q1895953</idno>
+               </place>
+            </listPlace>
+         </settingDesc>
+
+         <listOrg>
+            <org xml:id="actArchitectureGroup">
+               <orgName>ACT architecture group</orgName>
+               <note>No stable authority identifier was identified for this project.</note>
+            </org>
+
+            <org xml:id="googleArtsCulture">
+               <orgName>Google Arts &amp; Culture</orgName>
+               <idno type="wikidata">wikidata:Q369089</idno>
+            </org>
+
+            <org xml:id="icamt">
+               <orgName>ARCHI-TECHS</orgName>
+               <note>
+                  Also known by its full name, the ICOM International Committee for Architecture
+                  and Museum Techniques (ICAMT), a committee of ICOM, the International Council
+                  of Museums.
+               </note>
+            </org>
+
+            <org xml:id="wikimediaFoundation">
+               <orgName>Wikimedia Foundation</orgName>
+               <idno type="wikidata">wikidata:Q180</idno>
+            </org>
+         </listOrg>
+
+         <listEvent>
+            <event xml:id="expo1900">
+               <label>Exposition Universelle of 1900</label>
+               <date when="1900">1900</date>
+               <idno type="wikidata">wikidata:Q170558</idno>
+            </event>
+
+            <event xml:id="openingGareOrsay">
+               <label>Opening of the Gare d’Orsay</label>
+               <date when="1900-05-28">28 May 1900</date>
+            </event>
+
+            <event xml:id="architecturalCompetition1978">
+               <label>Architectural competition for the transformation of the Gare d’Orsay</label>
+               <date when="1978">1978</date>
+            </event>
+
+            <event xml:id="openingMuseeOrsay">
+               <label>Opening of the Musée d’Orsay</label>
+               <date when="1986-12">December 1986</date>
+            </event>
+         </listEvent>
+
+         <textClass>
+            <keywords scheme="subjects">
+               <term xml:id="impressionism">
+                  Impressionism
+                  <idno type="wikidata">wikidata:Q40415</idno>
+                  <idno type="loc">loc:subjects/sh85064413</idno>
+               </term>
+
+               <term xml:id="postImpressionism">
+                  Post-Impressionism
+                  <idno type="wikidata">wikidata:Q189085</idno>
+               </term>
+
+               <term xml:id="beauxArtsStyle">
+                  Beaux-Arts style
+                  <idno type="wikidata">wikidata:Q170292</idno>
+               </term>
+
+               <term xml:id="culturalHeritage">
+                  Cultural heritage
+                  <idno type="wikidata">wikidata:Q210272</idno>
+               </term>
+
+               <term xml:id="culturalHeritageTransformation">
+                  Cultural heritage transformation
+                  <note>
+                     This concept is used in the project to describe the transformation of the
+                     Gare d’Orsay from a railway station into the Musée d’Orsay.
+                  </note>
+               </term>
+
+               <term xml:id="adaptiveReuse">
+                  Adaptive reuse
+                  <idno type="wikidata">wikidata:Q4688776</idno>
+                  <note>
+                     Adaptive reuse is the process of reusing an old site or building for a
+                     purpose other than the one it was built or designed for. Where a building
+                     can no longer function with its original use, a new use through adaptation
+                     may be the only way to preserve its heritage significance.
+                  </note>
+               </term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+
+      <revisionDesc>
+         <change when="2026-07-07">
+            TEI encoding created and expanded for a Linked Open Data project.
+         </change>
+      </revisionDesc>
+   </teiHeader>
+
+   <standOff>
+      <listBibl>
+         <bibl xml:id="oneNightOrsayMuseum" type="documentary">
+            <title level="m">One Night in Orsay Museum</title>
+            <author>
+               <persName ref="#olivierLemaire">Olivier Lemaire</persName>
+            </author>
+            <note>
+               Documentary film mentioned as a media representation of the Musée d’Orsay.
+            </note>
+         </bibl>
+
+         <bibl xml:id="googleVirtualTour" type="website">
+            <title level="m">Virtual tour of the Musée d’Orsay</title>
+            <respStmt>
+               <resp>provided by</resp>
+               <orgName ref="#googleArtsCulture">Google Arts &amp; Culture</orgName>
+            </respStmt>
+            <note>
+               Digital cultural resource allowing online exploration of the museum space.
+            </note>
+         </bibl>
+
+         <bibl xml:id="icamtAdaptiveReuseArticle" type="reference">
+            <title level="a">Adaptive Reuse</title>
+            <respStmt>
+               <resp>published by</resp>
+               <orgName ref="#icamt">ARCHI-TECHS</orgName>
+            </respStmt>
+            <note>
+               ICOM-ICAMT reference page on adaptive reuse in museums, naming the Musée d’Orsay
+               a successful and well-known case of a Beaux-Arts railway station adapted for
+               museum use, and noting the surviving ornate gold clock as a trace of its past.
+            </note>
+            <ref target="https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/">
+               icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse
+            </ref>
+         </bibl>
+
+         <bibl xml:id="wikipediaAdaptiveReuse" type="reference">
+            <title level="a">Adaptive reuse</title>
+            <respStmt>
+               <resp>published by</resp>
+               <orgName ref="#wikimediaFoundation">Wikimedia Foundation</orgName>
+            </respStmt>
+            <note>
+               Wikipedia encyclopedia entry giving a general overview of adaptive reuse as an
+               architectural and urban-planning concept.
+            </note>
+            <ref target="https://en.wikipedia.org/wiki/Adaptive_reuse">
+               en.wikipedia.org/wiki/Adaptive_reuse
+            </ref>
+         </bibl>
+
+         <bibl xml:id="adaptiveReuseBuiltHeritageBook" type="monograph">
+            <title level="m">Adaptive Reuse of the Built Heritage: Concepts and Cases of an
+               Emerging Discipline</title>
+            <respStmt>
+               <resp>authored by</resp>
+               <persName ref="#biePlevoets">Bie Plevoets</persName>
+               <persName ref="#koenraadVanCleempoel">Koenraad Van Cleempoel</persName>
+            </respStmt>
+            <respStmt>
+               <resp>published by</resp>
+               <orgName>Routledge</orgName>
+            </respStmt>
+            <note>
+               Academic monograph examining adaptive reuse as an emerging design discipline,
+               through theoretical concepts and international case studies.
+            </note>
+         </bibl>
+      </listBibl>
+
+      <listRelation>
+         <relation name="designedBy" active="#gareOrsay" passive="#victorLaloux"/>
+         <relation name="openedFor" active="#gareOrsay" passive="#expo1900"/>
+         <relation name="openedOn" active="#gareOrsay" passive="#openingGareOrsay"/>
+         <relation name="transformedInto" active="#gareOrsay" passive="#museeOrsay"/>
+         <relation name="locatedIn" active="#gareOrsay #museeOrsay" passive="#paris"/>
+         <relation name="fillsChronologicalGapBetween" active="#museeOrsay"
+            passive="#louvre #nationalMuseumModernArt #centrePompidou"/>
+         <relation name="supportedBy" active="#museeOrsay" passive="#georgesPompidou #valeryGiscard"/>
+         <relation name="awardedTo" active="#architecturalCompetition1978" passive="#actArchitectureGroup"/>
+         <relation name="ledBy" active="#actArchitectureGroup" passive="#pierreColboc"/>
+         <relation name="interiorDesignedBy" active="#museeOrsay" passive="#gaeAulenti"/>
+         <relation name="openedAs" active="#museeOrsay" passive="#openingMuseeOrsay"/>
+         <relation name="housesWorksBy" active="#museeOrsay"
+            passive="#claudeMonet #paulGauguin #vincentVanGogh #edouardManet #edgarDegas #pierreAugusteRenoir #paulCezanne"/>
+         <relation name="representsArtMovement" active="#museeOrsay"
+            passive="#impressionism #postImpressionism"/>
+         <relation name="hasArchitecturalStyle" active="#gareOrsay" passive="#beauxArtsStyle"/>
+         <relation name="representedIn" active="#museeOrsay" passive="#oneNightOrsayMuseum"/>
+         <relation name="directedBy" active="#oneNightOrsayMuseum" passive="#olivierLemaire"/>
+         <relation name="digitallyRepresentedBy" active="#museeOrsay" passive="#googleVirtualTour"/>
+         <relation name="providedBy" active="#googleVirtualTour" passive="#googleArtsCulture"/>
+         <relation name="isCaseOf" active="#gareOrsay #museeOrsay"
+            passive="#culturalHeritageTransformation"/>
+         <relation name="referencedIn" active="#museeOrsay" passive="#icamtAdaptiveReuseArticle"/>
+         <relation name="citesAsCaseStudy" active="#icamtAdaptiveReuseArticle" passive="#museeOrsay"/>
+         <relation name="highlightsConcept" active="#icamtAdaptiveReuseArticle" passive="#adaptiveReuse"/>
+         <relation name="publishedBy" active="#icamtAdaptiveReuseArticle" passive="#icamt"/>
+         <relation name="documentedIn" active="#adaptiveReuse" passive="#wikipediaAdaptiveReuse"/>
+         <relation name="publishedBy" active="#wikipediaAdaptiveReuse" passive="#wikimediaFoundation"/>
+         <relation name="documentedIn" active="#adaptiveReuse" passive="#adaptiveReuseBuiltHeritageBook"/>
+         <relation name="authoredBy" active="#adaptiveReuseBuiltHeritageBook" passive="#biePlevoets #koenraadVanCleempoel"/>
+      </listRelation>
+   </standOff>
+
+   <text>
+      <body>
+         <div type="article">
+            <head>
+               <title type="main">From Railway Station to Museum: The Story of the Musée d’Orsay</title>
+               <title type="sub">A Case of Cultural Heritage Transformation</title>
+            </head>
+
+            <p>
+               This project focuses on the transformation of the
+               <placeName ref="#gareOrsay">Gare d’Orsay</placeName>
+               from a railway station into one of the most important art museums in the world.
+               The <placeName ref="#gareOrsay">Gare d’Orsay</placeName>
+               was originally built between
+               <date when="1898">1898</date>
+               and
+               <date when="1900">1900</date>
+               in <placeName ref="#paris">Paris</placeName>
+               and was designed mainly by the architect
+               <persName ref="#victorLaloux">Victor Laloux</persName>.
+               It officially opened on
+               <date when="1900-05-28">28 May 1900</date>,
+               in time for the
+               <rs type="event" ref="#expo1900">Exposition Universelle of 1900</rs>.
+               At that time, the building represented both technological progress and architectural
+               elegance: it was a modern railway terminal, but its exterior was designed in the
+               monumental <term ref="#beauxArtsStyle">Beaux-Arts style</term>.
+            </p>
+
+            <p>
+               By <date when="1939">1939</date>, the station had become less suitable for modern
+               railway traffic because its platforms were too short for longer trains. As a result,
+               the building gradually lost its original function. During the following decades, it was
+               used for different purposes and was even threatened with demolition.
+            </p>
+
+            <p>
+               In the <date when="1970">1970s</date>, a new idea appeared: instead of destroying
+               the former station, it could be preserved and transformed into a museum. This decision
+               was important because it showed a new attitude toward historical industrial buildings.
+               The <placeName ref="#gareOrsay">Gare d’Orsay</placeName>
+               was no longer seen only as an obsolete railway structure, but as a valuable piece of
+               architectural and <term ref="#culturalHeritage">cultural heritage</term>.
+               The future museum was also intended to fill the gap between the collections of the
+               <placeName ref="#louvre">Louvre</placeName>
+               and the
+               <placeName ref="#nationalMuseumModernArt">National Museum of Modern Art</placeName>
+               at the <placeName ref="#centrePompidou">Centre Pompidou</placeName>.
+            </p>
+
+            <p>
+               The transformation project was supported by French political figures including
+               <persName ref="#georgesPompidou">Georges Pompidou</persName>
+               and
+               <persName ref="#valeryGiscard">Valéry Giscard d’Estaing</persName>.
+               In <date when="1978">1978</date>, an
+               <rs type="event" ref="#architecturalCompetition1978">architectural competition</rs>
+               was organised, and the project was awarded to the
+               <orgName ref="#actArchitectureGroup">ACT architecture group</orgName>,
+               led by <persName ref="#pierreColboc">Pierre Colboc</persName>.
+               The Italian architect and designer
+               <persName ref="#gaeAulenti">Gae Aulenti</persName>
+               was responsible for the interior design. Her work adapted the vast railway hall into
+               a museum space while preserving the memory of the original station.
+            </p>
+
+            <p>
+               The building reopened in
+               <date when="1986-12">December 1986</date>
+               as the <placeName ref="#museeOrsay">Musée d’Orsay</placeName>.
+               Its new identity combined the old and the new: the former train shed became a grand
+               exhibition hall, while the former railway hotel was adapted into gallery spaces.
+               The result was not simply a museum placed inside an old station, but a cultural
+               institution whose architecture became part of the visitor experience.
+            </p>
+
+            <p>
+               Today, the <placeName ref="#museeOrsay">Musée d’Orsay</placeName>
+               is internationally known for its collections of French art from the period
+               <date from="1848" to="1914">1848–1914</date>.
+               It holds paintings, sculptures, furniture, photography, and decorative arts.
+               It is especially famous for its
+               <term ref="#impressionism">Impressionist</term>
+               and
+               <term ref="#postImpressionism">Post-Impressionist</term>
+               masterpieces, including works by
+               <persName ref="#claudeMonet">Claude Monet</persName>,
+               <persName ref="#paulGauguin">Paul Gauguin</persName>,
+               <persName ref="#vincentVanGogh">Vincent van Gogh</persName>,
+               <persName ref="#edouardManet">Édouard Manet</persName>,
+               <persName ref="#edgarDegas">Edgar Degas</persName>,
+               <persName ref="#pierreAugusteRenoir">Pierre-Auguste Renoir</persName>,
+               and <persName ref="#paulCezanne">Paul Cézanne</persName>.
+            </p>
+
+            <p>
+               The building is not only a museum but also an important cultural symbol. Its unique
+               atmosphere has also inspired films, such as the documentary
+               <rs type="documentary" ref="#oneNightOrsayMuseum">One Night in Orsay Museum</rs>
+               by <persName ref="#olivierLemaire">Olivier Lemaire</persName>,
+               which shows the museum at night and reflects on its transformation
+               <quote>from a railway station into a space dedicated to art</quote>.
+               The museum is also accessible through digital cultural resources, including the
+               <rs type="digitalResource" ref="#googleVirtualTour">virtual tour of the Musée d’Orsay</rs>
+               provided by
+               <orgName ref="#googleArtsCulture">Google Arts &amp; Culture</orgName>,
+               which allows visitors to explore the museum space online.
+            </p>
+
+            <p>
+               This project is therefore about the transformation of a building and its meaning.
+               The <placeName ref="#gareOrsay">Gare d’Orsay</placeName>
+               moved from transport to culture, from industrial modernity to museum heritage,
+               and from threatened demolition to preservation. This makes it a case of
+               <term ref="#culturalHeritageTransformation">cultural heritage transformation</term>
+               and also an example of <term ref="#adaptiveReuse">adaptive reuse</term>.
+            </p>
+
+            <p>
+               This reading is echoed internationally: the
+               <rs type="reference" ref="#icamtAdaptiveReuseArticle">Adaptive Reuse</rs>
+               reference page published by
+               <orgName ref="#icamt">ARCHI-TECHS</orgName>, ICOM’s International Committee
+               for Architecture and Museum Techniques, names the Musée d’Orsay a
+               <quote>successful and well-known case of adaptive reuse</quote>,
+               pointing to the surviving ornate gold clock above the former tracks as a
+               visible trace of the building’s history as the Gare d’Orsay.
+            </p>
+
+            <p>
+               The concept is also documented more broadly on
+               <rs type="reference" ref="#wikipediaAdaptiveReuse">Wikipedia’s Adaptive reuse
+               entry</rs>, published by the
+               <orgName ref="#wikimediaFoundation">Wikimedia Foundation</orgName>, which frames
+               adaptive reuse as an architectural and urban-planning strategy applicable well
+               beyond the museum sector.
+            </p>
+
+            <p>
+               The theoretical framing draws further on
+               <title level="m" ref="#adaptiveReuseBuiltHeritageBook">Adaptive Reuse of the Built
+               Heritage: Concepts and Cases of an Emerging Discipline</title> by
+               <persName ref="#biePlevoets">Bie Plevoets</persName> and
+               <persName ref="#koenraadVanCleempoel">Koenraad Van Cleempoel</persName>, which
+               establishes adaptive reuse as an emerging design discipline through theoretical
+               concepts and international case studies.
+            </p>
+         </div>
+      </body>
+   </text>
+
+</TEI>

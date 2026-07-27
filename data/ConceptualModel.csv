@@ -1,0 +1,109 @@
+﻿Subject,Predicate,Object,Standard
+orsay:Project,rdf:type,schema:CreativeWork,RDF / Schema.org
+orsay:Project,dcterms:title,From Railway Station to Museum: The Story of the Musée d’Orsay,Dublin Core Terms
+orsay:Project,dcterms:subject,orsay:CulturalHeritageTransformation,Dublin Core Terms / SKOS
+orsay:Project,dcterms:creator,orsay:EkaterinaPetukhova,Dublin Core Terms / FOAF
+orsay:Project,dcterms:source,orsay:WikipediaGareOrsay,Dublin Core Terms
+orsay:Project,dcterms:source,orsay:WikipediaMuseeOrsay,Dublin Core Terms
+orsay:GareOrsay,rdf:type,schema:LandmarksOrHistoricalBuildings,RDF / Schema.org
+orsay:GareOrsay,rdf:type,schema:Place,RDF / Schema.org
+orsay:GareOrsay,rdfs:label,Gare d’Orsay,RDFS
+orsay:GareOrsay,schema:name,Gare d’Orsay,Schema.org
+orsay:GareOrsay,schema:creator,orsay:VictorLaloux,Schema.org
+orsay:GareOrsay,schema:location,orsay:Paris,Schema.org
+orsay:GareOrsay,schema:event,orsay:OpeningGareOrsay,Schema.org
+orsay:GareOrsay,dcterms:relation,orsay:ExpositionUniverselle1900,Dublin Core Terms
+orsay:GareOrsay,schema:architecturalStyle,orsay:BeauxArtsStyle,Schema.org / SKOS
+orsay:GareOrsay,dcterms:relation,orsay:MuseeOrsay,Dublin Core Terms
+orsay:GareOrsay,dcterms:subject,orsay:AdaptiveReuse,Dublin Core Terms / SKOS
+orsay:GareOrsay,owl:sameAs,wikidata:Q2698691,OWL / Wikidata
+orsay:MuseeOrsay,rdf:type,schema:Museum,RDF / Schema.org
+orsay:MuseeOrsay,rdf:type,schema:Place,RDF / Schema.org
+orsay:MuseeOrsay,rdfs:label,Musée d’Orsay,RDFS
+orsay:MuseeOrsay,schema:name,Musée d’Orsay,Schema.org
+orsay:MuseeOrsay,schema:location,orsay:Paris,Schema.org
+orsay:MuseeOrsay,schema:event,orsay:OpeningMuseeOrsay,Schema.org
+orsay:MuseeOrsay,schema:creator,orsay:GaeAulenti,Schema.org
+orsay:MuseeOrsay,schema:sponsor,orsay:GeorgesPompidou,Schema.org
+orsay:MuseeOrsay,schema:sponsor,orsay:ValeryGiscardEstaing,Schema.org
+orsay:MuseeOrsay,dcterms:relation,orsay:ACTArchitectureGroup,Dublin Core Terms
+orsay:ACTArchitectureGroup,rdf:type,foaf:Organization,RDF / FOAF
+orsay:ACTArchitectureGroup,schema:founder,orsay:PierreColboc,Schema.org
+orsay:MuseeOrsay,dcterms:relation,orsay:LouvreMuseum,Dublin Core Terms
+orsay:MuseeOrsay,dcterms:relation,orsay:NationalMuseumModernArt,Dublin Core Terms
+orsay:MuseeOrsay,dcterms:relation,orsay:CentrePompidou,Dublin Core Terms
+orsay:MuseeOrsay,dcterms:subject,orsay:Impressionism,Dublin Core Terms / SKOS
+orsay:MuseeOrsay,dcterms:subject,orsay:PostImpressionism,Dublin Core Terms / SKOS
+orsay:MuseeOrsay,dcterms:subject,orsay:CulturalHeritageTransformation,Dublin Core Terms / SKOS
+orsay:MuseeOrsay,dcterms:subject,orsay:AdaptiveReuse,Dublin Core Terms / SKOS
+orsay:MuseeOrsay,schema:creator,orsay:ClaudeMonet,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:PaulGauguin,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:VincentVanGogh,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:EdouardManet,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:EdgarDegas,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:PierreAugusteRenoir,Schema.org / FOAF
+orsay:MuseeOrsay,schema:creator,orsay:PaulCezanne,Schema.org / FOAF
+orsay:MuseeOrsay,dcterms:isReferencedBy,orsay:OneNightOrsayMuseum,Dublin Core Terms / BIBO
+orsay:OneNightOrsayMuseum,rdf:type,schema:Movie,RDF / Schema.org
+orsay:OneNightOrsayMuseum,rdf:type,bibo:AudioVisualDocument,RDF / BIBO
+orsay:OneNightOrsayMuseum,schema:director,orsay:OlivierLemaire,Schema.org
+orsay:MuseeOrsay,schema:subjectOf,orsay:GoogleVirtualTour,Schema.org
+orsay:GoogleVirtualTour,rdf:type,schema:WebSite,RDF / Schema.org
+orsay:GoogleVirtualTour,rdf:type,schema:CreativeWork,RDF / Schema.org
+orsay:GoogleVirtualTour,schema:provider,orsay:GoogleArtsCulture,Schema.org
+orsay:GoogleArtsCulture,rdf:type,foaf:Organization,RDF / FOAF
+orsay:VictorLaloux,rdf:type,foaf:Person,RDF / FOAF
+orsay:GaeAulenti,rdf:type,foaf:Person,RDF / FOAF
+orsay:ClaudeMonet,rdf:type,foaf:Person,RDF / FOAF
+orsay:PaulGauguin,rdf:type,foaf:Person,RDF / FOAF
+orsay:OlivierLemaire,rdf:type,foaf:Person,RDF / FOAF
+orsay:Paris,rdf:type,schema:City,RDF / Schema.org
+orsay:Paris,owl:sameAs,geonames:2988507,OWL / GeoNames
+orsay:LouvreMuseum,rdf:type,schema:Museum,RDF / Schema.org
+orsay:CentrePompidou,rdf:type,schema:CivicStructure,RDF / Schema.org
+orsay:Impressionism,rdf:type,skos:Concept,RDF / SKOS
+orsay:PostImpressionism,rdf:type,skos:Concept,RDF / SKOS
+orsay:BeauxArtsStyle,rdf:type,skos:Concept,RDF / SKOS
+orsay:CulturalHeritageTransformation,rdf:type,skos:Concept,RDF / SKOS
+orsay:AdaptiveReuse,rdf:type,skos:Concept,RDF / SKOS
+orsay:AdaptiveReuse,skos:definition,"Adaptive reuse is the process of reusing an old site or building for a purpose other than the one it was built or designed for; a new use through adaptation may be the only way to preserve its heritage significance.",SKOS
+orsay:MuseeOrsay,owl:sameAs,wikidata:Q23402,OWL / Wikidata
+orsay:MuseeOrsay,owl:sameAs,viaf:130307757,OWL / VIAF
+orsay:MuseeOrsay,owl:sameAs,isni:0000000121572575,OWL / ISNI
+orsay:VictorLaloux,owl:sameAs,wikidata:Q924704,OWL / Wikidata
+orsay:VictorLaloux,owl:sameAs,viaf:34723705,OWL / VIAF
+orsay:GaeAulenti,owl:sameAs,wikidata:Q8867,OWL / Wikidata
+orsay:ClaudeMonet,owl:sameAs,wikidata:Q296,OWL / Wikidata
+orsay:PaulGauguin,owl:sameAs,wikidata:Q37693,OWL / Wikidata
+orsay:Impressionism,skos:exactMatch,loc:subjects/sh85064413,SKOS / LCSH
+orsay:MuseeOrsay,dcterms:isReferencedBy,orsay:ICAMTAdaptiveReuseArticle,Dublin Core Terms / BIBO
+orsay:ICAMTAdaptiveReuseArticle,rdf:type,schema:WebPage,RDF / Schema.org
+orsay:ICAMTAdaptiveReuseArticle,rdf:type,bibo:Document,RDF / BIBO
+orsay:ICAMTAdaptiveReuseArticle,dcterms:title,Adaptive Reuse,Dublin Core Terms
+orsay:ICAMTAdaptiveReuseArticle,dcterms:relation,orsay:MuseeOrsay,Dublin Core Terms
+orsay:ICAMTAdaptiveReuseArticle,dcterms:subject,orsay:AdaptiveReuse,Dublin Core Terms / SKOS
+orsay:ICAMTAdaptiveReuseArticle,dcterms:publisher,orsay:ICOMICAMT,Dublin Core Terms
+orsay:ICAMTAdaptiveReuseArticle,schema:url,https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/,Schema.org
+orsay:ICOMICAMT,rdf:type,foaf:Organization,RDF / FOAF
+orsay:ICOMICAMT,rdfs:label,ARCHI-TECHS,RDFS
+orsay:ICOMICAMT,skos:altLabel,ICOM International Committee for Architecture and Museum Techniques (ICAMT),SKOS
+orsay:AdaptiveReuse,dcterms:relation,orsay:WikipediaAdaptiveReuse,Dublin Core Terms
+orsay:WikipediaAdaptiveReuse,rdf:type,schema:WebPage,RDF / Schema.org
+orsay:WikipediaAdaptiveReuse,rdf:type,bibo:Document,RDF / BIBO
+orsay:WikipediaAdaptiveReuse,dcterms:title,Adaptive reuse,Dublin Core Terms
+orsay:WikipediaAdaptiveReuse,dcterms:subject,orsay:AdaptiveReuse,Dublin Core Terms / SKOS
+orsay:WikipediaAdaptiveReuse,dcterms:publisher,orsay:WikimediaFoundation,Dublin Core Terms
+orsay:WikipediaAdaptiveReuse,schema:url,https://en.wikipedia.org/wiki/Adaptive_reuse,Schema.org
+orsay:WikimediaFoundation,rdf:type,foaf:Organization,RDF / FOAF
+orsay:WikimediaFoundation,owl:sameAs,wikidata:Q180,OWL / Wikidata
+orsay:AdaptiveReuse,dcterms:relation,orsay:AdaptiveReuseBuiltHeritageBook,Dublin Core Terms
+orsay:AdaptiveReuseBuiltHeritageBook,rdf:type,bibo:Book,RDF / BIBO
+orsay:AdaptiveReuseBuiltHeritageBook,dcterms:title,Adaptive Reuse of the Built Heritage: Concepts and Cases of an Emerging Discipline,Dublin Core Terms
+orsay:AdaptiveReuseBuiltHeritageBook,dcterms:subject,orsay:AdaptiveReuse,Dublin Core Terms / SKOS
+orsay:AdaptiveReuseBuiltHeritageBook,dcterms:creator,orsay:BiePlevoets,Dublin Core Terms
+orsay:AdaptiveReuseBuiltHeritageBook,dcterms:creator,orsay:KoenraadVanCleempoel,Dublin Core Terms
+orsay:AdaptiveReuseBuiltHeritageBook,dcterms:publisher,Routledge,Dublin Core Terms
+orsay:BiePlevoets,rdf:type,foaf:Person,RDF / FOAF
+orsay:BiePlevoets,rdfs:label,Bie Plevoets,RDFS
+orsay:KoenraadVanCleempoel,rdf:type,foaf:Person,RDF / FOAF
+orsay:KoenraadVanCleempoel,rdfs:label,Koenraad Van Cleempoel,RDFS
