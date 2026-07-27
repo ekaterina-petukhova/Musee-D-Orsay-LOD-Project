@@ -1,0 +1,214 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay> a crm:E24_Physical_Human_Made_Thing,
+        schema:LandmarksOrHistoricalBuildings ;
+    rdfs:label "Gare d’Orsay"@en ;
+    owl:sameAs <https://www.wikidata.org/entity/Q2698691> ;
+    ex:designedBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux> ;
+    ex:hasArchitecturalStyle <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style> ;
+    ex:historicalFunction "Railway station and railway hotel."@en ;
+    ex:openedFor <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900> ;
+    ex:samePhysicalBuildingDifferentFunction <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay> ;
+    ex:wasModifiedBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation> .
+
+ex:designedBy a rdf:Property ;
+    rdfs:label "designed by"@en ;
+    rdfs:subPropertyOf dcterms:creator .
+
+ex:digitallyRepresentedBy a rdf:Property ;
+    rdfs:label "digitally represented by"@en .
+
+ex:hasArchitecturalStyle a rdf:Property ;
+    rdfs:label "has architectural style"@en ;
+    rdfs:range skos:Concept .
+
+ex:historicalFunction a rdf:Property ;
+    rdfs:label "historical function"@en .
+
+ex:housesWorksBy a rdf:Property ;
+    rdfs:label "houses works by"@en .
+
+ex:interiorDesignedBy a rdf:Property ;
+    rdfs:label "interior designed by"@en ;
+    rdfs:subPropertyOf dcterms:creator .
+
+ex:isCaseOf a rdf:Property ;
+    rdfs:label "is case of"@en ;
+    rdfs:range skos:Concept .
+
+ex:openedFor a rdf:Property ;
+    rdfs:label "opened for"@en .
+
+ex:representsArtMovement a rdf:Property ;
+    rdfs:label "represents art movement"@en ;
+    rdfs:range skos:Concept .
+
+ex:resultedIn a rdf:Property ;
+    rdfs:label "resulted in"@en .
+
+ex:samePhysicalBuildingDifferentFunction a rdf:Property ;
+    rdfs:label "same physical building, different function"@en ;
+    rdfs:comment "Relates distinct historical identities or functions of the same physical building and does not imply owl:sameAs."@en .
+
+ex:wasModifiedBy a rdf:Property ;
+    rdfs:label "was modified by"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style> a skos:Concept ;
+    skos:exactMatch <https://www.wikidata.org/entity/Q1268134> ;
+    skos:prefLabel "Beaux-Arts style"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism> a skos:Concept ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300021503>,
+        <https://id.loc.gov/authorities/subjects/sh85064664>,
+        <https://www.wikidata.org/entity/Q40415> ;
+    skos:prefLabel "Impressionism"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism> a skos:Concept ;
+    skos:exactMatch <http://vocab.getty.edu/aat/300021508>,
+        <https://id.loc.gov/authorities/subjects/sh85105416>,
+        <https://www.wikidata.org/entity/Q166713> ;
+    skos:prefLabel "Post-Impressionism"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture> a crm:E73_Information_Object,
+        schema:WebSite ;
+    dcterms:publisher <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/google-arts-culture> ;
+    dcterms:title "Musée d’Orsay on Google Arts & Culture"@en ;
+    schema:url <https://artsandculture.google.com/partner/musee-dorsay-paris> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900> a crm:E5_Event ;
+    rdfs:label "Exposition Universelle of 1900"@en ;
+    dcterms:date "1900"^^xsd:gYear ;
+    owl:sameAs <https://www.wikidata.org/entity/Q753646> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation> a crm:E11_Modification,
+        crm:E5_Event ;
+    rdfs:label "Transformation of the Gare d’Orsay into the Musée d’Orsay"@en ;
+    dcterms:description """Adaptive reuse process through which the former railway station was
+            converted into the Musée d’Orsay."""@en ;
+    ex:resultedIn <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay> ;
+    schema:endDate "1986"^^xsd:gYear ;
+    schema:startDate "1977"^^xsd:gYear .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/google-arts-culture> a crm:E74_Group,
+        schema:Organization ;
+    rdfs:label "Google Arts & Culture"@en ;
+    owl:sameAs <https://www.wikidata.org/entity/Q369089> ;
+    schema:url <https://artsandculture.google.com/> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom> a crm:E74_Group,
+        schema:Organization ;
+    rdfs:label "ICOM"@en ;
+    dcterms:description "International Council of Museums."@en ;
+    owl:sameAs <https://isni.org/isni/0000000121512871>,
+        <https://viaf.org/viaf/124987637>,
+        <https://www.wikidata.org/entity/Q653054> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-image> a crm:E74_Group,
+        schema:Organization ;
+    rdfs:label "Label Image"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news> a crm:E74_Group,
+        schema:Organization ;
+    rdfs:label "Label News"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/musees-orsay-orangerie> a crm:E74_Group,
+        schema:Organization ;
+    rdfs:label "Musées d’Orsay et de l’Orangerie"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet> a crm:E21_Person,
+        foaf:Person ;
+    rdfs:label "Claude Monet"@en ;
+    owl:sameAs <http://vocab.getty.edu/ulan/500019484>,
+        <https://isni.org/isni/0000000121244328>,
+        <https://viaf.org/viaf/24605513>,
+        <https://www.wikidata.org/entity/Q296> ;
+    schema:jobTitle "Painter"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti> a crm:E21_Person,
+        foaf:Person ;
+    rdfs:label "Gae Aulenti"@en ;
+    owl:sameAs <http://vocab.getty.edu/ulan/500031019>,
+        <https://isni.org/isni/0000000078410983>,
+        <https://viaf.org/viaf/79173999>,
+        <https://www.wikidata.org/entity/Q8867> ;
+    schema:jobTitle "Architect and designer"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne> a crm:E21_Person,
+        foaf:Person ;
+    rdfs:label "Paul Cézanne"@en ;
+    owl:sameAs <http://vocab.getty.edu/ulan/500004793>,
+        <https://isni.org/isni/0000000121287379>,
+        <https://viaf.org/viaf/39374836>,
+        <https://www.wikidata.org/entity/Q35548> ;
+    schema:jobTitle "Painter"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux> a crm:E21_Person,
+        foaf:Person ;
+    rdfs:label "Victor Laloux"@en ;
+    owl:sameAs <http://vocab.getty.edu/ulan/500023967>,
+        <https://isni.org/isni/0000000071407773>,
+        <https://viaf.org/viaf/34723705>,
+        <https://www.wikidata.org/entity/Q924704> ;
+    schema:jobTitle "Architect"@en .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/adaptive-reuse-wikipedia> a crm:E73_Information_Object,
+        schema:CreativeWork ;
+    dcterms:subject <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse> ;
+    dcterms:title "Adaptive reuse"@en ;
+    schema:url <https://en.wikipedia.org/wiki/Adaptive_reuse> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse> a crm:E73_Information_Object,
+        schema:CreativeWork ;
+    dcterms:publisher <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom> ;
+    dcterms:subject <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse> ;
+    dcterms:title "Adaptive Reuse"@en ;
+    schema:url <https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis> a crm:E73_Information_Object,
+        schema:Movie ;
+    dcterms:date "2020"^^xsd:gYear ;
+    dcterms:description """This documentary explores the Musée d’Orsay through its artworks,
+            architecture, and history. It revisits the transformation of the former
+            railway station into a museum and discusses the preservation and display
+            of collections dating from 1848 to 1914."""@en ;
+    dcterms:title "Musée d’Orsay - A Great Metamorphosis"@en ;
+    schema:countryOfOrigin "France"@en ;
+    schema:duration "PT53M"^^xsd:duration ;
+    schema:isPartOf "Archi & Design"@en ;
+    schema:productionCompany <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-image>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/musees-orsay-orangerie> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay> a crm:E24_Physical_Human_Made_Thing,
+        schema:Museum ;
+    rdfs:label "Musée d’Orsay"@en ;
+    dcterms:isReferencedBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/adaptive-reuse-wikipedia>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis> ;
+    owl:sameAs <http://vocab.getty.edu/ulan/500310001>,
+        <https://isni.org/isni/0000000121572575>,
+        <https://viaf.org/viaf/130307757>,
+        <https://www.wikidata.org/entity/Q23402> ;
+    ex:digitallyRepresentedBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture> ;
+    ex:historicalFunction "Art museum occupying the former Gare d’Orsay."@en ;
+    ex:housesWorksBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne> ;
+    ex:interiorDesignedBy <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti> ;
+    ex:isCaseOf <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse> ;
+    ex:representsArtMovement <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse> a skos:Concept ;
+    dcterms:description """Reuse of an existing building for a new function while retaining
+              significant material and historical features."""@en ;
+    skos:prefLabel "Adaptive reuse"@en .
+
