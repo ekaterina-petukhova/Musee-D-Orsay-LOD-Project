@@ -244,6 +244,10 @@ def radial_layout(nodes, edges, central):
 
 def build_svg_and_data(nodes, edges, central, canvas_pad=140):
     pos, depth, max_depth = radial_layout(nodes, edges, central)
+    return build_svg_and_data_from_pos(nodes, edges, pos, depth, canvas_pad=canvas_pad)
+
+
+def build_svg_and_data_from_pos(nodes, edges, pos, depth, canvas_pad=140):
 
     max_r = max(math.hypot(x, y) for x, y in pos.values()) if pos else 0
     half = max_r + canvas_pad
