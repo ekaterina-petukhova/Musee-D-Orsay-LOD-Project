@@ -1,0 +1,64 @@
+﻿source,predicate,target,source_type,target_type,relation_type,description
+Transformation of Gare d’Orsay into Musée d’Orsay,focuses on former state,Gare d’Orsay,Topic,Building,primary,The former railway station before its transformation.
+Transformation of Gare d’Orsay into Musée d’Orsay,focuses on resulting institution,Musée d’Orsay,Topic,Museum,primary,The museum created inside the former railway station.
+Transformation of Gare d’Orsay into Musée d’Orsay,centres on,Orsay transformation,Topic,Transformation event,primary,The adaptive-reuse process connecting the former station and the museum.
+Transformation of Gare d’Orsay into Musée d’Orsay,is interpreted through,Adaptive reuse,Topic,Concept,primary,The central theoretical concept of the project.
+Gare d’Orsay,was modified through,Orsay transformation,Building,Transformation event,primary,The former station was altered through the museum conversion project.
+Orsay transformation,resulted in,Musée d’Orsay,Transformation event,Museum,primary,The transformation produced the museum in its current function.
+Gare d’Orsay,"same physical building, different function",Musée d’Orsay,Building,Museum,primary,The station and museum represent different historical functions of the same structure.
+Orsay transformation,is an example of,Adaptive reuse,Transformation event,Concept,conceptual,The conversion is interpreted as adaptive reuse.
+Musée d’Orsay,is a case of,Adaptive reuse,Museum,Concept,conceptual,The museum is a well-known adaptive-reuse case.
+Gare d’Orsay,designed by,Victor Laloux,Building,Person,historical,Victor Laloux designed the original station.
+Gare d’Orsay,opened for,Exposition Universelle of 1900,Building,Event,historical,The station opened for the 1900 world's fair.
+Gare d’Orsay,has architectural style,Beaux-Arts style,Building,Concept,classification,The station is associated with the Beaux-Arts architectural style.
+Musée d’Orsay,interior designed by,Gae Aulenti,Museum,Person,historical,Gae Aulenti designed the museum interior.
+Musée d’Orsay,houses works by,Claude Monet,Museum,Person,collection,The museum holds works by Claude Monet.
+Musée d’Orsay,houses works by,Paul Cézanne,Museum,Person,collection,The museum holds works by Paul Cézanne.
+Musée d’Orsay,represents art movement,Impressionism,Museum,Concept,classification,Impressionism is strongly represented in the museum collections.
+Musée d’Orsay,represents art movement,Post-Impressionism,Museum,Concept,classification,Post-Impressionism is strongly represented in the museum collections.
+Musée d’Orsay,is represented in,Musée d’Orsay – A Great Metamorphosis,Museum,Documentary,representation,A documentary represents the museum and its transformation.
+Musée d’Orsay,digitally represented by,Musée d’Orsay on Google Arts & Culture,Museum,Digital resource,representation,The museum is represented through a Google Arts & Culture resource.
+Musée d’Orsay,is referenced by,Adaptive reuse (Wikipedia),Museum,Reference,reference,The museum is mentioned in the Wikipedia article on adaptive reuse.
+Musée d’Orsay,is referenced by,ICOM ICAMT: Adaptive Reuse,Museum,Reference,reference,The museum is discussed by ICOM as an adaptive-reuse example.
+Adaptive reuse (Wikipedia),discusses,Adaptive reuse,Reference,Concept,subject,The page provides a general explanation of adaptive reuse.
+ICOM ICAMT: Adaptive Reuse,discusses,Adaptive reuse,Reference,Concept,subject,The ICOM page discusses adaptive reuse in museum architecture.
+Musée d’Orsay on Google Arts & Culture,provided by,Google Arts & Culture,Digital resource,Organization,publisher,Google Arts & Culture provides the digital museum resource.
+ICOM ICAMT: Adaptive Reuse,published by,ICOM,Reference,Organization,publisher,ICOM publishes the adaptive-reuse reference page.
+Musée d’Orsay – A Great Metamorphosis,produced by,Label News,Documentary,Organization,production,Label News is listed as a documentary producer.
+Musée d’Orsay – A Great Metamorphosis,produced by,Label Image,Documentary,Organization,production,Label Image is listed as a documentary producer.
+Musée d’Orsay – A Great Metamorphosis,produced by,Musées d’Orsay et de l’Orangerie,Documentary,Organization,production,The museum organization is listed as a documentary producer.
+Musée d’Orsay – A Great Metamorphosis,has series,Archi & Design,Documentary,Literal,metadata,Series title.
+Musée d’Orsay – A Great Metamorphosis,has duration,53 minutes,Documentary,Literal,metadata,Documentary duration.
+Musée d’Orsay – A Great Metamorphosis,has year,2020,Documentary,Literal,metadata,Documentary release year.
+Musée d’Orsay – A Great Metamorphosis,has country,France,Documentary,Literal,metadata,Country of origin.
+Victor Laloux,identified by,Wikidata record for Victor Laloux,Person,Authority record,authority,External identity link.
+Victor Laloux,identified by,VIAF record for Victor Laloux,Person,Authority record,authority,External authority link.
+Victor Laloux,identified by,ISNI record for Victor Laloux,Person,Authority record,authority,External authority link.
+Victor Laloux,identified by,Getty ULAN record for Victor Laloux,Person,Authority record,authority,External authority link.
+Gae Aulenti,identified by,Wikidata record for Gae Aulenti,Person,Authority record,authority,External identity link.
+Gae Aulenti,identified by,VIAF record for Gae Aulenti,Person,Authority record,authority,External authority link.
+Gae Aulenti,identified by,ISNI record for Gae Aulenti,Person,Authority record,authority,External authority link.
+Gae Aulenti,identified by,Getty ULAN record for Gae Aulenti,Person,Authority record,authority,External authority link.
+Claude Monet,identified by,Wikidata record for Claude Monet,Person,Authority record,authority,External identity link.
+Claude Monet,identified by,VIAF record for Claude Monet,Person,Authority record,authority,External authority link.
+Claude Monet,identified by,ISNI record for Claude Monet,Person,Authority record,authority,External authority link.
+Claude Monet,identified by,Getty ULAN record for Claude Monet,Person,Authority record,authority,External authority link.
+Paul Cézanne,identified by,Wikidata record for Paul Cézanne,Person,Authority record,authority,External identity link.
+Paul Cézanne,identified by,VIAF record for Paul Cézanne,Person,Authority record,authority,External authority link.
+Paul Cézanne,identified by,ISNI record for Paul Cézanne,Person,Authority record,authority,External authority link.
+Paul Cézanne,identified by,Getty ULAN record for Paul Cézanne,Person,Authority record,authority,External authority link.
+Musée d’Orsay,identified by,Wikidata record for Musée d’Orsay,Museum,Authority record,authority,External identity link.
+Musée d’Orsay,identified by,VIAF record for Musée d’Orsay,Museum,Authority record,authority,External authority link.
+Musée d’Orsay,identified by,ISNI record for Musée d’Orsay,Museum,Authority record,authority,External authority link.
+Musée d’Orsay,identified by,Getty ULAN record for Musée d’Orsay,Museum,Authority record,authority,External authority link.
+ICOM,identified by,Wikidata record for ICOM,Organization,Authority record,authority,External identity link.
+ICOM,identified by,VIAF record for ICOM,Organization,Authority record,authority,External authority link.
+ICOM,identified by,ISNI record for ICOM,Organization,Authority record,authority,External authority link.
+Impressionism,classified by,Wikidata concept for Impressionism,Concept,Authority concept,authority,External concept mapping.
+Impressionism,classified by,Getty AAT concept for Impressionism,Concept,Authority concept,authority,External concept mapping.
+Impressionism,classified by,LCSH concept for Impressionism,Concept,Authority concept,authority,External concept mapping.
+Post-Impressionism,classified by,Wikidata concept for Post-Impressionism,Concept,Authority concept,authority,External concept mapping.
+Post-Impressionism,classified by,Getty AAT concept for Post-Impressionism,Concept,Authority concept,authority,External concept mapping.
+Post-Impressionism,classified by,LCSH concept for Post-Impressionism,Concept,Authority concept,authority,External concept mapping.
+Beaux-Arts style,classified by,Wikidata concept for Beaux-Arts architecture,Concept,Authority concept,authority,External concept mapping.
+Adaptive reuse,classified by,Wikidata concept for adaptive reuse,Concept,Authority concept,authority,External concept mapping.

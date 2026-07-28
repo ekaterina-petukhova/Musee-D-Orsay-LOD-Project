@@ -1,0 +1,77 @@
+﻿source,predicate,target,source_type,target_type,relation_type,description
+Transformation of Gare d’Orsay into Musée d’Orsay,models physical structure as,crm:E24_Physical_Human_Made_Thing,Topic,Class,primary,CIDOC CRM class for the physical station/building.
+Transformation of Gare d’Orsay into Musée d’Orsay,models transformation as,crm:E11_Modification,Topic,Class,primary,CIDOC CRM class for the transformation event.
+Transformation of Gare d’Orsay into Musée d’Orsay,models resulting institution as,schema:Museum,Topic,Class,primary,Schema.org class for the museum.
+Transformation of Gare d’Orsay into Musée d’Orsay,uses central concept class,skos:Concept,Topic,Class,primary,"SKOS class for adaptive reuse, styles and art movements."
+crm:E24_Physical_Human_Made_Thing,ex:designedBy,crm:E21_Person,Class,Class,object property,Connects a building to its architect.
+crm:E24_Physical_Human_Made_Thing,ex:openedFor,crm:E5_Event,Class,Class,object property,Connects a building to the event for which it opened.
+crm:E24_Physical_Human_Made_Thing,ex:hasArchitecturalStyle,skos:Concept,Class,Class,object property,Connects a building to an architectural style concept.
+crm:E24_Physical_Human_Made_Thing,ex:wasModifiedBy,crm:E11_Modification,Class,Class,object property,Connects the former station to the transformation event.
+crm:E11_Modification,rdfs:subClassOf,crm:E5_Event,Class,Class,class relation,A modification is modeled as a type of event.
+crm:E11_Modification,ex:resultedIn,schema:Museum,Class,Class,object property,Connects the transformation event to the resulting museum.
+crm:E24_Physical_Human_Made_Thing,ex:samePhysicalBuildingDifferentFunction,schema:Museum,Class,Class,object property,Represents continuity of the physical building across functions.
+schema:Museum,ex:interiorDesignedBy,crm:E21_Person,Class,Class,object property,Connects a museum to its interior designer.
+schema:Museum,ex:housesWorksBy,crm:E21_Person,Class,Class,object property,Connects a museum to artists represented in its collections.
+schema:Museum,ex:representsArtMovement,skos:Concept,Class,Class,object property,Connects a museum to an artistic movement.
+schema:Museum,ex:isCaseOf,skos:Concept,Class,Class,object property,Connects a museum to the adaptive-reuse concept.
+schema:Museum,dcterms:isReferencedBy,schema:Movie,Class,Class,object property,Connects the museum to a documentary.
+schema:Museum,dcterms:isReferencedBy,schema:CreativeWork,Class,Class,object property,Connects the museum to reference pages.
+schema:Museum,ex:digitallyRepresentedBy,schema:WebSite,Class,Class,object property,Connects the museum to its digital representation.
+schema:Movie,rdf:type,crm:E73_Information_Object,Class,Class,typing,The documentary is also modeled as an information object.
+schema:WebSite,rdf:type,crm:E73_Information_Object,Class,Class,typing,The website is also modeled as an information object.
+schema:CreativeWork,rdf:type,crm:E73_Information_Object,Class,Class,typing,Reference pages are also information objects.
+schema:Movie,schema:productionCompany,schema:Organization,Class,Class,object property,Connects a documentary to a production organization.
+schema:WebSite,dcterms:publisher,schema:Organization,Class,Class,object property,Connects a website to its provider.
+schema:CreativeWork,dcterms:publisher,schema:Organization,Class,Class,object property,Connects a reference work to its publisher.
+schema:CreativeWork,dcterms:subject,skos:Concept,Class,Class,object property,Connects a reference resource to its subject concept.
+schema:Organization,rdf:type,crm:E74_Group,Class,Class,typing,Organizations can also be typed as CIDOC CRM groups.
+crm:E21_Person,rdf:type,foaf:Person,Class,Class,typing,People can additionally be typed with FOAF.
+schema:Movie,dcterms:date,xsd:gYear,Class,Datatype,datatype property,Year of documentary production or release.
+schema:Movie,schema:duration,xsd:duration,Class,Datatype,Documentary duration.
+schema:Movie,schema:countryOfOrigin,xsd:string,Class,Datatype,Country of origin as a textual literal.
+schema:Movie,schema:name,xsd:string,Class,Datatype,Documentary title.
+schema:CreativeWork,dcterms:title,xsd:string,Class,Datatype,Title of a reference resource.
+schema:CreativeWork,dcterms:description,xsd:string,Class,Datatype,Textual description of a resource.
+skos:Concept,skos:prefLabel,xsd:string,Class,Datatype,Preferred label of a concept.
+crm:E21_Person,rdfs:label,xsd:string,Class,Datatype,Human-readable label of a person.
+schema:Museum,rdfs:label,xsd:string,Class,Datatype,Human-readable label of the museum.
+crm:E24_Physical_Human_Made_Thing,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+crm:E21_Person,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+crm:E5_Event,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+crm:E11_Modification,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+crm:E73_Information_Object,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+crm:E74_Group,defined in,CIDOC CRM,Class,Vocabulary,vocabulary reuse,Reused CIDOC CRM class.
+schema:Museum,defined in,Schema.org,Class,Vocabulary,vocabulary reuse,Reused Schema.org class.
+schema:Movie,defined in,Schema.org,Class,Vocabulary,vocabulary reuse,Reused Schema.org class.
+schema:WebSite,defined in,Schema.org,Class,Vocabulary,vocabulary reuse,Reused Schema.org class.
+schema:CreativeWork,defined in,Schema.org,Class,Vocabulary,vocabulary reuse,Reused Schema.org class.
+schema:Organization,defined in,Schema.org,Class,Vocabulary,vocabulary reuse,Reused Schema.org class.
+skos:Concept,defined in,SKOS,Class,Vocabulary,vocabulary reuse,Reused SKOS class.
+foaf:Person,defined in,FOAF,Class,Vocabulary,vocabulary reuse,Reused FOAF class.
+dcterms:isReferencedBy,defined in,Dublin Core Terms,Property,Vocabulary,vocabulary reuse,Reused DCTerms property.
+dcterms:publisher,defined in,Dublin Core Terms,Property,Vocabulary,vocabulary reuse,Reused DCTerms property.
+dcterms:subject,defined in,Dublin Core Terms,Property,Vocabulary,vocabulary reuse,Reused DCTerms property.
+owl:sameAs,defined in,OWL,Property,Vocabulary,vocabulary reuse,Reused OWL identity property.
+skos:exactMatch,defined in,SKOS,Property,Vocabulary,vocabulary reuse,Reused SKOS mapping property.
+rdfs:subClassOf,defined in,RDFS,Property,Vocabulary,vocabulary reuse,Reused RDFS class relation.
+rdf:type,defined in,RDF,Property,Vocabulary,vocabulary reuse,Reused RDF typing property.
+ex:designedBy,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:openedFor,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:hasArchitecturalStyle,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:wasModifiedBy,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:resultedIn,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:interiorDesignedBy,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:housesWorksBy,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:representsArtMovement,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:isCaseOf,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:digitallyRepresentedBy,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+ex:samePhysicalBuildingDifferentFunction,rdf:type,owl:ObjectProperty,Project property,OWL class,property declaration,Project-specific object property.
+crm:E21_Person,owl:sameAs,Wikidata person entity,Class,External authority class,authority mapping,Instances may link to Wikidata identities.
+crm:E21_Person,owl:sameAs,VIAF authority record,Class,External authority class,authority mapping,Instances may link to VIAF identities.
+crm:E21_Person,owl:sameAs,ISNI authority record,Class,External authority class,authority mapping,Instances may link to ISNI identities.
+crm:E21_Person,owl:sameAs,Getty ULAN record,Class,External authority class,authority mapping,Instances may link to Getty ULAN identities.
+schema:Museum,owl:sameAs,Wikidata museum entity,Class,External authority class,authority mapping,Museum instances may link to Wikidata.
+schema:Organization,owl:sameAs,Wikidata organization entity,Class,External authority class,authority mapping,Organization instances may link to Wikidata.
+skos:Concept,skos:exactMatch,Wikidata concept entity,Class,External authority concept,authority mapping,Concept instances may map to Wikidata concepts.
+skos:Concept,skos:exactMatch,Getty AAT concept,Class,External authority concept,authority mapping,Concept instances may map to Getty AAT.
+skos:Concept,skos:exactMatch,LCSH concept,Class,External authority concept,authority mapping,Concept instances may map to LCSH.
