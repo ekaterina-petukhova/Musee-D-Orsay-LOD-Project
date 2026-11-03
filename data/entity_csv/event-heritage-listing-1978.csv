@@ -1,0 +1,7 @@
+subject,predicate,object
+project:event/heritage-listing-1978,dcterms:date,"""1978""^^xsd:gYear"
+project:event/heritage-listing-1978,dcterms:description,"""The station was finally listed as a Historic Monument in 1978.""@en"
+project:event/heritage-listing-1978,crm:P4_has_time_span,project:time/1978
+project:event/heritage-listing-1978,rdf:type,crm:E5_Event
+project:event/heritage-listing-1978,rdfs:label,"""Historic Monument listing of Gare d’Orsay""@en"
+project:event/heritage-listing-1978,ex:concerns,project:object/gare-dorsay

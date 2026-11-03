@@ -1,0 +1,5 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900>,dcterms:date,"""1900""^^xsd:gYear"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900>,owl:sameAs,<https://www.wikidata.org/entity/Q753646>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900>,rdf:type,crm:E5_Event
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900>,rdfs:label,"""Exposition Universelle of 1900""@en"

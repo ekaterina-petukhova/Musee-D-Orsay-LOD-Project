@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>From Railway Station to Museum: The Story of the Musée d’Orsay</title>
+        <subtitle>A Case of Cultural Heritage Transformation</subtitle>
+        <author>Ekaterina Petukhova</author>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>University of Bologna – Digital Humanities</publisher>
+        <date when="2026-10-19">19 October 2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Wikipedia source text: CC BY-SA 4.0; TEI annotation and accompanying research separately authored</licence>
+        </availability>
+      </publicationStmt>
+
+      <sourceDesc>
+        <bibl type="sourceReference">
+          <title>Gare d’Orsay</title>
+          <publisher>Wikipedia</publisher>
+          <ptr target="https://en.wikipedia.org/wiki/Gare_d%27Orsay"/>
+        </bibl>
+        <bibl type="sourceReference">
+          <title>Musée d’Orsay</title>
+          <publisher>Wikipedia</publisher>
+          <ptr target="https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>
+          This TEI document encodes a Linked Open Data project about the transformation
+          of the Gare d’Orsay into the Musée d’Orsay. It annotates people, places,
+          events, concepts, organizations, bibliographic references, digital resources,
+          and relations between them.
+        </p>
+        <p>
+          The Gare d’Orsay and the Musée d’Orsay are modeled as distinct historical
+          entities. They refer to the same physical structure in different periods and
+          with different functions. Therefore, they are connected through an adaptive
+          reuse event and are not declared identical with owl:sameAs.
+        </p>
+      <p>The running text consists of selected verbatim paragraphs from https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay retrieved on 2026-10-19. The standOff bibliography and semantic relations may additionally model enriched entities not mentioned in these paragraphs. Source is attributed under CC BY-SA 4.0.</p></projectDesc>
+
+      <listPrefixDef>
+        <prefixDef ident="project" matchPattern="(.+)" replacementPattern="https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/$1"/>
+        <prefixDef ident="wikidata" matchPattern="(.+)" replacementPattern="https://www.wikidata.org/entity/$1"/>
+        <prefixDef ident="viaf" matchPattern="(.+)" replacementPattern="https://viaf.org/viaf/$1"/>
+        <prefixDef ident="isni" matchPattern="(.+)" replacementPattern="https://isni.org/isni/$1"/>
+        <prefixDef ident="gettyulan" matchPattern="(.+)" replacementPattern="http://vocab.getty.edu/ulan/$1"/>
+        <prefixDef ident="gettyaat" matchPattern="(.+)" replacementPattern="http://vocab.getty.edu/aat/$1"/>
+        <prefixDef ident="loc" matchPattern="(.+)" replacementPattern="https://id.loc.gov/authorities/$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+
+    <profileDesc>
+      <particDesc>
+        <listPerson>
+          <person xml:id="victorLaloux">
+            <persName>Victor Laloux</persName>
+            <occupation>Architect</occupation>
+            <idno type="project">project:person/victor-laloux</idno>
+            <idno type="wikidata">wikidata:Q924704</idno>
+            <idno type="viaf">viaf:34723705</idno>
+            <idno type="isni">isni:0000000071407773</idno>
+            <idno type="gettyulan">gettyulan:500023967</idno>
+          </person>
+
+          <person xml:id="gaeAulenti">
+            <persName>Gae Aulenti</persName>
+            <occupation>Architect and designer</occupation>
+            <idno type="project">project:person/gae-aulenti</idno>
+            <idno type="wikidata">wikidata:Q8867</idno>
+            <idno type="viaf">viaf:79173999</idno>
+            <idno type="isni">isni:0000000078410983</idno>
+            <idno type="gettyulan">gettyulan:500031019</idno>
+          </person>
+
+          <person xml:id="claudeMonet">
+            <persName>Claude Monet</persName>
+            <occupation>Painter</occupation>
+            <idno type="project">project:person/claude-monet</idno>
+            <idno type="wikidata">wikidata:Q296</idno>
+            <idno type="viaf">viaf:24605513</idno>
+            <idno type="isni">isni:0000000121244328</idno>
+            <idno type="gettyulan">gettyulan:500019484</idno>
+          </person>
+
+          <person xml:id="paulCezanne">
+            <persName>Paul Cézanne</persName>
+            <occupation>Painter</occupation>
+            <idno type="project">project:person/paul-cezanne</idno>
+            <idno type="wikidata">wikidata:Q35548</idno>
+            <idno type="viaf">viaf:39374836</idno>
+            <idno type="isni">isni:0000000121287379</idno>
+            <idno type="gettyulan">gettyulan:500004793</idno>
+          </person>
+        </listPerson>
+      </particDesc>
+
+      <settingDesc>
+        <listPlace>
+          <place xml:id="gareOrsay" type="building">
+            <placeName>Gare d’Orsay</placeName>
+            <idno type="project">project:object/gare-dorsay</idno>
+            <idno type="wikidata">wikidata:Q2698691</idno>
+            <state type="function">
+              <desc>Railway station and railway hotel.</desc>
+            </state>
+          </place>
+
+          <place xml:id="museeOrsay" type="museum">
+            <placeName>Musée d’Orsay</placeName>
+            <idno type="project">project:object/musee-dorsay</idno>
+            <idno type="wikidata">wikidata:Q23402</idno>
+            <idno type="viaf">viaf:130307757</idno>
+            <idno type="isni">isni:0000000121572575</idno>
+            <idno type="gettyulan">gettyulan:500310001</idno>
+            <state type="function">
+              <desc>Art museum occupying the former Gare d’Orsay.</desc>
+            </state>
+          </place>
+        </listPlace>
+      </settingDesc>
+
+      <textClass>
+        <keywords scheme="subjects">
+          <term xml:id="impressionism">
+            <term>Impressionism</term>
+            <idno type="project">project:concept/impressionism</idno>
+            <idno type="wikidata">wikidata:Q40415</idno>
+            <idno type="gettyaat">gettyaat:300021503</idno>
+            <idno type="loc">loc:subjects/sh85064664</idno>
+          </term>
+
+          <term xml:id="postImpressionism">
+            <term>Post-Impressionism</term>
+            <idno type="project">project:concept/post-impressionism</idno>
+            <idno type="wikidata">wikidata:Q166713</idno>
+            <idno type="gettyaat">gettyaat:300021508</idno>
+            <idno type="loc">loc:subjects/sh85105416</idno>
+          </term>
+
+          <term xml:id="beauxArtsStyle">
+            <term>Beaux-Arts style</term>
+            <idno type="project">project:concept/beaux-arts-style</idno>
+            <idno type="wikidata">wikidata:Q1268134</idno>
+          </term>
+
+          <term xml:id="adaptiveReuse">
+            <term>Adaptive reuse</term>
+            <idno type="project">project:concept/adaptive-reuse</idno>
+            <note>
+              Reuse of an existing building for a new function while retaining
+              significant material and historical features.
+            </note>
+          </term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2026-07-27">
+        Revised TEI encoding with separate organization and digital-resource entities,
+        an expanded documentary record, and corrected entity relations.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+  <standOff>
+    <listEvent>
+        <event xml:id="expo1900">
+          <label>Exposition Universelle of 1900</label>
+          <date when="1900">1900</date>
+          <idno type="project">project:event/exposition-universelle-1900</idno>
+          <idno type="wikidata">wikidata:Q753646</idno>
+        </event>
+
+        <event xml:id="orsayTransformation" type="adaptiveReuse">
+          <label>Transformation of the Gare d’Orsay into the Musée d’Orsay</label>
+          <date from="1977" to="1986">1977–1986</date>
+          <idno type="project">project:event/orsay-transformation</idno>
+          <desc>
+            Adaptive reuse process through which the former railway station was
+            converted into the Musée d’Orsay.
+          </desc>
+        </event>
+      <event xml:id="heritageListing1978"><label>Historic Monument listing of Gare d’Orsay</label><date when="1978">1978</date><idno type="project">project:event/heritage-listing-1978</idno><desc>The station was finally listed as a Historic Monument in 1978.</desc></event><event xml:id="museumCompetition1978"><label>Musée d’Orsay design competition</label><date when="1978">1978</date><idno type="project">project:event/museum-design-competition-1978</idno><desc>A competition was organized in 1978 to design the new museum.</desc></event><event xml:id="aulentiSelection1981"><label>Selection of Gae Aulenti for museum interior design</label><date when="1981">1981</date><idno type="project">project:event/aulenti-selection-1981</idno><desc>In 1981, Gae Aulenti was chosen to design the museum interior.</desc></event><event xml:id="museumOpening1986"><label>Opening of Musée d’Orsay</label><date when="1986">1986</date><idno type="project">project:event/museum-opening-1986</idno><desc>The museum officially opened in December 1986.</desc></event></listEvent>
+
+      <listOrg>
+        <org xml:id="icom">
+          <orgName>ICOM</orgName>
+          <idno type="project">project:organization/icom</idno>
+          <idno type="wikidata">wikidata:Q653054</idno>
+          <idno type="viaf">viaf:124987637</idno>
+          <idno type="isni">isni:0000000121512871</idno>
+          <note>International Council of Museums.</note>
+        </org>
+
+        <org xml:id="labelNews">
+          <orgName>Label News</orgName>
+          <idno type="project">project:organization/label-news</idno>
+        </org>
+
+        <org xml:id="labelImage">
+          <orgName>Label Image</orgName>
+          <idno type="project">project:organization/label-image</idno>
+        </org>
+
+        <org xml:id="museesOrsayOrangerie">
+          <orgName>Musées d’Orsay et de l’Orangerie</orgName>
+          <idno type="project">project:organization/musees-orsay-orangerie</idno>
+        </org>
+      </listOrg>
+
+      <listBibl>
+      <bibl xml:id="googleArtsCulture" type="digitalPlatform"><title>Google Arts &amp; Culture</title><idno type="project">project:platform/google-arts-culture</idno><idno type="wikidata">wikidata:Q369089</idno><ref target="https://artsandculture.google.com/">Platform website</ref><note>Google Arts &amp; Culture is a digital cultural platform, not a separate organization.</note></bibl><bibl xml:id="greatMetamorphosis" type="documentary">
+        <title level="m">Musée d’Orsay - A Great Metamorphosis</title>
+        <idno type="project">project:reference/musee-dorsay-great-metamorphosis</idno>
+        <date when="2020">2020</date>
+        <country key="FR">France</country>
+        <extent>
+          <measure unit="minute" quantity="53">53 minutes</measure>
+        </extent>
+        <respStmt>
+          <resp>produced by</resp>
+          <orgName ref="#labelNews">Label News</orgName>
+          <orgName ref="#labelImage">Label Image</orgName>
+          <orgName ref="#museesOrsayOrangerie">Musées d’Orsay et de l’Orangerie</orgName>
+        </respStmt>
+        <note type="series">Archi &amp; Design</note>
+        <abstract>
+          <p>
+            This documentary explores the Musée d’Orsay through its artworks,
+            architecture, and history. It revisits the transformation of the former
+            railway station into a museum and discusses the preservation and display
+            of collections dating from 1848 to 1914.
+          </p>
+        </abstract>
+      </bibl>
+
+      <bibl xml:id="googleOrsayResource" type="digitalResource">
+        <title level="m">Musée d’Orsay on Google Arts &amp; Culture</title>
+        <idno type="project">project:digital-resource/musee-dorsay-google-arts-culture</idno>
+        <respStmt>
+          <resp>hosted on</resp>
+          <name ref="#googleArtsCulture">Google Arts &amp; Culture</name></respStmt>
+        <ref target="https://artsandculture.google.com/partner/musee-dorsay-paris">
+          Musée d’Orsay on Google Arts &amp; Culture
+        </ref>
+      </bibl>
+
+      <bibl xml:id="wikipediaAdaptiveReuse" type="reference">
+        <title level="a">Adaptive reuse</title>
+        <idno type="project">project:reference/adaptive-reuse-wikipedia</idno>
+        <ref target="https://en.wikipedia.org/wiki/Adaptive_reuse">
+          Adaptive reuse – Wikipedia
+        </ref>
+      </bibl>
+
+      <bibl xml:id="icomAdaptiveReuseArticle" type="reference">
+        <title level="a">Adaptive Reuse</title>
+        <idno type="project">project:reference/icom-adaptive-reuse</idno>
+        <respStmt>
+          <resp>published by</resp>
+          <orgName ref="#icom">ICOM ICAMT</orgName>
+        </respStmt>
+        <ref target="https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/">
+          Adaptive Reuse – ICOM ICAMT
+        </ref>
+      </bibl>
+    </listBibl>
+
+    <listRelation>
+      <relation name="designedBy" active="#gareOrsay" passive="#victorLaloux"/>
+      <relation name="openedFor" active="#gareOrsay" passive="#expo1900"/>
+      <relation name="hasArchitecturalStyle" active="#gareOrsay" passive="#beauxArtsStyle"/>
+      <relation name="wasModifiedBy" active="#gareOrsay" passive="#orsayTransformation"/>
+      <relation name="resultedIn" active="#orsayTransformation" passive="#museeOrsay"/>
+      <relation name="samePhysicalBuildingDifferentFunction" active="#gareOrsay" passive="#museeOrsay"/>
+      <relation name="interiorDesignedBy" active="#museeOrsay" passive="#gaeAulenti"/>
+      <relation name="housesWorksBy" active="#museeOrsay" passive="#claudeMonet #paulCezanne"/>
+      <relation name="representsArtMovement" active="#museeOrsay" passive="#impressionism #postImpressionism"/>
+      <relation name="isCaseOf" active="#museeOrsay" passive="#adaptiveReuse"/>
+      <relation name="representedIn" active="#museeOrsay" passive="#greatMetamorphosis"/>
+      <relation name="producedBy" active="#greatMetamorphosis" passive="#labelNews #labelImage #museesOrsayOrangerie"/>
+      <relation name="digitallyRepresentedBy" active="#museeOrsay" passive="#googleOrsayResource"/>
+      <relation name="hostedOn" active="#googleOrsayResource" passive="#googleArtsCulture"/>
+      <relation name="referencedIn" active="#museeOrsay" passive="#wikipediaAdaptiveReuse #icomAdaptiveReuseArticle"/>
+      <relation name="publishedBy" active="#icomAdaptiveReuseArticle" passive="#icom"/>
+      <relation name="discussesConcept" active="#wikipediaAdaptiveReuse" passive="#adaptiveReuse"/>
+      <relation name="discussesConcept" active="#icomAdaptiveReuseArticle" passive="#adaptiveReuse"/>
+    <relation name="concerns" active="#heritageListing1978" passive="#gareOrsay"/><relation name="concerns" active="#museumCompetition1978" passive="#museeOrsay"/><relation name="concerns" active="#aulentiSelection1981" passive="#museeOrsay"/><relation name="selectedDesigner" active="#aulentiSelection1981" passive="#gaeAulenti"/><relation name="concerns" active="#museumOpening1986" passive="#museeOrsay"/></listRelation>
+  <list type="timeSpans"><item xml:id="time1900"><label>1900</label><date when="1900">1900</date><idno type="project">project:time/1900</idno></item><item xml:id="time1978"><label>1978</label><date when="1978">1978</date><idno type="project">project:time/1978</idno></item><item xml:id="time1981"><label>1981</label><date when="1981">1981</date><idno type="project">project:time/1981</idno></item><item xml:id="time1986"><label>1986</label><date when="1986">1986</date><idno type="project">project:time/1986</idno></item></list><note type="source-evidence">Additional 1978/1981/1986 historical milestones and the 1900 exposition year are evidenced in the History section of https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay (reviewed 2026-10-19). The time spans are modelling decisions and not separately named Wikipedia entities.</note></standOff>
+
+  <text>
+    <body>
+      <div type="wikipedia-article"><head>Musée d’Orsay — Wikipedia article (selected sections)</head><p>The <placeName ref="#museeOrsay">Musée d'Orsay</placeName> ( UK : / ˌ m juː z eɪ d ɔːr ˈ s eɪ / MEW -zay dor- SAY , US : / m juː ˈ z eɪ -/ mew- ZAY - ⁠ , French: [ myze dɔʁsɛ ] ; English: Orsay Museum ) is a museum in Paris, France, on the Left Bank of the Seine . It is housed in the former <placeName ref="#gareOrsay">Gare d'Orsay</placeName> , a <term ref="#beauxArtsStyle">Beaux-Arts</term> railway station built from 1898 to 1900. The museum holds mainly French art (including works by France based foreign artists) dating from 1848 to 1914, including paintings, sculptures, furniture, and photography. It houses the largest collection of <term ref="#impressionism">Impressionist</term> and <term ref="#postImpressionism">post-Impressionist</term> masterpieces in the world, by painters including Berthe Morisot , <persName ref="#claudeMonet">Claude Monet</persName> , Édouard Manet , Degas , Renoir , <persName ref="#paulCezanne">Cézanne</persName> , Seurat , Sisley , Gauguin , and van Gogh . Many of these works were held at the Galerie nationale du Jeu de Paume prior to the museum's opening in 1986. It is one of the largest art museums in Europe.</p><p>In 2022, the museum had 3.2 million visitors, up from 1.4 million in 2021. It was the sixth-most-visited art museum in the world in 2022, and second-most-visited art museum in France, after the Louvre . [ 3 ] [ 4 ]</p><p>The museum building was originally a railway station, <placeName ref="#gareOrsay">Gare d'Orsay</placeName> , located next to the Seine river. Built on the site of the Palais d'Orsay , its central location was convenient for commuting travelers. [ 5 ] The station was constructed for the Chemin de Fer de Paris à Orléans and finished in time for the 1900 <rs ref="#expo1900" type="event">Exposition Universelle</rs> to the design of three architects: Lucien Magne , Émile Bénard and <persName ref="#victorLaloux">Victor Laloux</persName> . The <placeName ref="#gareOrsay">Gare d'Orsay</placeName> design was considered to be an "anachronism". [ 6 ] The museum building is accountable to 19th-century aesthetics and construction techniques that were molded to accommodate modern life. Paris had become a modern capital city following grand changes implemented by Napoleon III and Georges-Eugène Haussmann . Architecture was thus allocated a permanent exhibition area in the museum, showcasing the new Paris opera house, and the Palais Garnier , designed by Charles Garnier and built from 1863 to 1875. At the end of the museum's central aisle, a space was dedicated to town planning, architecture and decoration. [ 7 ]</p><p>In the 1970s, work began on building a 1 km-long tunnel under the station as part of the creation of line C of the Réseau Express Régional with a new station under the old station. In 1970, permission was granted to demolish the station but Jacques Duhamel , Minister for Cultural Affairs, ruled against plans to build a new hotel in its stead. The station was put on the supplementary list of Historic Monuments and finally listed in 1978. The suggestion to turn the station into a museum came from the Directorate of the Museum of France . The idea was to build a museum that would bridge the gap between the Louvre and the National Museum of Modern Art at the Georges Pompidou Centre . The plan was accepted by Georges Pompidou and a study was commissioned in 1974. In 1978, a competition was organized to design the new museum. ACT Architecture, a team of three young architects (Pierre Colboc, Renaud Bardon and Jean-Paul Philippon), were awarded the contract which involved creating 20,000 square metres (220,000 sq ft) of new floorspace on four floors. The construction work was carried out by Bouygues . [ 8 ] In 1981, the Italian architect <persName ref="#gaeAulenti">Gae Aulenti</persName> was chosen to design the interior including the internal arrangement, decoration, furniture and fittings of the museum. The arrangement of the galleries she designed was elaborate and inhabited the three main levels that are under the museum's barrel vault atrium. On the main level of the building, a central nave was formed by the surrounding stone structures that were previously the building's train platforms. The central nave's structures break up the immense sculpture and gallery spaces and provided more organized units for viewing the art. [ 9 ]</p><p>In July 1986, the museum was ready to receive its exhibits. It took six months to install the approximately 2,000 paintings, 600 sculptures, and other works. The museum was officially opened in December 1986 by then-president François Mitterrand . At any given time about 3,000 art pieces are on display at <placeName ref="#museeOrsay">Musée d'Orsay</placeName>. Within the museum is a 1:100 scale model created by Richard Peduzzi of an aerial view of the Paris Opera and surrounding area. This model is encapsulated underneath glass flooring that visitors walk on as they proceed through the museum, allowing them to understand the city planning of Paris at the time, which has made this attraction one of the most popular within the museum. [ citation needed ]</p><p>Another exhibit within the museum is "A Passion for France: The Marlene and Spencer Hays Collection". This collection was donated by Marlene and Spencer Hays, art collectors who reside in Texas and have been collecting art since the early 1970s. In 2016 the museum complied to keeping the collection of about 600 art pieces in one collection rather than dispersed throughout other exhibits. Since World War II, France has not been donated a collection of foreign art this large. The collection favors mostly <term ref="#postImpressionism">post-impressionist</term> works. Artists featured in this collection are Bonnard, Vuillard, Maurice Denis , Odilon Redon , Aristide Maillol , André Derain , Edgar Degas , and Jean-Baptiste-Camille Corot . [ 10 ] To make room for the art that has been donated, the <placeName ref="#museeOrsay">Musée d'Orsay</placeName> is scheduled to undergo a radical transformation over a decade starting in 2020. This remodel is funded in part by an anonymous US patron who donated €20 million to a building project known as Orsay Grand Ouvert (Orsay Wide Open). The gift was made via the American Friends of the Musées d'Orsay et de l'Orangerie. [ 11 ] The projected completion date is 2026, implementing new galleries and education opportunities to endorse a conductive experience. [ 12 ]</p><p>The square next to the museum displays six bronze allegorical sculptural groups in a row, originally produced for the <rs ref="#expo1900" type="event">Exposition Universelle</rs> :</p><p>Sculpture was in high demand in the 19th century and became widely used as a way to display a person's social and political standings. The style and ideology represented by many of the sculptures were out of fashion by the mid-20th century, and the sculptures were put into storage. It wasn't until the conversion of the Orsay railway station into the <placeName ref="#museeOrsay">Musée d'Orsay</placeName> museum in the 1970s that many sculptures from the 19th century were placed on exhibit again. The substantial nave inside the new museum offered a perfect area for the display of sculptures. During the grand opening of the museum in December 1986, there were 1,200 sculptures on display, brought in from collections such as the Louvre , state loans, and the Musée du Luxembourg . The museum also obtained more than 200 sculptures before opening through donations from art connoisseurs, the lineage of artists, and people in support of the <placeName ref="#museeOrsay">Musée d'Orsay</placeName>. [ 13 ]</p><p>Since the grand opening in 1986, the museum has collected works from exchanges that other museums or institutions once showcased such as Nature Unveiling Herself Before Science by Louis-Ernest Barrias that was initially commissioned for Conservatoire des Arts et Métiers , as well as The Thinker and The Gates of Hell by Auguste Rodin . The museum also purchases specific works to fill gaps and finish the collections already in the museum such as one of the panels of Be Mysterious by Paul Gauguin , the full set of Honoré Daumier 's Célébrités du Juste Milieu , and Maturity by Camille Claudel . There are currently more than 2,200 sculptures in the <placeName ref="#museeOrsay">Musée d'Orsay</placeName>. [ 13 ]</p><p>Major sculptors represented in the collection include Alfred Barye , François Rude , Jules Cavelier , Jean-Baptiste Carpeaux , Émile-Coriolan Guillemin , Auguste Rodin , Paul Gauguin , Camille Claudel , Sarah Bernhardt , Aristide Maillol and Honoré Daumier .</p><p>It also holds collections of architecture and decorative arts, as well as photography.</p></div></body>
+  </text>
+</TEI>

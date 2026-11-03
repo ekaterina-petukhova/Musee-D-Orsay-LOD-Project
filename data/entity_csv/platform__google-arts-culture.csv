@@ -1,0 +1,6 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>,owl:sameAs,<https://www.wikidata.org/entity/Q369089>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>,rdf:type,crm:E73_Information_Object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>,rdf:type,schema:WebSite
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>,rdfs:label,"""Google Arts & Culture""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>,schema:url,<https://artsandculture.google.com/>

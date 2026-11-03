@@ -1,0 +1,9 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,dcterms:description,"""Adaptive reuse process through which the former railway station was
+            converted into the Musée d’Orsay.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,ex:resultedIn,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,rdf:type,crm:E11_Modification
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,rdf:type,crm:E5_Event
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,rdfs:label,"""Transformation of the Gare d’Orsay into the Musée d’Orsay""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,schema:endDate,"""1986""^^xsd:gYear"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>,schema:startDate,"""1977""^^xsd:gYear"

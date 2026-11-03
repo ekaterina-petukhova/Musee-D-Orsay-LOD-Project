@@ -1,0 +1,9 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,owl:sameAs,<http://vocab.getty.edu/ulan/500031019>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,owl:sameAs,<https://isni.org/isni/0000000078410983>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,owl:sameAs,<https://viaf.org/viaf/79173999>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,owl:sameAs,<https://www.wikidata.org/entity/Q8867>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,rdf:type,crm:E21_Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,rdf:type,foaf:Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,rdfs:label,"""Gae Aulenti""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>,schema:jobTitle,"""Architect and designer""@en"

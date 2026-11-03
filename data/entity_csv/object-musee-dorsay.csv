@@ -1,0 +1,19 @@
+subject,predicate,object
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/adaptive-reuse-wikipedia
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/icom-adaptive-reuse
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/musee-dorsay-great-metamorphosis
+project:object/musee-dorsay,rdf:type,crm:E24_Physical_Human_Made_Thing
+project:object/musee-dorsay,rdf:type,schema:Museum
+project:object/musee-dorsay,rdfs:label,"""Musée d’Orsay""@en"
+project:object/musee-dorsay,owl:sameAs,<http://vocab.getty.edu/ulan/500310001>
+project:object/musee-dorsay,owl:sameAs,<https://isni.org/isni/0000000121572575>
+project:object/musee-dorsay,owl:sameAs,<https://viaf.org/viaf/130307757>
+project:object/musee-dorsay,owl:sameAs,<https://www.wikidata.org/entity/Q23402>
+project:object/musee-dorsay,ex:digitallyRepresentedBy,project:digital-resource/musee-dorsay-google-arts-culture
+project:object/musee-dorsay,ex:historicalFunction,"""Art museum occupying the former Gare d’Orsay.""@en"
+project:object/musee-dorsay,ex:housesWorksBy,project:person/claude-monet
+project:object/musee-dorsay,ex:housesWorksBy,project:person/paul-cezanne
+project:object/musee-dorsay,ex:interiorDesignedBy,project:person/gae-aulenti
+project:object/musee-dorsay,ex:isCaseOf,project:concept/adaptive-reuse
+project:object/musee-dorsay,ex:representsArtMovement,project:concept/impressionism
+project:object/musee-dorsay,ex:representsArtMovement,project:concept/post-impressionism

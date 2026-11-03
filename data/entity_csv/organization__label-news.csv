@@ -1,0 +1,4 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news>,rdf:type,crm:E74_Group
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news>,rdf:type,schema:Organization
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news>,rdfs:label,"""Label News""@en"

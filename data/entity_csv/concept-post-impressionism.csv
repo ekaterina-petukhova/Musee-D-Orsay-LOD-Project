@@ -1,0 +1,6 @@
+subject,predicate,object
+project:concept/post-impressionism,rdf:type,skos:Concept
+project:concept/post-impressionism,skos:exactMatch,<http://vocab.getty.edu/aat/300021508>
+project:concept/post-impressionism,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85105416>
+project:concept/post-impressionism,skos:exactMatch,<https://www.wikidata.org/entity/Q166713>
+project:concept/post-impressionism,skos:prefLabel,"""Post-Impressionism""@en"

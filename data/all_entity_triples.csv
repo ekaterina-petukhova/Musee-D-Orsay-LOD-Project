@@ -1,0 +1,180 @@
+subject,predicate,object
+project:concept/adaptive-reuse,rdf:type,skos:Concept
+project:concept/adaptive-reuse,dcterms:description,"""Reuse of an existing building for a new function while retaining
+              significant material and historical features.""@en"
+project:concept/adaptive-reuse,skos:prefLabel,"""Adaptive reuse""@en"
+project:concept/beaux-arts-style,rdf:type,skos:Concept
+project:concept/beaux-arts-style,skos:exactMatch,<https://www.wikidata.org/entity/Q1268134>
+project:concept/beaux-arts-style,skos:prefLabel,"""Beaux-Arts style""@en"
+project:concept/impressionism,rdf:type,skos:Concept
+project:concept/impressionism,skos:exactMatch,<http://vocab.getty.edu/aat/300021503>
+project:concept/impressionism,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85064664>
+project:concept/impressionism,skos:exactMatch,<https://www.wikidata.org/entity/Q40415>
+project:concept/impressionism,skos:prefLabel,"""Impressionism""@en"
+project:concept/post-impressionism,rdf:type,skos:Concept
+project:concept/post-impressionism,skos:exactMatch,<http://vocab.getty.edu/aat/300021508>
+project:concept/post-impressionism,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85105416>
+project:concept/post-impressionism,skos:exactMatch,<https://www.wikidata.org/entity/Q166713>
+project:concept/post-impressionism,skos:prefLabel,"""Post-Impressionism""@en"
+project:digital-resource/musee-dorsay-google-arts-culture,rdf:type,crm:E73_Information_Object
+project:digital-resource/musee-dorsay-google-arts-culture,rdf:type,schema:WebPage
+project:digital-resource/musee-dorsay-google-arts-culture,dcterms:title,"""Musée d’Orsay on Google Arts & Culture""@en"
+project:digital-resource/musee-dorsay-google-arts-culture,schema:isPartOf,project:platform/google-arts-culture
+project:digital-resource/musee-dorsay-google-arts-culture,schema:url,<https://artsandculture.google.com/partner/musee-dorsay-paris>
+project:event/exposition-universelle-1900,rdf:type,crm:E5_Event
+project:event/exposition-universelle-1900,rdfs:label,"""Exposition Universelle of 1900""@en"
+project:event/exposition-universelle-1900,dcterms:date,"""1900""^^xsd:gYear"
+project:event/exposition-universelle-1900,crm:P4_has_time_span,project:time/1900
+project:event/exposition-universelle-1900,owl:sameAs,<https://www.wikidata.org/entity/Q753646>
+project:event/heritage-listing-1978,rdf:type,crm:E5_Event
+project:event/heritage-listing-1978,rdfs:label,"""Historic Monument listing of Gare d’Orsay""@en"
+project:event/heritage-listing-1978,dcterms:date,"""1978""^^xsd:gYear"
+project:event/heritage-listing-1978,dcterms:description,"""The station was finally listed as a Historic Monument in 1978.""@en"
+project:event/heritage-listing-1978,crm:P4_has_time_span,project:time/1978
+project:event/heritage-listing-1978,ex:concerns,project:object/gare-dorsay
+project:event/museum-design-competition-1978,rdf:type,crm:E5_Event
+project:event/museum-design-competition-1978,rdfs:label,"""Musée d’Orsay design competition""@en"
+project:event/museum-design-competition-1978,dcterms:date,"""1978""^^xsd:gYear"
+project:event/museum-design-competition-1978,dcterms:description,"""A competition was organized in 1978 to design the new museum.""@en"
+project:event/museum-design-competition-1978,crm:P4_has_time_span,project:time/1978
+project:event/museum-design-competition-1978,ex:concerns,project:object/musee-dorsay
+project:event/museum-opening-1986,rdf:type,crm:E5_Event
+project:event/museum-opening-1986,rdfs:label,"""Opening of Musée d’Orsay""@en"
+project:event/museum-opening-1986,dcterms:date,"""1986""^^xsd:gYear"
+project:event/museum-opening-1986,dcterms:description,"""The museum officially opened in December 1986.""@en"
+project:event/museum-opening-1986,crm:P4_has_time_span,project:time/1986
+project:event/museum-opening-1986,ex:concerns,project:object/musee-dorsay
+project:event/museum-opening-1986,ex:concludesTransformation,project:event/orsay-transformation
+project:event/aulenti-selection-1981,rdf:type,crm:E5_Event
+project:event/aulenti-selection-1981,rdfs:label,"""Selection of Gae Aulenti for museum interior design""@en"
+project:event/aulenti-selection-1981,dcterms:date,"""1981""^^xsd:gYear"
+project:event/aulenti-selection-1981,dcterms:description,"""In 1981, Gae Aulenti was chosen to design the museum interior.""@en"
+project:event/aulenti-selection-1981,crm:P4_has_time_span,project:time/1981
+project:event/aulenti-selection-1981,ex:concerns,project:object/musee-dorsay
+project:event/aulenti-selection-1981,ex:selectedDesigner,project:person/gae-aulenti
+project:event/orsay-transformation,rdf:type,crm:E11_Modification
+project:event/orsay-transformation,rdf:type,crm:E5_Event
+project:event/orsay-transformation,rdfs:label,"""Transformation of the Gare d’Orsay into the Musée d’Orsay""@en"
+project:event/orsay-transformation,dcterms:description,"""Adaptive reuse process through which the former railway station was
+            converted into the Musée d’Orsay.""@en"
+project:event/orsay-transformation,ex:resultedIn,project:object/musee-dorsay
+project:event/orsay-transformation,schema:endDate,"""1986""^^xsd:gYear"
+project:event/orsay-transformation,schema:startDate,"""1977""^^xsd:gYear"
+project:object/gare-dorsay,rdf:type,crm:E24_Physical_Human_Made_Thing
+project:object/gare-dorsay,rdf:type,schema:LandmarksOrHistoricalBuildings
+project:object/gare-dorsay,rdfs:label,"""Gare d’Orsay""@en"
+project:object/gare-dorsay,owl:sameAs,<https://www.wikidata.org/entity/Q2698691>
+project:object/gare-dorsay,ex:designedBy,project:person/victor-laloux
+project:object/gare-dorsay,ex:hasArchitecturalStyle,project:concept/beaux-arts-style
+project:object/gare-dorsay,ex:historicalFunction,"""Railway station and railway hotel.""@en"
+project:object/gare-dorsay,ex:openedFor,project:event/exposition-universelle-1900
+project:object/gare-dorsay,ex:samePhysicalBuildingDifferentFunction,project:object/musee-dorsay
+project:object/gare-dorsay,ex:wasModifiedBy,project:event/orsay-transformation
+project:object/musee-dorsay,rdf:type,crm:E24_Physical_Human_Made_Thing
+project:object/musee-dorsay,rdf:type,schema:Museum
+project:object/musee-dorsay,rdfs:label,"""Musée d’Orsay""@en"
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/adaptive-reuse-wikipedia
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/icom-adaptive-reuse
+project:object/musee-dorsay,dcterms:isReferencedBy,project:reference/musee-dorsay-great-metamorphosis
+project:object/musee-dorsay,owl:sameAs,<http://vocab.getty.edu/ulan/500310001>
+project:object/musee-dorsay,owl:sameAs,<https://isni.org/isni/0000000121572575>
+project:object/musee-dorsay,owl:sameAs,<https://viaf.org/viaf/130307757>
+project:object/musee-dorsay,owl:sameAs,<https://www.wikidata.org/entity/Q23402>
+project:object/musee-dorsay,ex:digitallyRepresentedBy,project:digital-resource/musee-dorsay-google-arts-culture
+project:object/musee-dorsay,ex:historicalFunction,"""Art museum occupying the former Gare d’Orsay.""@en"
+project:object/musee-dorsay,ex:housesWorksBy,project:person/claude-monet
+project:object/musee-dorsay,ex:housesWorksBy,project:person/paul-cezanne
+project:object/musee-dorsay,ex:interiorDesignedBy,project:person/gae-aulenti
+project:object/musee-dorsay,ex:isCaseOf,project:concept/adaptive-reuse
+project:object/musee-dorsay,ex:representsArtMovement,project:concept/impressionism
+project:object/musee-dorsay,ex:representsArtMovement,project:concept/post-impressionism
+project:organization/icom,rdf:type,crm:E74_Group
+project:organization/icom,rdf:type,schema:Organization
+project:organization/icom,rdfs:label,"""ICOM""@en"
+project:organization/icom,dcterms:description,"""International Council of Museums.""@en"
+project:organization/icom,owl:sameAs,<https://isni.org/isni/0000000121512871>
+project:organization/icom,owl:sameAs,<https://viaf.org/viaf/124987637>
+project:organization/icom,owl:sameAs,<https://www.wikidata.org/entity/Q653054>
+project:organization/label-image,rdf:type,crm:E74_Group
+project:organization/label-image,rdf:type,schema:Organization
+project:organization/label-image,rdfs:label,"""Label Image""@en"
+project:organization/label-news,rdf:type,crm:E74_Group
+project:organization/label-news,rdf:type,schema:Organization
+project:organization/label-news,rdfs:label,"""Label News""@en"
+project:organization/musees-orsay-orangerie,rdf:type,crm:E74_Group
+project:organization/musees-orsay-orangerie,rdf:type,schema:Organization
+project:organization/musees-orsay-orangerie,rdfs:label,"""Musées d’Orsay et de l’Orangerie""@en"
+project:person/claude-monet,rdf:type,crm:E21_Person
+project:person/claude-monet,rdf:type,foaf:Person
+project:person/claude-monet,rdfs:label,"""Claude Monet""@en"
+project:person/claude-monet,owl:sameAs,<http://vocab.getty.edu/ulan/500019484>
+project:person/claude-monet,owl:sameAs,<https://isni.org/isni/0000000121244328>
+project:person/claude-monet,owl:sameAs,<https://viaf.org/viaf/24605513>
+project:person/claude-monet,owl:sameAs,<https://www.wikidata.org/entity/Q296>
+project:person/claude-monet,schema:jobTitle,"""Painter""@en"
+project:person/gae-aulenti,rdf:type,crm:E21_Person
+project:person/gae-aulenti,rdf:type,foaf:Person
+project:person/gae-aulenti,rdfs:label,"""Gae Aulenti""@en"
+project:person/gae-aulenti,owl:sameAs,<http://vocab.getty.edu/ulan/500031019>
+project:person/gae-aulenti,owl:sameAs,<https://isni.org/isni/0000000078410983>
+project:person/gae-aulenti,owl:sameAs,<https://viaf.org/viaf/79173999>
+project:person/gae-aulenti,owl:sameAs,<https://www.wikidata.org/entity/Q8867>
+project:person/gae-aulenti,schema:jobTitle,"""Architect and designer""@en"
+project:person/paul-cezanne,rdf:type,crm:E21_Person
+project:person/paul-cezanne,rdf:type,foaf:Person
+project:person/paul-cezanne,rdfs:label,"""Paul Cézanne""@en"
+project:person/paul-cezanne,owl:sameAs,<http://vocab.getty.edu/ulan/500004793>
+project:person/paul-cezanne,owl:sameAs,<https://isni.org/isni/0000000121287379>
+project:person/paul-cezanne,owl:sameAs,<https://viaf.org/viaf/39374836>
+project:person/paul-cezanne,owl:sameAs,<https://www.wikidata.org/entity/Q35548>
+project:person/paul-cezanne,schema:jobTitle,"""Painter""@en"
+project:person/victor-laloux,rdf:type,crm:E21_Person
+project:person/victor-laloux,rdf:type,foaf:Person
+project:person/victor-laloux,rdfs:label,"""Victor Laloux""@en"
+project:person/victor-laloux,owl:sameAs,<http://vocab.getty.edu/ulan/500023967>
+project:person/victor-laloux,owl:sameAs,<https://isni.org/isni/0000000071407773>
+project:person/victor-laloux,owl:sameAs,<https://viaf.org/viaf/34723705>
+project:person/victor-laloux,owl:sameAs,<https://www.wikidata.org/entity/Q924704>
+project:person/victor-laloux,schema:jobTitle,"""Architect""@en"
+project:platform/google-arts-culture,rdf:type,crm:E73_Information_Object
+project:platform/google-arts-culture,rdf:type,schema:WebSite
+project:platform/google-arts-culture,rdfs:label,"""Google Arts & Culture""@en"
+project:platform/google-arts-culture,owl:sameAs,<https://www.wikidata.org/entity/Q369089>
+project:platform/google-arts-culture,schema:url,<https://artsandculture.google.com/>
+project:reference/icom-adaptive-reuse,rdf:type,crm:E73_Information_Object
+project:reference/icom-adaptive-reuse,rdf:type,schema:CreativeWork
+project:reference/icom-adaptive-reuse,dcterms:publisher,project:organization/icom
+project:reference/icom-adaptive-reuse,dcterms:subject,project:concept/adaptive-reuse
+project:reference/icom-adaptive-reuse,dcterms:title,"""Adaptive Reuse""@en"
+project:reference/icom-adaptive-reuse,schema:url,<https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/>
+project:reference/adaptive-reuse-wikipedia,rdf:type,crm:E73_Information_Object
+project:reference/adaptive-reuse-wikipedia,rdf:type,schema:CreativeWork
+project:reference/adaptive-reuse-wikipedia,dcterms:subject,project:concept/adaptive-reuse
+project:reference/adaptive-reuse-wikipedia,dcterms:title,"""Adaptive reuse""@en"
+project:reference/adaptive-reuse-wikipedia,schema:url,<https://en.wikipedia.org/wiki/Adaptive_reuse>
+project:reference/musee-dorsay-great-metamorphosis,rdf:type,crm:E73_Information_Object
+project:reference/musee-dorsay-great-metamorphosis,rdf:type,schema:Movie
+project:reference/musee-dorsay-great-metamorphosis,dcterms:date,"""2020""^^xsd:gYear"
+project:reference/musee-dorsay-great-metamorphosis,dcterms:description,"""This documentary explores the Musée d’Orsay through its artworks,
+            architecture, and history. It revisits the transformation of the former
+            railway station into a museum and discusses the preservation and display
+            of collections dating from 1848 to 1914.""@en"
+project:reference/musee-dorsay-great-metamorphosis,dcterms:title,"""Musée d’Orsay - A Great Metamorphosis""@en"
+project:reference/musee-dorsay-great-metamorphosis,schema:countryOfOrigin,"""France""@en"
+project:reference/musee-dorsay-great-metamorphosis,schema:duration,"""PT53M""^^xsd:duration"
+project:reference/musee-dorsay-great-metamorphosis,schema:isPartOf,"""Archi & Design""@en"
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/label-image
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/label-news
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/musees-orsay-orangerie
+project:time/1900,rdf:type,crm:E52_Time_Span
+project:time/1900,rdfs:label,"""1900""@en"
+project:time/1900,crm:P82_at_some_time_within,"""1900""^^xsd:gYear"
+project:time/1978,rdf:type,crm:E52_Time_Span
+project:time/1978,rdfs:label,"""1978""@en"
+project:time/1978,crm:P82_at_some_time_within,"""1978""^^xsd:gYear"
+project:time/1981,rdf:type,crm:E52_Time_Span
+project:time/1981,rdfs:label,"""1981""@en"
+project:time/1981,crm:P82_at_some_time_within,"""1981""^^xsd:gYear"
+project:time/1986,rdf:type,crm:E52_Time_Span
+project:time/1986,rdfs:label,"""1986""@en"
+project:time/1986,crm:P82_at_some_time_within,"""1986""^^xsd:gYear"

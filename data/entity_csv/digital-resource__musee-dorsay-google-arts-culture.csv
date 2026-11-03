@@ -1,0 +1,6 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>,dcterms:title,"""Musée d’Orsay on Google Arts & Culture""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>,rdf:type,crm:E73_Information_Object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>,rdf:type,schema:WebPage
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>,schema:isPartOf,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>,schema:url,<https://artsandculture.google.com/partner/musee-dorsay-paris>

@@ -1,0 +1,6 @@
+subject,predicate,object
+project:platform/google-arts-culture,rdf:type,crm:E73_Information_Object
+project:platform/google-arts-culture,rdf:type,schema:WebSite
+project:platform/google-arts-culture,rdfs:label,"""Google Arts & Culture""@en"
+project:platform/google-arts-culture,owl:sameAs,<https://www.wikidata.org/entity/Q369089>
+project:platform/google-arts-culture,schema:url,<https://artsandculture.google.com/>

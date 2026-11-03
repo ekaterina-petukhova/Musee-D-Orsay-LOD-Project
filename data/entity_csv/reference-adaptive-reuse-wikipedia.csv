@@ -1,0 +1,6 @@
+subject,predicate,object
+project:reference/adaptive-reuse-wikipedia,dcterms:subject,project:concept/adaptive-reuse
+project:reference/adaptive-reuse-wikipedia,dcterms:title,"""Adaptive reuse""@en"
+project:reference/adaptive-reuse-wikipedia,rdf:type,crm:E73_Information_Object
+project:reference/adaptive-reuse-wikipedia,rdf:type,schema:CreativeWork
+project:reference/adaptive-reuse-wikipedia,schema:url,<https://en.wikipedia.org/wiki/Adaptive_reuse>

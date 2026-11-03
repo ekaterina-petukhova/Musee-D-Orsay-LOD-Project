@@ -1,0 +1,9 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,owl:sameAs,<http://vocab.getty.edu/ulan/500023967>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,owl:sameAs,<https://isni.org/isni/0000000071407773>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,owl:sameAs,<https://viaf.org/viaf/34723705>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,owl:sameAs,<https://www.wikidata.org/entity/Q924704>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,rdf:type,crm:E21_Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,rdf:type,foaf:Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,rdfs:label,"""Victor Laloux""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>,schema:jobTitle,"""Architect""@en"

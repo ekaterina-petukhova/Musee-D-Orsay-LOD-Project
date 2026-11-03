@@ -1,0 +1,15 @@
+subject,predicate,object
+project:reference/musee-dorsay-great-metamorphosis,dcterms:date,"""2020""^^xsd:gYear"
+project:reference/musee-dorsay-great-metamorphosis,dcterms:description,"""This documentary explores the Musée d’Orsay through its artworks,
+            architecture, and history. It revisits the transformation of the former
+            railway station into a museum and discusses the preservation and display
+            of collections dating from 1848 to 1914.""@en"
+project:reference/musee-dorsay-great-metamorphosis,dcterms:title,"""Musée d’Orsay - A Great Metamorphosis""@en"
+project:reference/musee-dorsay-great-metamorphosis,rdf:type,crm:E73_Information_Object
+project:reference/musee-dorsay-great-metamorphosis,rdf:type,schema:Movie
+project:reference/musee-dorsay-great-metamorphosis,schema:countryOfOrigin,"""France""@en"
+project:reference/musee-dorsay-great-metamorphosis,schema:duration,"""PT53M""^^xsd:duration"
+project:reference/musee-dorsay-great-metamorphosis,schema:isPartOf,"""Archi & Design""@en"
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/label-image
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/label-news
+project:reference/musee-dorsay-great-metamorphosis,schema:productionCompany,project:organization/musees-orsay-orangerie

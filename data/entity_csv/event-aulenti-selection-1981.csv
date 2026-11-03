@@ -1,0 +1,8 @@
+subject,predicate,object
+project:event/aulenti-selection-1981,dcterms:date,"""1981""^^xsd:gYear"
+project:event/aulenti-selection-1981,dcterms:description,"""In 1981, Gae Aulenti was chosen to design the museum interior.""@en"
+project:event/aulenti-selection-1981,crm:P4_has_time_span,project:time/1981
+project:event/aulenti-selection-1981,rdf:type,crm:E5_Event
+project:event/aulenti-selection-1981,rdfs:label,"""Selection of Gae Aulenti for museum interior design""@en"
+project:event/aulenti-selection-1981,ex:concerns,project:object/musee-dorsay
+project:event/aulenti-selection-1981,ex:selectedDesigner,project:person/gae-aulenti

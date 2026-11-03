@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Knowledge Organization — Musée d'Orsay LOD</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="root">
+<nav>
+<div class="nav-inner">
+<a class="nav-logo" href="index.html">Musée d'Orsay<span>LOD</span></a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a class="active" href="knowledge.html">Knowledge Organization</a>
+<a href="representation.html">Knowledge Representation</a>
+<a href="methods.html">Research Methods</a><a href="team.html">Team</a>
+</div>
+<button aria-label="Menu" class="hamburger">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<line x1="3" x2="21" y1="6" y2="6"></line>
+<line x1="3" x2="21" y1="12" y2="12"></line>
+<line x1="3" x2="21" y1="18" y2="18"></line>
+</svg>
+</button>
+</div>
+<div class="mobile-menu">
+<a href="index.html">Home</a>
+<a class="active" href="knowledge.html">Knowledge Organization</a>
+<a href="representation.html">Knowledge Representation</a>
+<a href="methods.html">Research Methods</a><a href="team.html">Team</a>
+</div>
+</nav>
+<main>
+<div class="wrap">
+<span class="eyebrow">02 · Knowledge Organization</span>
+<h1 class="page-title">Knowledge <em style="color:var(--gold);font-style:italic">Organization</em></h1>
+<p class="subtitle">
+    This section presents the knowledge-organization layer of the project: a theoretical
+    model of the domain in natural language / graphic form, and its formal conceptual model
+    — a vocabulary-based conceptual schema reusing CIDOC CRM, Schema.org, FOAF, SKOS and Dublin Core Terms. See <a href="methods.html#metadata">Metadata Alignment</a> for the mapping table.
+  </p>
+<div class="tabs-scope">
+<div class="tabs">
+<button class="tab-btn active">Theoretical Model</button>
+<button class="tab-btn">Conceptual Model</button>
+<button class="tab-btn">Entity Types</button>
+</div>
+<!-- TAB 1: Theoretical Model -->
+<div class="tab-content active">
+<p class="lede">
+        A mind map of the relations between the project's central topic and the entities
+        identified in the source text. The transformation itself —
+        <strong style="color:var(--spine,#a8681a)">Gare d'Orsay → transformed into → Musée d'Orsay</strong>
+        — is drawn as the bright, heavyweight spine of the diagram: everything about the
+        station's origins and decline branches off one hero node, and everything about the
+        museum's later development branches off the other. Dashed nodes mark entities added to
+        enrich the network beyond what is explicitly named in the page.
+      </p>
+<div class="panel">
+<div class="panel-toolbar">
+<span>Theoretical Model — Mind Map</span>
+<a class="expand-link" href="diagrams/theoretical_model.html" target="_blank">Open full screen ↗</a>
+</div>
+<iframe class="model-frame" loading="lazy" src="diagrams/theoretical_model.html" title="Theoretical Model — interactive mind map"></iframe>
+</div>
+<div class="cards-grid" style="margin-top:1.5rem">
+<a class="res-card" href="diagrams/theoretical_model.html" target="_blank">
+<h3>Open full screen ↗</h3>
+<p>The interactive mind map on its own page — pan, zoom, and click nodes for details.</p>
+<span class="res-link">Open →</span>
+</a>
+<a class="res-card" download="" href="diagrams/TheoreticalModel.csv">
+<h3>TheoreticalModel.csv</h3>
+<p>The full subject / predicate / object triple table behind the mind map.</p>
+<span class="res-link">Download →</span>
+</a>
+</div>
+<div class="legend">
+<span class="item"><span class="swatch" style="border-color:#a8534f"></span>Person</span>
+<span class="item"><span class="swatch" style="border-color:#3d6d8c"></span>Place / Museum</span>
+<span class="item"><span class="swatch" style="border-color:#6b4f96"></span>Organisation</span>
+<span class="item"><span class="swatch" style="border-color:#3f7d43"></span>Event</span>
+<span class="item"><span class="swatch" style="border-color:#a8672f"></span>Concept</span>
+<span class="item"><span class="swatch" style="border-color:#5f6670"></span>Bibl. / digital resource</span>
+<span class="item"><span class="swatch" style="border-color:#8a8378"></span>Descriptive literal</span>
+<span class="item"><span class="swatch dashed" style="border-color:#b8860b"></span>Added to enrich the network</span>
+<span class="item">[WD / VIAF / ISNI / GeoNames / LCSH] = authority-control link</span>
+</div>
+</div>
+<!-- TAB 2: Conceptual Model -->
+<div class="tab-content">
+<p class="lede">
+        A Graffoo-inspired graphical schema representing the theoretical model: classes
+        reused from Schema.org, FOAF and SKOS, connected by object and datatype properties from
+        Schema.org, Dublin Core Terms and BIBO, and reconciled to external authorities via
+        <span class="mono">owl:sameAs</span> and <span class="mono">skos:exactMatch</span>.
+        The <strong style="color:var(--spine,#a8681a)">Gare d’Orsay → Musée d’Orsay</strong>
+        relation (<span class="mono">dcterms:relation</span>, standing in for
+        <span class="mono">transformedInto</span>) is drawn as the bright, heavyweight edge —
+        the one relation the whole ontology turns on.
+      </p>
+<div class="panel">
+<div class="panel-toolbar">
+<span>Conceptual Model — Graffoo / OWL</span>
+<a class="expand-link" href="diagrams/conceptual_model.html" target="_blank">Open full screen ↗</a>
+</div>
+<iframe class="model-frame" loading="lazy" src="diagrams/conceptual_model.html" title="Conceptual Model — interactive Graffoo diagram"></iframe>
+</div>
+<div class="cards-grid" style="margin-top:1.5rem">
+<a class="res-card" href="diagrams/conceptual_model.html" target="_blank">
+<h3>Open full screen ↗</h3>
+<p>The interactive Graffoo diagram on its own page — pan, zoom, and click nodes for details.</p>
+<span class="res-link">Open →</span>
+</a>
+<a class="res-card" download="" href="diagrams/ConceptualModel.csv">
+<h3>ConceptualModel.csv</h3>
+<p>A CSV description of the ontology terms and relationships shown in the diagram.</p>
+<span class="res-link">Download →</span>
+</a>
+</div>
+<div class="legend">
+<span class="item"><span class="swatch" style="border-color:#a8792a"></span>Class</span>
+<span class="item"><span class="swatch" style="border-color:#3d6d8c"></span>Object property</span>
+<span class="item"><span class="swatch" style="border-color:#3f7d43"></span>Datatype property</span>
+<span class="item"><span class="swatch" style="border-color:#5f6670"></span>External authority</span>
+<span class="item"><span class="swatch" style="border-color:#a8534f"></span>Source document</span>
+<span class="item"><span class="swatch" style="border-color:#8a8378"></span>Literal range (xsd:datatype)</span>
+<span class="item">dashed = owl:sameAs / skos:exactMatch</span>
+</div>
+</div>
+<!-- TAB 3: Entity Types -->
+<div class="tab-content">
+<p class="lede">
+        The eight entity types used across the TEI encoding and the RDF graph, each mapped to a
+        class reused from an existing vocabulary.
+      </p>
+<div class="entity-card">
+<div class="entity-badge">PER</div>
+<div>
+<h4>Person</h4>
+<p>Historical agents connected to the design, redesign, or artistic identity of the museum.</p>
+<span class="entity-ex">foaf:Person · Examples: Victor Laloux, Gae Aulenti, Claude Monet, Paul Gauguin</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">PLC</div>
+<div>
+<h4>Place</h4>
+<p>Buildings, museums and cities that anchor the narrative geographically and architecturally.</p>
+<span class="entity-ex">schema:Place (+ LandmarksOrHistoricalBuildings, Museum, City, CivicStructure) · Examples: Gare d'Orsay, Musée d'Orsay, Paris, Louvre Museum</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">ORG</div>
+<div>
+<h4>Organisation</h4>
+<p>Institutions and groups involved in the transformation or its digital afterlife.</p>
+<span class="entity-ex">foaf:Organization · Examples: ACT architecture group, Google Arts &amp; Culture</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">EVT</div>
+<div>
+<h4>Event</h4>
+<p>Historical occurrences that motivate or frame the transformation.</p>
+<span class="entity-ex">schema:Event · Examples: Exposition Universelle of 1900, opening of the Musée d'Orsay</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">CON</div>
+<div>
+<h4>Concept</h4>
+<p>Abstract categories used to classify architecture, art movements, and the transformation itself.</p>
+<span class="entity-ex">skos:Concept · Examples: Beaux-Arts style, Impressionism, Post-Impressionism, adaptive reuse</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">MOV</div>
+<div>
+<h4>Movie</h4>
+<p>A documentary included as a cultural representation of the museum beyond its institutional role.</p>
+<span class="entity-ex">schema:Movie / bibo:AudioVisualDocument · Example: One Night in Orsay Museum</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">WEB</div>
+<div>
+<h4>WebSite</h4>
+<p>A digital resource extending access to the museum beyond the physical building.</p>
+<span class="entity-ex">schema:WebSite · Example: Google Arts &amp; Culture virtual tour</span>
+</div>
+</div>
+<div class="entity-card">
+<div class="entity-badge">CW</div>
+<div>
+<h4>CreativeWork</h4>
+<p>The project itself, and other authored works referenced by it.</p>
+<span class="entity-ex">schema:CreativeWork · Example: this project, dcterms:creator → Ekaterina Petukhova</span>
+</div>
+</div>
+</div>
+</div><!-- /.tabs-scope -->
+</div>
+</main>
+<footer class="wrap">
+<div class="top">
+<div>
+<h3>From Railway Station to Museum</h3>
+<p style="color:var(--text-dim);max-width:40ch;margin-top:.6rem">
+        A Linked Open Data Project on the Musée d'Orsay.
+      </p>
+</div>
+<div class="meta">
+      Information Science &amp; Cultural Heritage · 2025–2026<br/>
+      Ekaterina Petukhova · University of Bologna
+    </div>
+</div>
+</footer>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

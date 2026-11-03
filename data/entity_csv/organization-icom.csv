@@ -1,0 +1,8 @@
+subject,predicate,object
+project:organization/icom,dcterms:description,"""International Council of Museums.""@en"
+project:organization/icom,rdf:type,crm:E74_Group
+project:organization/icom,rdf:type,schema:Organization
+project:organization/icom,rdfs:label,"""ICOM""@en"
+project:organization/icom,owl:sameAs,<https://isni.org/isni/0000000121512871>
+project:organization/icom,owl:sameAs,<https://viaf.org/viaf/124987637>
+project:organization/icom,owl:sameAs,<https://www.wikidata.org/entity/Q653054>

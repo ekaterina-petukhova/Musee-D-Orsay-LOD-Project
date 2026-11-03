@@ -1,0 +1,4 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style>,rdf:type,skos:Concept
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style>,skos:exactMatch,<https://www.wikidata.org/entity/Q1268134>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style>,skos:prefLabel,"""Beaux-Arts style""@en"

@@ -1,0 +1,9 @@
+subject,predicate,object
+project:person/victor-laloux,rdf:type,crm:E21_Person
+project:person/victor-laloux,rdf:type,foaf:Person
+project:person/victor-laloux,rdfs:label,"""Victor Laloux""@en"
+project:person/victor-laloux,owl:sameAs,<http://vocab.getty.edu/ulan/500023967>
+project:person/victor-laloux,owl:sameAs,<https://isni.org/isni/0000000071407773>
+project:person/victor-laloux,owl:sameAs,<https://viaf.org/viaf/34723705>
+project:person/victor-laloux,owl:sameAs,<https://www.wikidata.org/entity/Q924704>
+project:person/victor-laloux,schema:jobTitle,"""Architect""@en"

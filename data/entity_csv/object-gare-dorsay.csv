@@ -1,0 +1,11 @@
+subject,predicate,object
+project:object/gare-dorsay,rdf:type,crm:E24_Physical_Human_Made_Thing
+project:object/gare-dorsay,rdf:type,schema:LandmarksOrHistoricalBuildings
+project:object/gare-dorsay,rdfs:label,"""Gare d’Orsay""@en"
+project:object/gare-dorsay,owl:sameAs,<https://www.wikidata.org/entity/Q2698691>
+project:object/gare-dorsay,ex:designedBy,project:person/victor-laloux
+project:object/gare-dorsay,ex:hasArchitecturalStyle,project:concept/beaux-arts-style
+project:object/gare-dorsay,ex:historicalFunction,"""Railway station and railway hotel.""@en"
+project:object/gare-dorsay,ex:openedFor,project:event/exposition-universelle-1900
+project:object/gare-dorsay,ex:samePhysicalBuildingDifferentFunction,project:object/musee-dorsay
+project:object/gare-dorsay,ex:wasModifiedBy,project:event/orsay-transformation

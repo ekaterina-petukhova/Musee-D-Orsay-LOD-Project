@@ -1,0 +1,4 @@
+subject,predicate,object
+project:time/1986,crm:P82_at_some_time_within,"""1986""^^xsd:gYear"
+project:time/1986,rdf:type,crm:E52_Time_Span
+project:time/1986,rdfs:label,"""1986""@en"

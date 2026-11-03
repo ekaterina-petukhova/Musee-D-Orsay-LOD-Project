@@ -1,0 +1,6 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,rdf:type,skos:Concept
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,skos:exactMatch,<http://vocab.getty.edu/aat/300021503>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85064664>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,skos:exactMatch,<https://www.wikidata.org/entity/Q40415>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>,skos:prefLabel,"""Impressionism""@en"

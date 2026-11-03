@@ -1,0 +1,4 @@
+subject,predicate,object
+project:organization/label-news,rdf:type,crm:E74_Group
+project:organization/label-news,rdf:type,schema:Organization
+project:organization/label-news,rdfs:label,"""Label News""@en"

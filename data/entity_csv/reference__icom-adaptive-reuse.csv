@@ -1,0 +1,7 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,dcterms:publisher,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,dcterms:subject,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,dcterms:title,"""Adaptive Reuse""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,rdf:type,crm:E73_Information_Object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,rdf:type,schema:CreativeWork
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>,schema:url,<https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/>

@@ -1,0 +1,19 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,dcterms:isReferencedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/adaptive-reuse-wikipedia>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,dcterms:isReferencedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,dcterms:isReferencedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:digitallyRepresentedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:historicalFunction,"""Art museum occupying the former Gare d’Orsay.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:housesWorksBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:housesWorksBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:interiorDesignedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:isCaseOf,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:representsArtMovement,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,ex:representsArtMovement,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,owl:sameAs,<http://vocab.getty.edu/ulan/500310001>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,owl:sameAs,<https://isni.org/isni/0000000121572575>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,owl:sameAs,<https://viaf.org/viaf/130307757>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,owl:sameAs,<https://www.wikidata.org/entity/Q23402>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,rdf:type,crm:E24_Physical_Human_Made_Thing
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,rdf:type,schema:Museum
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>,rdfs:label,"""Musée d’Orsay""@en"

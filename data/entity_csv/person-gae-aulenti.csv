@@ -1,0 +1,9 @@
+subject,predicate,object
+project:person/gae-aulenti,rdf:type,crm:E21_Person
+project:person/gae-aulenti,rdf:type,foaf:Person
+project:person/gae-aulenti,rdfs:label,"""Gae Aulenti""@en"
+project:person/gae-aulenti,owl:sameAs,<http://vocab.getty.edu/ulan/500031019>
+project:person/gae-aulenti,owl:sameAs,<https://isni.org/isni/0000000078410983>
+project:person/gae-aulenti,owl:sameAs,<https://viaf.org/viaf/79173999>
+project:person/gae-aulenti,owl:sameAs,<https://www.wikidata.org/entity/Q8867>
+project:person/gae-aulenti,schema:jobTitle,"""Architect and designer""@en"

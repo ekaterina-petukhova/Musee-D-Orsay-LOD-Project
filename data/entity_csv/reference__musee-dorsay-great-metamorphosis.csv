@@ -1,0 +1,15 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,dcterms:date,"""2020""^^xsd:gYear"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,dcterms:description,"""This documentary explores the Musée d’Orsay through its artworks,
+            architecture, and history. It revisits the transformation of the former
+            railway station into a museum and discusses the preservation and display
+            of collections dating from 1848 to 1914.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,dcterms:title,"""Musée d’Orsay - A Great Metamorphosis""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,rdf:type,crm:E73_Information_Object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,rdf:type,schema:Movie
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:countryOfOrigin,"""France""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:duration,"""PT53M""^^xsd:duration"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:isPartOf,"""Archi & Design""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:productionCompany,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-image>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:productionCompany,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis>,schema:productionCompany,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/musees-orsay-orangerie>

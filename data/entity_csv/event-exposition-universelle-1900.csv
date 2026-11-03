@@ -1,0 +1,6 @@
+subject,predicate,object
+project:event/exposition-universelle-1900,dcterms:date,"""1900""^^xsd:gYear"
+project:event/exposition-universelle-1900,crm:P4_has_time_span,project:time/1900
+project:event/exposition-universelle-1900,rdf:type,crm:E5_Event
+project:event/exposition-universelle-1900,rdfs:label,"""Exposition Universelle of 1900""@en"
+project:event/exposition-universelle-1900,owl:sameAs,<https://www.wikidata.org/entity/Q753646>

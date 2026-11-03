@@ -1,0 +1,7 @@
+subject,predicate,object
+project:event/museum-design-competition-1978,dcterms:date,"""1978""^^xsd:gYear"
+project:event/museum-design-competition-1978,dcterms:description,"""A competition was organized in 1978 to design the new museum.""@en"
+project:event/museum-design-competition-1978,crm:P4_has_time_span,project:time/1978
+project:event/museum-design-competition-1978,rdf:type,crm:E5_Event
+project:event/museum-design-competition-1978,rdfs:label,"""Musée d’Orsay design competition""@en"
+project:event/museum-design-competition-1978,ex:concerns,project:object/musee-dorsay

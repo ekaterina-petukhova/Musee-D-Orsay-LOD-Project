@@ -1,0 +1,9 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,owl:sameAs,<http://vocab.getty.edu/ulan/500019484>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,owl:sameAs,<https://isni.org/isni/0000000121244328>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,owl:sameAs,<https://viaf.org/viaf/24605513>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,owl:sameAs,<https://www.wikidata.org/entity/Q296>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,rdf:type,crm:E21_Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,rdf:type,foaf:Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,rdfs:label,"""Claude Monet""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet>,schema:jobTitle,"""Painter""@en"

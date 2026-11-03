@@ -1,0 +1,9 @@
+subject,predicate,object
+project:person/paul-cezanne,rdf:type,crm:E21_Person
+project:person/paul-cezanne,rdf:type,foaf:Person
+project:person/paul-cezanne,rdfs:label,"""Paul Cézanne""@en"
+project:person/paul-cezanne,owl:sameAs,<http://vocab.getty.edu/ulan/500004793>
+project:person/paul-cezanne,owl:sameAs,<https://isni.org/isni/0000000121287379>
+project:person/paul-cezanne,owl:sameAs,<https://viaf.org/viaf/39374836>
+project:person/paul-cezanne,owl:sameAs,<https://www.wikidata.org/entity/Q35548>
+project:person/paul-cezanne,schema:jobTitle,"""Painter""@en"

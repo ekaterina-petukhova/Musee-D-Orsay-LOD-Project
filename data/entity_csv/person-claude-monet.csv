@@ -1,0 +1,9 @@
+subject,predicate,object
+project:person/claude-monet,rdf:type,crm:E21_Person
+project:person/claude-monet,rdf:type,foaf:Person
+project:person/claude-monet,rdfs:label,"""Claude Monet""@en"
+project:person/claude-monet,owl:sameAs,<http://vocab.getty.edu/ulan/500019484>
+project:person/claude-monet,owl:sameAs,<https://isni.org/isni/0000000121244328>
+project:person/claude-monet,owl:sameAs,<https://viaf.org/viaf/24605513>
+project:person/claude-monet,owl:sameAs,<https://www.wikidata.org/entity/Q296>
+project:person/claude-monet,schema:jobTitle,"""Painter""@en"

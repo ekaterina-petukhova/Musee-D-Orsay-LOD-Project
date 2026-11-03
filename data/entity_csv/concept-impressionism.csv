@@ -1,0 +1,6 @@
+subject,predicate,object
+project:concept/impressionism,rdf:type,skos:Concept
+project:concept/impressionism,skos:exactMatch,<http://vocab.getty.edu/aat/300021503>
+project:concept/impressionism,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85064664>
+project:concept/impressionism,skos:exactMatch,<https://www.wikidata.org/entity/Q40415>
+project:concept/impressionism,skos:prefLabel,"""Impressionism""@en"

@@ -1,0 +1,9 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,owl:sameAs,<http://vocab.getty.edu/ulan/500004793>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,owl:sameAs,<https://isni.org/isni/0000000121287379>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,owl:sameAs,<https://viaf.org/viaf/39374836>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,owl:sameAs,<https://www.wikidata.org/entity/Q35548>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,rdf:type,crm:E21_Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,rdf:type,foaf:Person
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,rdfs:label,"""Paul Cézanne""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne>,schema:jobTitle,"""Painter""@en"

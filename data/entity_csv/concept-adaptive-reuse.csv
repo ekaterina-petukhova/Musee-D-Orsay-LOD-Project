@@ -1,0 +1,5 @@
+subject,predicate,object
+project:concept/adaptive-reuse,dcterms:description,"""Reuse of an existing building for a new function while retaining
+              significant material and historical features.""@en"
+project:concept/adaptive-reuse,rdf:type,skos:Concept
+project:concept/adaptive-reuse,skos:prefLabel,"""Adaptive reuse""@en"

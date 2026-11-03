@@ -1,0 +1,11 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:designedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:hasArchitecturalStyle,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:historicalFunction,"""Railway station and railway hotel.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:openedFor,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:samePhysicalBuildingDifferentFunction,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,ex:wasModifiedBy,<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,owl:sameAs,<https://www.wikidata.org/entity/Q2698691>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,rdf:type,crm:E24_Physical_Human_Made_Thing
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,rdf:type,schema:LandmarksOrHistoricalBuildings
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay>,rdfs:label,"""Gare d’Orsay""@en"

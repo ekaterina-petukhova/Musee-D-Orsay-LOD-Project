@@ -1,0 +1,4 @@
+subject,predicate,object
+project:concept/beaux-arts-style,rdf:type,skos:Concept
+project:concept/beaux-arts-style,skos:exactMatch,<https://www.wikidata.org/entity/Q1268134>
+project:concept/beaux-arts-style,skos:prefLabel,"""Beaux-Arts style""@en"

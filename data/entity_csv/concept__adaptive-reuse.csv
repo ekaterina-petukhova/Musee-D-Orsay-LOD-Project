@@ -1,0 +1,5 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse>,dcterms:description,"""Reuse of an existing building for a new function while retaining
+              significant material and historical features.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse>,rdf:type,skos:Concept
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse>,skos:prefLabel,"""Adaptive reuse""@en"

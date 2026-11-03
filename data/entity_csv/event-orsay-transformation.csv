@@ -1,0 +1,9 @@
+subject,predicate,object
+project:event/orsay-transformation,dcterms:description,"""Adaptive reuse process through which the former railway station was
+            converted into the Musée d’Orsay.""@en"
+project:event/orsay-transformation,rdf:type,crm:E11_Modification
+project:event/orsay-transformation,rdf:type,crm:E5_Event
+project:event/orsay-transformation,rdfs:label,"""Transformation of the Gare d’Orsay into the Musée d’Orsay""@en"
+project:event/orsay-transformation,ex:resultedIn,project:object/musee-dorsay
+project:event/orsay-transformation,schema:endDate,"""1986""^^xsd:gYear"
+project:event/orsay-transformation,schema:startDate,"""1977""^^xsd:gYear"

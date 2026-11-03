@@ -1,0 +1,6 @@
+subject,predicate,object
+project:digital-resource/musee-dorsay-google-arts-culture,dcterms:title,"""Musée d’Orsay on Google Arts & Culture""@en"
+project:digital-resource/musee-dorsay-google-arts-culture,rdf:type,crm:E73_Information_Object
+project:digital-resource/musee-dorsay-google-arts-culture,rdf:type,schema:WebPage
+project:digital-resource/musee-dorsay-google-arts-culture,schema:isPartOf,project:platform/google-arts-culture
+project:digital-resource/musee-dorsay-google-arts-culture,schema:url,<https://artsandculture.google.com/partner/musee-dorsay-paris>

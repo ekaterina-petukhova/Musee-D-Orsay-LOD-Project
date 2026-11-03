@@ -1,0 +1,4 @@
+subject,predicate,object
+project:organization/label-image,rdf:type,crm:E74_Group
+project:organization/label-image,rdf:type,schema:Organization
+project:organization/label-image,rdfs:label,"""Label Image""@en"

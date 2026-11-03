@@ -1,0 +1,7 @@
+subject,predicate,object
+project:reference/icom-adaptive-reuse,dcterms:publisher,project:organization/icom
+project:reference/icom-adaptive-reuse,dcterms:subject,project:concept/adaptive-reuse
+project:reference/icom-adaptive-reuse,dcterms:title,"""Adaptive Reuse""@en"
+project:reference/icom-adaptive-reuse,rdf:type,crm:E73_Information_Object
+project:reference/icom-adaptive-reuse,rdf:type,schema:CreativeWork
+project:reference/icom-adaptive-reuse,schema:url,<https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/>

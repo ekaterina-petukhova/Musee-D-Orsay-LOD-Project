@@ -1,0 +1,8 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,dcterms:description,"""International Council of Museums.""@en"
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,owl:sameAs,<https://isni.org/isni/0000000121512871>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,owl:sameAs,<https://viaf.org/viaf/124987637>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,owl:sameAs,<https://www.wikidata.org/entity/Q653054>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,rdf:type,crm:E74_Group
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,rdf:type,schema:Organization
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom>,rdfs:label,"""ICOM""@en"

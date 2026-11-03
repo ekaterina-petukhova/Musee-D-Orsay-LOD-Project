@@ -1,0 +1,6 @@
+subject,predicate,object
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>,rdf:type,skos:Concept
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>,skos:exactMatch,<http://vocab.getty.edu/aat/300021508>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>,skos:exactMatch,<https://id.loc.gov/authorities/subjects/sh85105416>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>,skos:exactMatch,<https://www.wikidata.org/entity/Q166713>
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism>,skos:prefLabel,"""Post-Impressionism""@en"

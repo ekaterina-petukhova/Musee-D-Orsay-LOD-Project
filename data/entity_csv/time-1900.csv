@@ -1,0 +1,4 @@
+subject,predicate,object
+project:time/1900,crm:P82_at_some_time_within,"""1900""^^xsd:gYear"
+project:time/1900,rdf:type,crm:E52_Time_Span
+project:time/1900,rdfs:label,"""1900""@en"
