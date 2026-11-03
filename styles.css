@@ -914,28 +914,17 @@ footer .meta {
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
-/* Neutral fallback; no stock photo is passed off as historical evidence. */
-.image-missing-note { position:absolute; inset:0; display:flex; justify-content:center; align-items:center; text-align:center; padding:1rem; font-family:Inter,sans-serif; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:#e8dfcd; background:linear-gradient(135deg,#75634b,#29231d); }
-.frame-canvas .image-missing-note {color:#f3e7d4;}
-
-/* Targeted homepage spacing repair: About / Description and Selected Entities. */
-#about.block.wrap, #items.block.wrap, #resources.block.wrap {
-  width: 100%;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: clamp(1.5rem, 5vw, 3.5rem);
-  padding-right: clamp(1.5rem, 5vw, 3.5rem);
+/* Hero captions: stage one stays completely text-free. */
+.hero-scroll .hero-content-top,
+.hero-scroll .hero-museum-title {
+  opacity: 0;
+  transition: opacity 0.8s ease;
 }
-#about .lede, #items > .lede { max-width: 100%; min-width: 0; }
-#about .lede-block, #about .lede-block p, #items > .lede {
-  max-width: 100%;
-  overflow-wrap: break-word;
+.hero-scroll.has-revealed .hero-content-top,
+.hero-scroll.has-revealed .hero-museum-title {
+  opacity: 1;
 }
-#about .lede-block p { margin-top: 0; }
-@media (max-width: 600px) {
-  #about.block.wrap, #items.block.wrap, #resources.block.wrap { padding-left: 1.5rem; padding-right: 1.5rem; }
+.hero-scroll .hero-motif-caption,
+.hero-scroll .hero-scroll-hint {
+  display: none !important;
 }
-
-/* Resources section heading, intro and cards retain consistent inner bounds. */
-#resources > .lede, #resources > .section-head, #resources > .cards-grid { min-width: 0; }
