@@ -4,7 +4,7 @@
     <fileDesc>
       <titleStmt>
         <title>From Railway Station to Museum: The Story of the Musée d’Orsay</title>
-        <subtitle>A Case of Cultural Heritage Transformation</subtitle>
+        <title type="sub">A Case of Cultural Heritage Transformation</title>
         <author>Ekaterina Petukhova</author>
       </titleStmt>
 
@@ -20,13 +20,13 @@
         <bibl type="sourceReference">
           <title>Gare d’Orsay</title>
           <publisher>Wikipedia</publisher>
-          <ptr target="https://en.wikipedia.org/wiki/Gare_d%27Orsay"/>
-        </bibl>
+          <ptr target="https://en.wikipedia.org/w/index.php?title=Gare_d%27Orsay&amp;oldid=1370978995"/>
+        <date when="2026-08-24">Last revision before research capture: 24 August 2026</date></bibl>
         <bibl type="sourceReference">
           <title>Musée d’Orsay</title>
           <publisher>Wikipedia</publisher>
-          <ptr target="https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay"/>
-        </bibl>
+          <ptr target="https://en.wikipedia.org/w/index.php?title=Mus%C3%A9e_d%27Orsay&amp;oldid=1379299233"/>
+        <date when="2026-10-09">Last revision before research capture: 9 October 2026</date></bibl>
       </sourceDesc>
     </fileDesc>
 
@@ -44,7 +44,7 @@
           with different functions. Therefore, they are connected through an adaptive
           reuse event and are not declared identical with owl:sameAs.
         </p>
-      <p>The running text consists of selected verbatim paragraphs from https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay retrieved on 2026-10-19. The standOff bibliography and semantic relations may additionally model enriched entities not mentioned in these paragraphs. Source is attributed under CC BY-SA 4.0.</p></projectDesc>
+      <p>The running text consists of selected passages from the 9 October 2026 revision of the Wikipedia article Musée d’Orsay. The second article, Gare d’Orsay (24 August 2026 revision), provides additional historical context. The standOff bibliography and semantic relations may model enriched entities not named in the running text. Wikipedia source content is attributed under CC BY-SA 4.0. These fixed revisions replace dynamic article links for reproducible attribution.</p></projectDesc>
 
       <listPrefixDef>
         <prefixDef ident="project" matchPattern="(.+)" replacementPattern="https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/$1"/>
@@ -168,7 +168,7 @@
         Revised TEI encoding with separate organization and digital-resource entities,
         an expanded documentary record, and corrected entity relations.
       </change>
-    </revisionDesc>
+    <change when="2026-11-03">Pinned both Wikipedia source citations to exact historical revisions and documented stable provenance.</change></revisionDesc>
   </teiHeader>
 
   <standOff>

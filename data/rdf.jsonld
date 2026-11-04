@@ -1,0 +1,1052 @@
+[
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/digitallyRepresentedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "digitally represented by"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300021503"
+      },
+      {
+        "@id": "https://id.loc.gov/authorities/subjects/sh85064664"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q40415"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Impressionism"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q1268134"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Beaux-Arts style"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human_Made_Thing",
+      "https://schema.org/Museum"
+    ],
+    "http://purl.org/dc/terms/isReferencedBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/adaptive-reuse-wikipedia"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Musée d’Orsay"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://vocab.getty.edu/ulan/500310001"
+      },
+      {
+        "@id": "https://isni.org/isni/0000000121572575"
+      },
+      {
+        "@id": "https://viaf.org/viaf/130307757"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q23402"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/digitallyRepresentedBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/historicalFunction": [
+      {
+        "@language": "en",
+        "@value": "Art museum occupying the former Gare d’Orsay."
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/housesWorksBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/interiorDesignedBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/isCaseOf": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/representsArtMovement": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/impressionism"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "https://schema.org/Organization"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "International Council of Museums."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ICOM"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://isni.org/isni/0000000121512871"
+      },
+      {
+        "@id": "https://viaf.org/viaf/124987637"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q653054"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/museum-opening-1986",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1986"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "The museum officially opened in December 1986."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time_span": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1986"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Opening of Musée d’Orsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concerns": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concludesTransformation": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E11_Modification",
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Adaptive reuse process through which the former railway station was\n            converted into the Musée d’Orsay."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Transformation of the Gare d’Orsay into the Musée d’Orsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/resultedIn": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay"
+      }
+    ],
+    "https://schema.org/endDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1986"
+      }
+    ],
+    "https://schema.org/startDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1977"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/wasModifiedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "was modified by"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/samePhysicalBuildingDifferentFunction",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Relates distinct historical identities or functions of the same physical building and does not imply owl:sameAs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "same physical building, different function"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/digital-resource/musee-dorsay-google-arts-culture",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+      "https://schema.org/WebPage"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Musée d’Orsay on Google Arts & Culture"
+      }
+    ],
+    "https://schema.org/isPartOf": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://artsandculture.google.com/partner/musee-dorsay-paris"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/openedFor",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "opened for"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/icom-adaptive-reuse",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+      "https://schema.org/CreativeWork"
+    ],
+    "http://purl.org/dc/terms/publisher": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/icom"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Adaptive Reuse"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://icamt.mini.icom.museum/references/icamt-themes/adaptive-reuse/"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Human_Made_Thing",
+      "https://schema.org/LandmarksOrHistoricalBuildings"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gare d’Orsay"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q2698691"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/designedBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/hasArchitecturalStyle": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/beaux-arts-style"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/historicalFunction": [
+      {
+        "@language": "en",
+        "@value": "Railway station and railway hotel."
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/openedFor": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/samePhysicalBuildingDifferentFunction": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/wasModifiedBy": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/orsay-transformation"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/representsArtMovement",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "represents art movement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/exposition-universelle-1900",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1900"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time_span": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1900"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Exposition Universelle of 1900"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q753646"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/victor-laloux",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Victor Laloux"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://vocab.getty.edu/ulan/500023967"
+      },
+      {
+        "@id": "https://isni.org/isni/0000000071407773"
+      },
+      {
+        "@id": "https://viaf.org/viaf/34723705"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q924704"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "Architect"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/heritage-listing-1978",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1978"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "The station was finally listed as a Historic Monument in 1978."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time_span": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1978"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Historic Monument listing of Gare d’Orsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concerns": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/gare-dorsay"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1900",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1900"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "1900"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/musee-dorsay-great-metamorphosis",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+      "https://schema.org/Movie"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2020"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "This documentary explores the Musée d’Orsay through its artworks,\n            architecture, and history. It revisits the transformation of the former\n            railway station into a museum and discusses the preservation and display\n            of collections dating from 1848 to 1914."
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Musée d’Orsay - A Great Metamorphosis"
+      }
+    ],
+    "https://schema.org/countryOfOrigin": [
+      {
+        "@language": "en",
+        "@value": "France"
+      }
+    ],
+    "https://schema.org/duration": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#duration",
+        "@value": "PT53M"
+      }
+    ],
+    "https://schema.org/isPartOf": [
+      {
+        "@language": "en",
+        "@value": "Archi & Design"
+      }
+    ],
+    "https://schema.org/productionCompany": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-image"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news"
+      },
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/musees-orsay-orangerie"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/museum-design-competition-1978",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1978"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "A competition was organized in 1978 to design the new museum."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time_span": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1978"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Musée d’Orsay design competition"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concerns": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concerns",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "concerns"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/resultedIn",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "resulted in"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concludesTransformation",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "concludes transformation"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/interiorDesignedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "interior designed by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/dc/terms/creator"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1978",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1978"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "1978"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/claude-monet",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Claude Monet"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://vocab.getty.edu/ulan/500019484"
+      },
+      {
+        "@id": "https://isni.org/isni/0000000121244328"
+      },
+      {
+        "@id": "https://viaf.org/viaf/24605513"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q296"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "Painter"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/platform/google-arts-culture",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+      "https://schema.org/WebSite"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Google Arts & Culture"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://www.wikidata.org/entity/Q369089"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://artsandculture.google.com/"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/isCaseOf",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is case of"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1986",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1986"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "1986"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/historicalFunction",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "historical function"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/hasArchitecturalStyle",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has architectural style"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/paul-cezanne",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Paul Cézanne"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://vocab.getty.edu/ulan/500004793"
+      },
+      {
+        "@id": "https://isni.org/isni/0000000121287379"
+      },
+      {
+        "@id": "https://viaf.org/viaf/39374836"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q35548"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "Painter"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/housesWorksBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "houses works by"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1981",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E52_Time_Span"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P82_at_some_time_within": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1981"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "1981"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/selectedDesigner",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "selected designer"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/event/aulenti-selection-1981",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1981"
+      }
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "In 1981, Gae Aulenti was chosen to design the museum interior."
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P4_has_time_span": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/time/1981"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Selection of Gae Aulenti for museum interior design"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/concerns": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/object/musee-dorsay"
+      }
+    ],
+    "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/selectedDesigner": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/reference/adaptive-reuse-wikipedia",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+      "https://schema.org/CreativeWork"
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Adaptive reuse"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://en.wikipedia.org/wiki/Adaptive_reuse"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/post-impressionism",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://vocab.getty.edu/aat/300021508"
+      },
+      {
+        "@id": "https://id.loc.gov/authorities/subjects/sh85105416"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q166713"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Post-Impressionism"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/designedBy",
+    "@type": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "designed by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/dc/terms/creator"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-image",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "https://schema.org/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Label Image"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/concept/adaptive-reuse",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "en",
+        "@value": "Reuse of an existing building for a new function while retaining\n              significant material and historical features."
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Adaptive reuse"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/musees-orsay-orangerie",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "https://schema.org/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Musées d’Orsay et de l’Orangerie"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/organization/label-news",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "https://schema.org/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Label News"
+      }
+    ]
+  },
+  {
+    "@id": "https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/id/person/gae-aulenti",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gae Aulenti"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://vocab.getty.edu/ulan/500031019"
+      },
+      {
+        "@id": "https://isni.org/isni/0000000078410983"
+      },
+      {
+        "@id": "https://viaf.org/viaf/79173999"
+      },
+      {
+        "@id": "https://www.wikidata.org/entity/Q8867"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "Architect and designer"
+      }
+    ]
+  }
+]

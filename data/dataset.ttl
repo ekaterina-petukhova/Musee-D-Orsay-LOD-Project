@@ -1,0 +1,25 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/dataset.ttl> a dcat:Dataset ;
+    dcterms:creator "Ekaterina Petukhova" ;
+    dcterms:description "An RDF representation of the Gare d’Orsay to Musée d’Orsay transformation, based on annotated TEI text and additional documented historical enrichment."@en ;
+    dcterms:issued "2026-11-03"^^xsd:date ;
+    dcterms:language "en" ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:source <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/tei.xml> ;
+    dcterms:title "From Railway Station to Museum — Musée d’Orsay LOD dataset"@en ;
+    void:triples 210 ;
+    dcat:distribution <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.jsonld#distribution>,
+        <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.ttl#distribution> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.jsonld#distribution> a dcat:Distribution ;
+    dcat:downloadURL <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.jsonld> ;
+    dcat:mediaType "application/ld+json" .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.ttl#distribution> a dcat:Distribution ;
+    dcat:downloadURL <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/data/rdf.ttl> ;
+    dcat:mediaType "text/turtle" .
+

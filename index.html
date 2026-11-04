@@ -6,6 +6,10 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Musée d'Orsay — Linked Open Data</title>
 <link href="styles.css" rel="stylesheet"/>
+<meta name="DC.title" content="From Railway Station to Museum — Musée d’Orsay LOD"/>
+<meta name="DC.creator" content="Ekaterina Petukhova"/>
+<meta name="DC.language" content="en"/>
+<link rel="describedby" type="text/turtle" href="data/dataset.ttl"/>
 </head>
 <body>
 <div id="root">
@@ -85,10 +89,8 @@
           events, concepts, and textual entities related to this transformation in order to
           formalise their historical, architectural, and cultural relations. The workflow
           combines theoretical modelling, conceptual (OWL) ontology design, TEI/XML
-          encoding, and RDF transformation. The RDF dataset reuses the Schema.org, FOAF,
-          SKOS, Dublin Core Terms, and BIBO vocabularies and reconciles entities to external
-          authority files including Wikidata, VIAF, ISNI, GeoNames, and the Library of
-          Congress Subject Headings, in order to support interoperability and Linked Open
+          encoding, and RDF transformation. The RDF dataset reuses CIDOC CRM, Schema.org, FOAF (person classes), SKOS and Dublin Core Terms and reconciles entities to external
+          authorities including Wikidata, VIAF, ISNI, Getty and Library of Congress identifiers (where available), in order to support interoperability and Linked Open
           Data integration. The resulting semantic structure enables the representation of
           architectural, conceptual, and historical knowledge through RDF triples and
           ontology-based relations, transforming the selected narrative into a
@@ -263,7 +265,7 @@
 <path d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <h3>RDF / Turtle</h3>
-<p>Schema.org / FOAF / SKOS / DCTerms / BIBO triples describing the entities and relations in the dataset.</p>
+<p>RDF/Turtle triples using CIDOC CRM, Schema.org, FOAF, SKOS and Dublin Core Terms.</p>
 <span class="res-link">View Source →</span>
 </a>
 </div>

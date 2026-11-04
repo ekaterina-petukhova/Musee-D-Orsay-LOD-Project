@@ -392,9 +392,10 @@
 <!-- TAB 2: RDF / Turtle -->
 <div class="tab-content">
 <p class="lede">
-        The TEI document is transformed into an RDF graph reusing CIDOC CRM, Schema.org, FOAF, SKOS, Dublin
-        Core Terms and BIBO, with <span class="mono">owl:sameAs</span> links to Wikidata,
-        VIAF, ISNI, GeoNames and the Library of Congress Subject Headings.
+        The TEI document is transformed into an RDF graph reusing CIDOC CRM, Schema.org, FOAF (for person types), SKOS,
+        Dublin Core Terms and documented project-specific properties. <span class="mono">owl:sameAs</span> identifies
+        selected matching entities in Wikidata, VIAF, ISNI and Getty; <span class="mono">skos:exactMatch</span> aligns concepts to authority vocabularies including the Library of Congress.
+        GeoNames and BIBO are not used in this RDF dataset.
       </p>
 <div class="code-block rdf-full-source">
 <div class="code-header">
@@ -721,7 +722,7 @@ ex:wasModifiedBy a rdf:Property ;
 </div>
 </div><!-- /.tabs-scope -->
 </div>
-</main>
+<aside class="data-publication-note"><strong>Dataset publication and validation</strong><p>Machine-readable <a href="data/dataset.ttl" download>DCAT metadata (Turtle)</a> · <a href="diagrams/orsay_ontology.ttl" download>OWL ontology (Turtle)</a> · <a href="PROVENANCE_AND_VALIDATION.md" download>provenance and validation report</a>. The static site provides RDF file downloads; it does not claim content negotiation, dereferenceable entity pages or a live SPARQL endpoint.</p></aside></main>
 <footer class="wrap">
 <div class="top">
 <div>

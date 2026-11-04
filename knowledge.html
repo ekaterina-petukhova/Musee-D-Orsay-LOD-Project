@@ -40,7 +40,7 @@
 <p class="subtitle">
     This section presents the knowledge-organization layer of the project: a theoretical
     model of the domain in natural language / graphic form, and its formal conceptual model
-    — a vocabulary-based conceptual schema reusing CIDOC CRM, Schema.org, FOAF, SKOS and Dublin Core Terms. See <a href="methods.html#metadata">Metadata Alignment</a> for the mapping table.
+    — a vocabulary-based conceptual schema reusing CIDOC CRM, Schema.org, FOAF, SKOS and Dublin Core Terms. See <a href="methods.html#metadata">Metadata Alignment</a> for the mapping table and <a href="diagrams/orsay_ontology.ttl">the formal OWL ontology</a> (Turtle serialization).
   </p>
 <div class="tabs-scope">
 <div class="tabs">
@@ -87,7 +87,7 @@
 <span class="item"><span class="swatch" style="border-color:#5f6670"></span>Bibl. / digital resource</span>
 <span class="item"><span class="swatch" style="border-color:#8a8378"></span>Descriptive literal</span>
 <span class="item"><span class="swatch dashed" style="border-color:#b8860b"></span>Added to enrich the network</span>
-<span class="item">[WD / VIAF / ISNI / GeoNames / LCSH] = authority-control link</span>
+<span class="item">[Wikidata / VIAF / ISNI / Getty / LOC] = external identifier</span>
 </div>
 </div>
 <!-- TAB 2: Conceptual Model -->
@@ -95,7 +95,7 @@
 <p class="lede">
         A Graffoo-inspired graphical schema representing the theoretical model: classes
         reused from Schema.org, FOAF and SKOS, connected by object and datatype properties from
-        Schema.org, Dublin Core Terms and BIBO, and reconciled to external authorities via
+        Schema.org, Dublin Core Terms and project-specific properties, and reconciled to external authorities via
         <span class="mono">owl:sameAs</span> and <span class="mono">skos:exactMatch</span>.
         The <strong style="color:var(--spine,#a8681a)">Gare d’Orsay → Musée d’Orsay</strong>
         relation (<span class="mono">dcterms:relation</span>, standing in for
@@ -182,7 +182,7 @@
 <div>
 <h4>Movie</h4>
 <p>A documentary included as a cultural representation of the museum beyond its institutional role.</p>
-<span class="entity-ex">schema:Movie / bibo:AudioVisualDocument · Example: One Night in Orsay Museum</span>
+<span class="entity-ex">schema:Movie (BIBO shown as an optional conceptual alternative, not used in the RDF export) · Example: One Night in Orsay Museum</span>
 </div>
 </div>
 <div class="entity-card">
@@ -204,7 +204,7 @@
 </div>
 </div><!-- /.tabs-scope -->
 </div>
-</main>
+<aside class="data-publication-note"><strong>Dataset publication and validation</strong><p>Machine-readable <a href="data/dataset.ttl" download>DCAT metadata (Turtle)</a> · <a href="diagrams/orsay_ontology.ttl" download>OWL ontology (Turtle)</a> · <a href="PROVENANCE_AND_VALIDATION.md" download>provenance and validation report</a>. The static site provides RDF file downloads; it does not claim content negotiation, dereferenceable entity pages or a live SPARQL endpoint.</p></aside></main>
 <footer class="wrap">
 <div class="top">
 <div>

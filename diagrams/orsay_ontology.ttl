@@ -1,0 +1,120 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ekaterina-petukhova.github.io/Musee-D-Orsay-LOD-Project/ontology> a owl:Ontology ;
+    dcterms:title "Musée d’Orsay: adaptive reuse — local ontology" ;
+    rdfs:comment "Defines only project-specific relationships used in data/rdf.ttl. CIDOC CRM and other reused vocabularies remain externally defined; no unsupported class equivalences are asserted." ;
+    owl:versionInfo "1.1 — modeled with conservative domain/range; 2026-11-03" .
+
+ex:DigitalRepresentation a owl:Class ;
+    rdfs:label "Digital Representation"@en ;
+    rdfs:subClassOf crm:E73_Information_Object .
+
+ex:HeritageTransformation a owl:Class ;
+    rdfs:label "Heritage Transformation"@en ;
+    rdfs:subClassOf crm:E11_Modification .
+
+ex:HistoricalConcept a owl:Class ;
+    rdfs:label "Historical Concept"@en ;
+    rdfs:subClassOf skos:Concept .
+
+ex:HistoricalEvent a owl:Class ;
+    rdfs:label "Historical Event"@en ;
+    rdfs:subClassOf crm:E5_Event .
+
+ex:concerns a owl:ObjectProperty ;
+    rdfs:label "concerns" ;
+    rdfs:comment "Associates a source or event with a relevant subject." .
+
+ex:concludesTransformation a owl:ObjectProperty ;
+    rdfs:label "concludes transformation" ;
+    rdfs:comment "Marks the event which concludes an adaptive-reuse transformation." ;
+    rdfs:domain crm:E5_Event ;
+    rdfs:range crm:E11_Modification .
+
+ex:designedBy a owl:ObjectProperty ;
+    rdfs:label "designed by" ;
+    rdfs:comment "Relates a built work to its original designer." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range crm:E21_Person .
+
+ex:digitallyRepresentedBy a owl:ObjectProperty ;
+    rdfs:label "digitally represented by" ;
+    rdfs:comment "Relates a heritage object to a digital representation." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range crm:E73_Information_Object .
+
+ex:hasArchitecturalStyle a owl:ObjectProperty ;
+    rdfs:label "has architectural style" ;
+    rdfs:comment "Associates a building with an architectural style concept." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range skos:Concept .
+
+ex:historicalFunction a owl:DatatypeProperty ;
+    rdfs:label "historical function" ;
+    rdfs:comment "Describes a historical function of a built work." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range xsd:string .
+
+ex:housesWorksBy a owl:ObjectProperty ;
+    rdfs:label "houses works by" ;
+    rdfs:comment "Relates a museum to a creator whose works it houses." ;
+    rdfs:domain schema:Museum ;
+    rdfs:range crm:E21_Person .
+
+ex:interiorDesignedBy a owl:ObjectProperty ;
+    rdfs:label "interior designed by" ;
+    rdfs:comment "Relates a museum to its interior designer." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range crm:E21_Person .
+
+ex:isCaseOf a owl:ObjectProperty ;
+    rdfs:label "is case of" ;
+    rdfs:comment "Classifies an entity as a case of a concept." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range skos:Concept .
+
+ex:openedFor a owl:ObjectProperty ;
+    rdfs:label "opened for" ;
+    rdfs:comment "Relates a building to an event for which it opened." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range crm:E5_Event .
+
+ex:representsArtMovement a owl:ObjectProperty ;
+    rdfs:label "represents art movement" ;
+    rdfs:comment "Relates a museum to a represented art movement." ;
+    rdfs:domain schema:Museum ;
+    rdfs:range skos:Concept .
+
+ex:resultedIn a owl:ObjectProperty ;
+    rdfs:label "resulted in" ;
+    rdfs:comment "Relates a process to its result." .
+
+ex:samePhysicalBuildingDifferentFunction a owl:ObjectProperty ;
+    rdfs:label "same physical building different function" ;
+    rdfs:comment "Connects historically distinct identities of the same physical building without implying owl:sameAs." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range ex:HistoricBuilding .
+
+ex:selectedDesigner a owl:ObjectProperty ;
+    rdfs:label "selected designer" ;
+    rdfs:comment "Associates a selection event with a selected designer." ;
+    rdfs:domain crm:E5_Event ;
+    rdfs:range crm:E21_Person .
+
+ex:wasModifiedBy a owl:ObjectProperty ;
+    rdfs:label "was modified by" ;
+    rdfs:comment "Relates a physical thing to a transformation event." ;
+    rdfs:domain ex:HistoricBuilding ;
+    rdfs:range crm:E11_Modification .
+
+ex:HistoricBuilding a owl:Class ;
+    rdfs:label "Historic Building"@en ;
+    rdfs:subClassOf crm:E24_Physical_Human_Made_Thing .
+

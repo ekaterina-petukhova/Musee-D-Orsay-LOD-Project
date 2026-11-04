@@ -92,8 +92,6 @@
 
   let ticking = false;
   let lockUntil = 0, locked1 = false, locked2 = false;
-  let currentHeroStage = 1;
-  let revealTimer = null;
 
   function update() {
     ticking = false;
@@ -118,27 +116,10 @@
     if (layer1) layer1.style.opacity = o1;
     if (layer2) layer2.style.opacity = o2;
     if (layer3) layer3.style.opacity = o3;
-    // Captions only appear after the incoming photograph is fully opaque.
-    if (captionEl) captionEl.textContent = '';
+    if (captionEl) captionEl.textContent = getCaption(p);
 
-    const stage = p >= T2_END ? 3 : p >= T1_END ? 2 : 1;
-    if (stage !== currentHeroStage) {
-      currentHeroStage = stage;
-      clearTimeout(revealTimer);
-      section.classList.remove('has-revealed');
-      tagline1?.classList.remove('visible');
-      tagline2?.classList.remove('visible');
-
-      if (stage >= 2) {
-        // Image opacity has a 200ms CSS transition; wait until it finishes.
-        revealTimer = setTimeout(() => {
-          if (currentHeroStage !== stage) return;
-          section.classList.add('has-revealed');
-          tagline1?.classList.add('visible');
-          tagline2?.classList.toggle('visible', stage === 3);
-        }, 280);
-      }
-    }
+    if (tagline1) tagline1.classList.toggle('visible', p >= HOLD_2_END);
+    if (tagline2) tagline2.classList.toggle('visible', p >= T2_END);
   }
 
   window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } }, { passive: true });
@@ -234,3 +215,22 @@
     }, { passive: false });
   });
 })();
+
+// Graceful fallback for image files not yet present in this distribution.
+document.addEventListener('DOMContentLoaded', () => {
+ document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('error', () => {
+   img.classList.add('image-unavailable');
+   img.setAttribute('aria-hidden', 'true');
+   img.style.opacity = '0';
+   const parent = img.parentElement;
+   if (parent && !parent.querySelector('.image-missing-note')) {
+     const note = document.createElement('span');
+     note.className = 'image-missing-note';
+     note.textContent = 'Image unavailable';
+     parent.appendChild(note);
+   }
+  });
+  if (img.complete && img.naturalWidth === 0) img.dispatchEvent(new Event('error'));
+ });
+});
